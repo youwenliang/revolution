@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Welcome",
+    "file": "welcome.html",
+    "hidden": true
+  },
+  {
+    "title": "Topics",
+    "directory": "topics",
+    "pages": [
+      {"title": "Topic1",
+        "file": "topic1.html"
+      },
+      {"title": "Topic2",
+        "file": "topic2.html"
+      },
+      {"title": "Topic3",
+        "file": "topic3.html"
+      },
+      {"title": "Topic4",
+        "file": "topic4.html"
+      }
+    ]
+  }
+]
