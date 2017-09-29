@@ -7,11 +7,13 @@ class TopicA extends Component {
   }
   render() {
     return (
-      <div className="Footer">
-        <p>
-          I'm a topicA!
-          <Link to='/'>Back to Home</Link>
-        </p>
+      <div>
+        <section className="bg-near-white min-vh-100 pv3">
+          <div className="center w-100 mw8 ph3 ph5-ns">
+            <p>This is Topic A</p>
+            <Link to='/'>Home</Link>
+          </div>
+        </section>
       </div>
     );
   }
