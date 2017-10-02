@@ -13,6 +13,10 @@ body {
   padding-bottom: 100px;
 }
 
+section {
+  position: relative;
+}
+
 a {
   color: #4f4f4f;
   text-decoration: none;
@@ -21,6 +25,31 @@ a {
 .df {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+/* Swiper */
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+.swiper-button-next {right: calc((100% - 896px)/2 - 40px); margin-top: 40px;}
+.swiper-button-prev {left: calc((100% - 896px)/2 - 40px); margin-top: 40px;}
+
+@media screen and (max-width: 960px) {
+  .swiper-button-next {right: 10px;}
+  .swiper-button-prev {left: 10px;}  
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }  
 }
 
 footer {
@@ -32,5 +61,5 @@ footer {
 }
 
 footer div {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
