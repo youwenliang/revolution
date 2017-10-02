@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
 import Home from './pages/Home';
-import TopicA from './pages/TopicA';
-import TopicB from './pages/TopicB';
-import TopicC from './pages/TopicC';
-import TopicD from './pages/TopicD';
-import TopicE from './pages/TopicE';
-import Page404 from './pages/404';
+import Topic1 from './pages/Topic1';
+import Topic2 from './pages/Topic2';
+import Topic3 from './pages/Topic3';
+import Topic4 from './pages/Topic4';
+import Topic5 from './pages/Topic5';
 
 class Main extends Component {
   componentDidUpdate(prevProps, prevState) {
@@ -17,12 +17,12 @@ class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/topicA' component={TopicA} />
-          <Route exact path='/topicB' component={TopicB} />
-          <Route exact path='/topicC' component={TopicC} />
-          <Route exact path='/topicD' component={TopicD} />
-          <Route exact path='/topicE' component={TopicE} />
-          <Route path='*' exact={true} component={Page404} />
+          <Route exact path='/self-exploration' component={Topic1} />
+          <Route exact path='/gender-equality' component={Topic2} />
+          <Route exact path='/aesthetic-education' component={Topic3} />
+          <Route exact path='/pursue-your-dreams' component={Topic4} />
+          <Route exact path='/independent-thinking' component={Topic5} />
+          <Redirect from='*' to='/' />
         </Switch>
       </main>
     );
