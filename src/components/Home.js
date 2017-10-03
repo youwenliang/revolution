@@ -39,47 +39,47 @@ class Home extends Component {
           </div>
         </header>
         <section className="bg-dark-gray">
-          <div className="center w-100 mw8 ph3 pv5 tc">
+          <div className="center w-100 mw8 ph3 pv5 tc hideme hidediv">
             <h2 className="white">This is a banner title</h2>
             <h4 className="white">This is a banner description</h4>
           </div>
         </section>
         <section className="bg-near-white pv5">
-        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5">
+        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0 hideme hidediv">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <Link to='/self-exploration'>
+                  <Link to='/topics/self-exploration'>
                     <div className="bg-white pv4 h5 df">
                       <h3>自我認識</h3>
                     </div>
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <Link to='/gender-equality'>
+                  <Link to='/topics/gender-equality'>
                     <div className="bg-white pv4 h5 df">
                       <h3>性別平等</h3>
                     </div>
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <Link to='/aesthetic-education'>
+                  <Link to='/topics/aesthetic-education'>
                     <div className="bg-white pv4 h5 df">
                       <h3>美感教育</h3>
                     </div>
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <Link to='/pursue-your-dreams'>
+                  <Link to='/topics/pursue-your-dreams'>
                     <div className="bg-white pv4 h5 df">
                       <h3>追求夢想</h3>
                     </div>
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <Link to='/independent-thinking'>
+                  <Link to='/topics/independent-thinking'>
                     <div className="bg-white pv4 h5 df">
                       <h3>獨立思考</h3>
                     </div>

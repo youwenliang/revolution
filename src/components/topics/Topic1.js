@@ -129,8 +129,8 @@ class TopicA extends Component {
         <section className="bg-near-white pv5">
           <div className="center w-100 mw8 ph3 ph5-ns tc">
             <div className="mw9 center ph2">
-              <div className="cf mb5">
-                <div className="fl w-100 w-50-l w-100 ">
+              <div className="cf mb5 hideme hidediv">
+                <div className="fl w-100 w-50-l w-100">
                   <div className="bg-white w-80-l pv4 h5 df">A</div>
                 </div>
                 <div className="fr w-100 w-50-l w-100 pl4-l tl">
@@ -138,8 +138,8 @@ class TopicA extends Component {
                   <h5>Description</h5>
                 </div>
               </div>
-              <div className="cf mb5">
-                <div className="fr w-100 w-50-l w-100 ">
+              <div className="cf mb5 hideme hidediv">
+                <div className="fr w-100 w-50-l w-100">
                   <div className="bg-white w-80-l ml4-l pv4 h5 df">B</div>
                 </div>
                 <div className="fl w-100 w-50-l w-100 tl">
@@ -147,8 +147,8 @@ class TopicA extends Component {
                   <h5>Description</h5>
                 </div>
               </div>
-              <div className="cf">
-                <div className="fl w-100 w-50-l w-100 ">
+              <div className="cf hideme hidediv">
+                <div className="fl w-100 w-50-l w-100">
                   <div className="bg-white w-80-l pv4 h5 df">C</div>
                 </div>
                 <div className="fr w-100 w-50-l w-100 pl4-l tl">
@@ -161,7 +161,7 @@ class TopicA extends Component {
         </section>
         {/*--- Section 2 ---*/}
         <section className="bg-white pv5 df">
-          <div className="center w-100 mw8 ph3 ph5-ns tc mb5">
+          <div className="center w-100 mw8 ph3 ph5-ns tc mb5 hideme hidediv">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
             <div className="swiper-container mt5 mh2">
@@ -193,7 +193,7 @@ class TopicA extends Component {
         </section>
         {/*--- Section 3 ---*/}
         <section className="bg-near-white pv5">
-          <div className="center w-100 mw8 ph3 ph5-ns tc mb5">
+          <div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0 hideme hidediv">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
             <div className="mw9 center mt5">

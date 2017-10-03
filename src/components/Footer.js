@@ -6,8 +6,8 @@ class Footer extends Component {
     return (
       <footer className="df">
         <div className="center w-100 mw8 ph3 ph5-ns df">
-          <Link to='/'><p className="white">This is a footer</p></Link>
-          <p className="white">This is social icons</p>
+          <Link to='/'><p className="white ph2">This is a footer</p></Link>
+          <p className="white ph2">This is social icons</p>
         </div>
       </footer>
     );
