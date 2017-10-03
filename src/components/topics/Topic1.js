@@ -126,40 +126,47 @@ class TopicA extends Component {
     const { open } = this.state;
     return (
       <div>
-        {/*--- Header ---*/}
-        <header className="min-vh-100 pv5 df">
-          <div className="center w-100 mw8 ph3 ph5-ns">
-            <div className="cf mb5">
-              <div className="fl w-100 w-50-l w-100">
-                <div className="bg-near-white w-80-l pv4 h5 df">A</div>
-              </div>
-              <div className="fr w-100 w-50-l w-100 pl4-l tl">
-                <h1>Title</h1>
-                <h3>Description</h3>
+        {/*--- Section 1 ---*/}
+        <section className="bg-near-white pv5 min-vh-100 df">
+          <div className="center w-100 mw8 ph3 ph5-ns tc">
+            <div className="mw9 center ph2">
+              <div className="cf mb5">
+                <div className="fl w-100 w-50-l w-100">
+                  <div className="bg-white w-80-l pv4 h5 df">A</div>
+                </div>
+                <div className="fr w-100 w-50-l w-100 pl4-l tl-l tc">
+                  <h1>Title</h1>
+                  <h3>Description</h3>
+                </div>
               </div>
             </div>
           </div>
-        </header>
-        {/*--- Section 1 ---*/}
-        <section className="bg-near-white pv5">
+        </section>
+        <section className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph3 ph5-ns tc">
             <div className="mw9 center ph2">
               <div className="cf mb5 hideme hidediv">
                 <div className="fr w-100 w-50-l w-100">
-                  <div className="bg-white w-80-l ml4-l pv4 h5 df">B</div>
+                  <div className="bg-near-white w-80-l ml4-l pv4 h5 df">B</div>
                 </div>
-                <div className="fl w-100 w-50-l w-100 tl">
-                  <h2>Title</h2>
-                  <h4>Description</h4>
+                <div className="fl w-100 w-50-l w-100 tl-l tc">
+                  <h1>Title</h1>
+                  <h3>Description</h3>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-near-white pv5 min-vh-100 df">
+          <div className="center w-100 mw8 ph3 ph5-ns tc">
+            <div className="mw9 center ph2">
               <div className="cf hideme hidediv">
                 <div className="fl w-100 w-50-l w-100">
                   <div className="bg-white w-80-l pv4 h5 df">C</div>
                 </div>
-                <div className="fr w-100 w-50-l w-100 pl4-l tl">
-                  <h2>Title</h2>
-                  <h4>Description</h4>
+                <div className="fr w-100 w-50-l w-100 pl4-l tl-l tc">
+                  <h1>Title</h1>
+                  <h3>Description</h3>
                 </div>
               </div>
             </div>
