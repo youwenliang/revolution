@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 import Swiper from 'swiper';
 
 class TopicA extends Component {
@@ -9,6 +10,7 @@ class TopicA extends Component {
       pagination: '.swiper-pagination',
       slidesPerView: 3,
       paginationClickable: true,
+      loop: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       spaceBetween: 0,
@@ -28,12 +30,12 @@ class TopicA extends Component {
         <header className="min-vh-100 pv5 df">
           <div className="center w-100 mw8 ph3 ph5-ns">
             <figure className="w-100 h5 bg-near-white mh2 mb4"></figure>
-            <h1 className="tc">自我認識</h1>
+            <h1 className="tc">自我認識 <FontAwesome name='rocket'/></h1>
             <h3 className="tc">This is a description</h3>
           </div>
         </header>
         {/*--- Section 1 ---*/}
-        <section className="bg-near-white min-vh-100 pv5">
+        <section className="bg-near-white pv5">
           <div className="center w-100 mw8 ph3 ph5-ns tc">
             <div className="mw9 center ph2">
               <div className="cf mb5">
@@ -67,8 +69,8 @@ class TopicA extends Component {
           </div>
         </section>
         {/*--- Section 2 ---*/}
-        <section className="bg-white min-vh-100 pv5 df">
-          <div className="center w-100 mw8 ph3 ph5-ns tc">
+        <section className="bg-white pv5 df">
+          <div className="center w-100 mw8 ph3 ph5-ns tc mb5">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
             <div className="swiper-container mt5 mh2">
@@ -86,50 +88,50 @@ class TopicA extends Component {
           </div>
         </section>
         {/*--- Section 3 ---*/}
-        <section className="bg-near-white min-vh-100 pv5">
-          <div className="center w-100 mw8 ph3 ph5-ns tc">
+        <section className="bg-near-white pv5">
+          <div className="center w-100 mw8 ph3 ph5-ns tc mb5">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
-            <div class="mw9 center mt5">
-              <div class="cf">
-                <div class="fl w-100 w-third-l w-100 pa2">
+            <div className="mw9 center mt5">
+              <div className="cf">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/self-exploration'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>自我認識</h3>
                     </div>
                   </Link>
                 </div>
-                <div class="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/gender-equality'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>性別平等</h3>
                     </div>
                   </Link>
                 </div>
-                <div class="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/aesthetic-education'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>美感教育</h3>
                     </div>
                   </Link>
                 </div>
-                <div class="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/pursue-your-dreams'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>追求夢想</h3>
                     </div>
                   </Link>
                 </div>
-                <div class="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/independent-thinking'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>獨立思考</h3>
                     </div>
                   </Link>
                 </div>
-                <div class="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/'>
-                    <div class="bg-white pv4 h5 df">
+                    <div className="bg-white pv4 h5 df">
                       <h3>?</h3>
                     </div>
                   </Link>

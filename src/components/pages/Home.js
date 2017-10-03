@@ -21,8 +21,8 @@ class Home extends Component {
             <h4 className="white">This is a banner description</h4>
           </div>
         </section>
-        <section className="bg-near-white min-vh-100 pv5">
-        	<div className="center w-100 mw8 ph3 ph5-ns tc">
+        <section className="bg-near-white pv5">
+        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5">
             <h2>This is a section title</h2>
             <h4>This is a section description</h4>
             <div class="mw9 center mt5">

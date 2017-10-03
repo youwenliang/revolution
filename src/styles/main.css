@@ -37,8 +37,8 @@ a {
   margin: 0 5px;
 }
 
-.swiper-button-next {right: calc((100% - 896px)/2 - 40px); margin-top: 40px;}
-.swiper-button-prev {left: calc((100% - 896px)/2 - 40px); margin-top: 40px;}
+.swiper-button-next {right: calc((100% - 896px)/2 - 40px); margin-top: 5px;}
+.swiper-button-prev {left: calc((100% - 896px)/2 - 40px); margin-top: 5px;}
 
 @media screen and (max-width: 960px) {
   .swiper-button-next {right: 10px;}
