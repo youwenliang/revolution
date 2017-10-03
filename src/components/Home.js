@@ -31,7 +31,7 @@ class Home extends Component {
       <div>
         <header className="min-vh-100 pv5 df">
         	<div className="center w-100 mw8 ph3 ph5-ns">
-            <figure className="w-100 h5 bg-near-white mh0 mb4">
+            <figure className="center w-100 mw6 h5 bg-near-white mh0 mb4">
               
             </figure>
             <h1 className="tc">This is a header</h1>
@@ -52,8 +52,10 @@ class Home extends Component {
               <div className="cf">
                 <div className="fl w-100 w-third-l w-100 pa2">
                   <Link to='/topics/self-exploration'>
-                    <div className="bg-white pv4 h5 df">
-                      <h3>自我認識</h3>
+                    <div className="bg-white pa3 h5 df dfc">
+                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                      <h3 className="center ma0 mt3">自我認識</h3>
+                      <h5 className="center mv0 ph4">自我認識的簡短介紹，自我認識的簡短介紹．</h5>
                     </div>
                   </Link>
                 </div>

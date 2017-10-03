@@ -21,7 +21,7 @@ class TopicA extends Component {
       paginationClickable: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      spaceBetween: 0,
+      spaceBetween: 20,
       breakpoints: {
         // when window width is <= 960px
         960: {
@@ -49,6 +49,17 @@ class TopicA extends Component {
       console.info('But these loaded fine:');
       console.info(err.loaded);
     });
+  };
+
+  showMore = (e) => {
+    var more = document.getElementById('more');
+    if(more.classList.contains('hide')) {
+      more.classList.remove('hide');
+      e.target.innerText = 'See Less';
+    } else {
+      more.classList.add('hide');
+      e.target.innerText = 'See More';
+    }
   };
 
   state = {
@@ -118,11 +129,15 @@ class TopicA extends Component {
         {/*--- Header ---*/}
         <header className="min-vh-100 pv5 df">
           <div className="center w-100 mw8 ph3 ph5-ns">
-            <figure className="w-100 h5 bg-near-white mh0 mb4">
-              
-            </figure>
-            <h1 className="tc">自我認識 <FontAwesome name='rocket'/></h1>
-            <h3 className="tc">This is a description</h3>
+            <div className="cf mb5">
+              <div className="fl w-100 w-50-l w-100">
+                <div className="bg-near-white w-80-l pv4 h5 df">A</div>
+              </div>
+              <div className="fr w-100 w-50-l w-100 pl4-l tl">
+                <h1>Title</h1>
+                <h3>Description</h3>
+              </div>
+            </div>
           </div>
         </header>
         {/*--- Section 1 ---*/}
@@ -130,21 +145,12 @@ class TopicA extends Component {
           <div className="center w-100 mw8 ph3 ph5-ns tc">
             <div className="mw9 center ph2">
               <div className="cf mb5 hideme hidediv">
-                <div className="fl w-100 w-50-l w-100">
-                  <div className="bg-white w-80-l pv4 h5 df">A</div>
-                </div>
-                <div className="fr w-100 w-50-l w-100 pl4-l tl">
-                  <h3>Title</h3>
-                  <h5>Description</h5>
-                </div>
-              </div>
-              <div className="cf mb5 hideme hidediv">
                 <div className="fr w-100 w-50-l w-100">
                   <div className="bg-white w-80-l ml4-l pv4 h5 df">B</div>
                 </div>
                 <div className="fl w-100 w-50-l w-100 tl">
-                  <h3>Title</h3>
-                  <h5>Description</h5>
+                  <h2>Title</h2>
+                  <h4>Description</h4>
                 </div>
               </div>
               <div className="cf hideme hidediv">
@@ -152,8 +158,8 @@ class TopicA extends Component {
                   <div className="bg-white w-80-l pv4 h5 df">C</div>
                 </div>
                 <div className="fr w-100 w-50-l w-100 pl4-l tl">
-                  <h3>Title</h3>
-                  <h5>Description</h5>
+                  <h2>Title</h2>
+                  <h4>Description</h4>
                 </div>
               </div>
             </div>
@@ -166,20 +172,30 @@ class TopicA extends Component {
             <h4>This is a section description</h4>
             <div className="swiper-container mt5 mh2">
               <div className="swiper-wrapper h5">
-                <div className="swiper-slide bg-near-white df cp" data-id="1" onClick={this.onOpenModal}>
-                  Slide 1
+                <div className="swiper-slide bg-near-white cp" data-id="1" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                  <h3 className="center ma0 mt3 pn">Title</h3>
+                  <h5 className="center mv0 ph4 pn">Description</h5>
                 </div>
-                <div className="swiper-slide bg-near-white df cp" data-id="2" onClick={this.onOpenModal}>
-                  Slide 2
+                <div className="swiper-slide bg-near-white cp" data-id="2" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                  <h3 className="center ma0 mt3 pn">Title</h3>
+                  <h5 className="center mv0 ph4 pn">Description</h5>
                 </div>
-                <div className="swiper-slide bg-near-white df cp" data-id="3" onClick={this.onOpenModal}>
-                  Slide 3
+                <div className="swiper-slide bg-near-white cp" data-id="3" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                  <h3 className="center ma0 mt3 pn">Title</h3>
+                  <h5 className="center mv0 ph4 pn">Description</h5>
                 </div>
-                <div className="swiper-slide bg-near-white df cp" data-id="4" onClick={this.onOpenModal}>
-                  Slide 4
+                <div className="swiper-slide bg-near-white cp" data-id="4" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                  <h3 className="center ma0 mt3 pn">Title</h3>
+                  <h5 className="center mv0 ph4 pn">Description</h5>
                 </div>
-                <div className="swiper-slide bg-near-white df cp" data-id="5" onClick={this.onOpenModal}>
-                  Slide 5
+                <div className="swiper-slide bg-near-white cp" data-id="5" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                  <h3 className="center ma0 mt3 pn">Title</h3>
+                  <h5 className="center mv0 ph4 pn">Description</h5>
                 </div>
               </div>
             </div>
@@ -199,32 +215,82 @@ class TopicA extends Component {
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <div className="bg-white pv4 h5 df cp" data-id="1" onClick={this.onOpenModal}>
-                    <h3 className="pn">1</h3>
+                  <div className="bg-white pb4 h5 cp" data-id="1" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                    <h3 className="center ma0 mt3 pn">Title</h3>
+                    <h5 className="center mv0 ph4 pn">Description</h5>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <div className="bg-white pv4 h5 df cp" data-id="2" onClick={this.onOpenModal}>
-                    <h3 className="pn">2</h3>
+                  <div className="bg-white pb4 h5 cp" data-id="2" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                    <h3 className="center ma0 mt3 pn">Title</h3>
+                    <h5 className="center mv0 ph4 pn">Description</h5>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <div className="bg-white pv4 h5 df cp" data-id="3" onClick={this.onOpenModal}>
-                    <h3 className="pn">3</h3>
+                  <div className="bg-white pb4 h5 cp" data-id="3" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                    <h3 className="center ma0 mt3 pn">Title</h3>
+                    <h5 className="center mv0 ph4 pn">Description</h5>
+                  </div>
+                </div>
+                <div className="hide" id="more">
+                  <div className="fl w-100 w-third-l w-100 pa2">
+                    <div className="bg-white pb4 h5 cp" data-id="4" onClick={this.onOpenModal}>
+                      <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                      <h3 className="center ma0 mt3 pn">Title</h3>
+                      <h5 className="center mv0 ph4 pn">Description</h5>
+                    </div>
+                  </div>
+                  <div className="fl w-100 w-third-l w-100 pa2">
+                    <div className="bg-white pb4 h5 cp" data-id="5" onClick={this.onOpenModal}>
+                      <figure className="db center w-100 h4 pb4 bg-near-black ma0 pn"></figure>
+                      <h3 className="center ma0 mt3 pn">Title</h3>
+                      <h5 className="center mv0 ph4 pn">Description</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button onClick={this.showMore}>See More</button>
+            </div>
+          </div>
+        </section>
+        {/*--- Section 4 ---*/}
+        <section className="bg-white pv5">
+          <div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0 hideme hidediv">
+            <div className="mw9 center mt5">
+              <div className="cf">
+                <div className="fl w-100 w-third-l w-100 pa2">
+                  <div className="bg-white pa3 df dfc">
+                    <figure className="db center w-100 mw5 h5 bg-near-white ma0 br-100"></figure>
+                    <h3 className="center ma0 mt4">Title</h3>
+                    <h5 className="center mv0 ph4">Description</h5>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <div className="bg-white pv4 h5 df cp" data-id="4" onClick={this.onOpenModal}>
-                    <h3 className="pn">4</h3>
+                  <div className="bg-white pa3 df dfc">
+                    <figure className="db center w-100 mw5 h5 bg-near-white ma0 br-100"></figure>
+                    <h3 className="center ma0 mt4">Title</h3>
+                    <h5 className="center mv0 ph4">Description</h5>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2">
-                  <div className="bg-white pv4 h5 df cp" data-id="5" onClick={this.onOpenModal}>
-                    <h3 className="pn">5</h3>
+                  <div className="bg-white pa3 df dfc">
+                    <figure className="db center w-100 mw5 h5 bg-near-white ma0 br-100"></figure>
+                    <h3 className="center ma0 mt4">Title</h3>
+                    <h5 className="center mv0 ph4">Description</h5>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        {/*--- Section 5 ---*/}
+        <section className="bg-near-white">
+          <div className="center w-100 mw8 ph3 pv5 tc hideme hidediv">
+            <h2>This is a banner title</h2>
+            <h4>This is a banner description</h4>
           </div>
         </section>
       </div>
