@@ -1,16 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import loadImage from 'image-promise';
 
 class Home extends Component {
   componentDidMount() {
     document.title = "Za-Tone";
+    document.getElementById('loading').classList.remove('fade');
+    document.body.classList.add('ds');
+
+    /* Preload Image */
+    var images  = [];
+
+	loadImage(images)
+	.then(function (allImgs) {
+	  setTimeout(function(){
+	  	document.getElementById('loading').classList.add('fade');
+	  	document.body.classList.remove('ds');
+	  }, 400);
+	  console.log(allImgs.length, 'images loaded!', allImgs);
+	})
+	.catch(function (err) {
+	  console.error('One or more images have failed to load :(');
+	  console.error(err.errored);
+	  console.info('But these loaded fine:');
+	  console.info(err.loaded);
+	});
   }
   render() {
     return (
       <div>
         <header className="min-vh-100 pv5 df">
         	<div className="center w-100 mw8 ph3 ph5-ns">
-            <figure className="w-100 h5 bg-near-white mh0 mb4"></figure>
+            <figure className="w-100 h5 bg-near-white mh0 mb4">
+              
+            </figure>
             <h1 className="tc">This is a header</h1>
             <h3 className="tc">This is a description</h3>
           </div>

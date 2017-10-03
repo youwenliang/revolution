@@ -5,12 +5,13 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
   min-height: 100%;
   padding-bottom: 100px;
+  line-height: 1.61;
 }
 
 section {
@@ -20,6 +21,33 @@ section {
 a {
   color: #4f4f4f;
   text-decoration: none;
+}
+
+#loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url(/images/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center center;
+  opacity: 1;
+  transition: opacity 0s ease-in-out;
+}
+
+#loading.fade {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease-in-out;
+}
+
+.ds {
+  overflow-y: hidden;
+}
+
+.es {
+  overflow-y: scroll;
 }
 
 .cp {
@@ -63,6 +91,9 @@ a {
 /* Modal */
 .modal-0-2 {
   width: 100% !important;
+  max-height: 90vh;
+  height: 100%;
+  padding: 3.5rem 0 2rem !important;
   border-radius: 3px;
 }
 
