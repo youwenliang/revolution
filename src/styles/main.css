@@ -12,6 +12,8 @@ body {
   min-height: 100%;
   padding-bottom: 100px;
   line-height: 1.61;
+  font-size: 16px;
+  color: #595756;
 }
 
 section {
@@ -21,6 +23,65 @@ section {
 a {
   color: #4f4f4f;
   text-decoration: none;
+}
+
+/* Typography */
+h1{font-size: 4em;} h2{font-size: 3em;} h3{font-size: 2em;} h4{font-size: 1.5em;} h5{font-size: 1.25em;} h6{font-size: 1em;}
+p {font-size: 1em;}
+
+#section-nav {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  top: 50%;
+  right: 20px;
+}
+
+#section-nav a:hover,
+#section-nav a.active {
+  color: #ff0000;
+}
+
+/* Share */
+#fb-share {
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  z-index: 10;
+}
+
+/* Home */
+.topic {
+  min-height: 285px;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.topic:hover {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: rgba(12,12,13,.10) 0 4px 8px;
+}
+
+/* Topic */
+.intro {
+  min-height: 400px;
+}
+
+@media screen and (max-width: 960px) {
+  .intro {
+    min-height: auto;
+    flex-direction: column;
+  }
+}
+
+.o1-l, .o1 {order: 1;}
+.o2-l, .o2 {order: 2;}
+
+@media screen and (max-width: 960px) {
+  .o1-l {order: 2;}
+  .o2-l {order: 1;}
 }
 
 /* Scroll Transition Divs */
@@ -35,9 +96,16 @@ a {
   transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.hide {
-  display: none;
+#more {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1); 
+  opacity: 1;
+}
+
+#more.hide {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  height: 0;
   opacity: 0;
+  overflow: hidden;
 }
 
 /* Loading Gif */
@@ -46,11 +114,12 @@ a {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  background-image: url(/za-tone/images/loading.gif);
+  background-image: url(/images/loading.gif);
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: center center;
   opacity: 1;
+  z-index: 9999;
   transition: opacity 0s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -81,11 +150,18 @@ a {
 .df {
   display: flex;
   align-items: center;
+}
+
+.dfjc {
   justify-content: center;
 }
 
 .dfc {
   flex-direction: column;
+}
+
+.dfr {
+  flex-direction: row;
 }
 
 /* Swiper */
@@ -119,6 +195,7 @@ a {
   height: 100%;
   padding: 3.5rem 0 2rem !important;
   border-radius: 3px;
+  max-width: 600px !important;
 }
 
 /* Footer */
