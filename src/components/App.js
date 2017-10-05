@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="loading"></div>
-        <div className="br-100 db fixed bg-black cp df dfjc" id="fb-share" onClick={this.socialShare}>
+        <div className="br-100 db fixed bg-silver cp df dfjc" id="fb-share" onClick={this.socialShare}>
         	<FontAwesome name='facebook' className="white" />
         </div>
         <Main/>

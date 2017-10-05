@@ -32,8 +32,8 @@ class Home extends Component {
         <header className="min-vh-100 pv5 df">
         	<div className="center w-100 mw8 ph3 ph5-ns">
             <h3 className="ma0 tc">2017</h3>
-            <figure className="center w-100 mw6 h5 bg-near-white mh0 mb4">
-              
+            <figure className="center w-100 mw7 mh0 mb3">
+              <img src='/images/1920x1080.png'/>
             </figure>
             <h1 className="ma0 tc">雜學起義</h1>
             <h3 className="ma0 tc">This is a description</h3>
@@ -46,60 +46,72 @@ class Home extends Component {
           </div>
         </section>
         <section className="bg-near-white pv5">
-        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0 hideme hidediv">
+        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0">
             <h2 className="ma0">This is a section title</h2>
             <h4 className="ma0">This is a section description</h4>
             <div className="mw9 center mt5">
               <div className="cf">
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/self-exploration'>
-                    <div className="bg-white pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3">自我認識</h5>
                       <h6 className="center mv0 ph4">自我認識的簡短介紹，自我認識的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/gender-equality'>
-                    <div className="bg-white pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3">性別平等</h5>
                       <h6 className="center mv0 ph4">性別平等的簡短介紹，性別平等的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/aesthetic-education'>
-                    <div className="bg-white pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3">美感教育</h5>
                       <h6 className="center mv0 ph4">美感教育的簡短介紹，美感教育的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/pursue-your-dreams'>
-                    <div className="bg-white pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3">追求夢想</h5>
                       <h6 className="center mv0 ph4">追求夢想的簡短介紹，追求夢想的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/independent-thinking'>
-                    <div className="bg-white pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-near-white ma0 br-100"></figure>
+                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3">獨立思考</h5>
                       <h6 className="center mv0 ph4">獨立思考的簡短介紹，獨立思考的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2">
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/'>
-                    <div className="bg-silver pa3 h5 df dfc dfjc br4 topic">
-                      <figure className="db center w-100 mw4 h4 bg-white ma0 br-100"></figure>
+                    <div className="bg-silver pa4 df dfc dfjc br4 topic">
+                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                        <img src='/images/400x400.png'/>
+                      </figure>
                       <h5 className="center ma0 mt3 white">????</h5>
                       <h6 className="center mv0 ph4 white">????簡短介紹，????簡短介紹．</h6>
                     </div>
