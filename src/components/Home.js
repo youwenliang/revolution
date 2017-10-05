@@ -54,7 +54,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/self-exploration'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3">自我認識</h5>
@@ -65,7 +65,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/gender-equality'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3">性別平等</h5>
@@ -76,7 +76,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/aesthetic-education'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3">美感教育</h5>
@@ -87,7 +87,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/pursue-your-dreams'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3">追求夢想</h5>
@@ -98,7 +98,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/independent-thinking'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3">獨立思考</h5>
@@ -109,7 +109,7 @@ class Home extends Component {
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/'>
                     <div className="bg-silver pa4 df dfc dfjc br4 topic">
-                      <figure className="db center home-image bg-near-white ma0 br-100 overflow-hidden">
+                      <figure className="db center home-image ma0">
                         <img src='/images/400x400.png'/>
                       </figure>
                       <h5 className="center ma0 mt3 white">????</h5>

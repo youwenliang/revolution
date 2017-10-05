@@ -14,6 +14,7 @@ ReactDOM.render((
 registerServiceWorker();
 
 $(document).ready(function() {
+  if(isFacebookApp()) $('body').css('font-size', '12px');
   $(window).scroll( function(){
     $('.hideme').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
@@ -57,3 +58,8 @@ $(document).ready(function() {
     return false;
   });
 });
+
+function isFacebookApp() {
+  var ua = navigator.userAgent || navigator.vendor || window.opera;
+  return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+}

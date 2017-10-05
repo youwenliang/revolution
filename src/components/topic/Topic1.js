@@ -79,7 +79,7 @@ class TopicA extends Component {
     switch(a) {
       case "1":
         return (
-          <div className="ph4 es h-100">
+          <div className="ph4-l ph3 es h-100">
             <h3 className="ma0">Slide 1</h3>
             <figure className="w-100 mh0 mb3">
               <img src="/images/1920x1080.png"/>
@@ -89,7 +89,7 @@ class TopicA extends Component {
         );
       case "2":
         return (
-          <div className="ph4 es h-100">
+          <div className="ph4-l ph3 es h-100">
             <figure className="w-100 mh0 mb3">
               <img src="/images/1920x1080.png"/>
             </figure>
@@ -99,7 +99,7 @@ class TopicA extends Component {
         );
       case "3":
         return (
-          <div className="ph4 es h-100">
+          <div className="ph4-l ph3 es h-100">
             <figure className="w-100 mh0 mb3">
               <img src="/images/1920x1080.png"/>
             </figure>
@@ -109,7 +109,7 @@ class TopicA extends Component {
         );
       case "4":
         return (
-          <div className="ph4 es h-100">
+          <div className="ph4-l ph3 es h-100">
             <figure className="w-100 mh0 mb3">
               <img src="/images/1920x1080.png"/>
             </figure>
@@ -119,7 +119,7 @@ class TopicA extends Component {
         );
       case "5":
         return (
-          <div className="ph4 es h-100">
+          <div className="ph4-l ph3 es h-100">
             <figure className="w-100 mh0 mb3">
               <img src="/images/1920x1080.png"/>
             </figure>
