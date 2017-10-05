@@ -31,34 +31,33 @@ class Home extends Component {
       <div>
         <header className="min-vh-100 pv5 df">
         	<div className="center w-100 mw8 ph3 ph5-ns">
-            <h3 className="ma0 tc">2017</h3>
+            <h3 className="tc">2017</h3>
             <figure className="center w-100 mw7 mh0 mb3">
-              <img src='/images/1920x1080.png'/>
+              <img src="/images/1920x1080.png" alt=""/>
             </figure>
-            <h1 className="ma0 tc">雜學起義</h1>
-            <h3 className="ma0 tc">This is a description</h3>
+            <h1 className="tc">雜學起義</h1>
+            <h3 className="mt2 tc">我有定士連受同能國馬小</h3>
           </div>
         </header>
         <section className="bg-dark-gray">
-          <div className="center w-100 mw8 ph3 pv5 tc hideme hidediv">
-            <h3 className="ma0 white">This is a banner title</h3>
-            <h5 className="ma0 white">This is a banner description</h5>
+          <div className="center w-100 mw6 ph3 pv5 tc hideme hidediv">
+            <h5 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h5>
           </div>
         </section>
         <section className="bg-near-white pv5">
         	<div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0">
-            <h2 className="ma0">This is a section title</h2>
-            <h4 className="ma0">This is a section description</h4>
+            <h2>影人一指然</h2>
+            <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/topic/self-exploration'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3">自我認識</h5>
-                      <h6 className="center mv0 ph4">自我認識的簡短介紹，自我認識的簡短介紹．</h6>
+                      <h4 className="center mt3">自我認識</h4>
+                      <h6 className="center mt2 ph4 mw6">自我認識的簡短介紹，自我認識的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
@@ -66,10 +65,10 @@ class Home extends Component {
                   <Link to='/topic/gender-equality'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3">性別平等</h5>
-                      <h6 className="center mv0 ph4">性別平等的簡短介紹，性別平等的簡短介紹．</h6>
+                      <h4 className="center mt3">性別平等</h4>
+                      <h6 className="center mt2 ph4 mw6">性別平等的簡短介紹，性別平等的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
@@ -77,10 +76,10 @@ class Home extends Component {
                   <Link to='/topic/aesthetic-education'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3">美感教育</h5>
-                      <h6 className="center mv0 ph4">美感教育的簡短介紹，美感教育的簡短介紹．</h6>
+                      <h4 className="center mt3">美感教育</h4>
+                      <h6 className="center mt2 ph4 mw6">美感教育的簡短介紹，美感教育的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
@@ -88,10 +87,10 @@ class Home extends Component {
                   <Link to='/topic/pursue-your-dreams'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3">追求夢想</h5>
-                      <h6 className="center mv0 ph4">追求夢想的簡短介紹，追求夢想的簡短介紹．</h6>
+                      <h4 className="center mt3">追求夢想</h4>
+                      <h6 className="center mt2 ph4 mw6">追求夢想的簡短介紹，追求夢想的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
@@ -99,10 +98,10 @@ class Home extends Component {
                   <Link to='/topic/independent-thinking'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3">獨立思考</h5>
-                      <h6 className="center mv0 ph4">獨立思考的簡短介紹，獨立思考的簡短介紹．</h6>
+                      <h4 className="center mt3">獨立思考</h4>
+                      <h6 className="center mt2 ph4 mw6">獨立思考的簡短介紹，獨立思考的簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
@@ -110,10 +109,10 @@ class Home extends Component {
                   <Link to='/'>
                     <div className="bg-silver pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src='/images/400x400.png'/>
+                        <img src="/images/400x400.png" alt=""/>
                       </figure>
-                      <h5 className="center ma0 mt3 white">????</h5>
-                      <h6 className="center mv0 ph4 white">????簡短介紹，????簡短介紹．</h6>
+                      <h4 className="center mt3 white">????</h4>
+                      <h6 className="center mt2 ph4 white mw6">????簡短介紹，????簡短介紹．</h6>
                     </div>
                   </Link>
                 </div>
