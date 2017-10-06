@@ -10,8 +10,6 @@ var modalString = {
   'lecturer-1':['講師名字1', '講師內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'lecturer-2':['講師名字2', '講師內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'lecturer-3':['講師名字3', '講師內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'lecturer-4':['講師名字4', '講師內容4大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'lecturer-5':['講師名字5', '講師內容5大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'exhibit-1' :['參展名字1', '參展內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'exhibit-2' :['參展名字2', '參展內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'exhibit-3' :['參展名字3', '參展內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
@@ -121,26 +119,6 @@ class TopicA extends Component {
             <p>{modalString['lecturer-3'][1]}</p>
           </div>
         );
-      case "lecturer-4":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <h3 className="mb3">{modalString['lecturer-4'][0]}</h3>
-            <figure className="w-100 mh0 mb3">
-              <img src="/images/1920x1080.png" alt=""/>
-            </figure>
-            <p>{modalString['lecturer-4'][1]}</p>
-          </div>
-        );
-      case "lecturer-5":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <h3 className="mb3">{modalString['lecturer-5'][0]}</h3>
-            <figure className="w-100 mh0 mb3">
-              <img src="/images/1920x1080.png" alt=""/>
-            </figure>
-            <p>{modalString['lecturer-5'][1]}</p>
-          </div>
-        );
       case "exhibit-1":
         return (
           <div className="ph4-l ph4-m ph3 es h-100">
@@ -232,7 +210,7 @@ class TopicA extends Component {
             <div className="mw9 center ph2">
               <div className="cf df intro mb5">
                 <div className="o1 w-100 w-50-l pr4-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l">
                     <img src="/images/1024x768.png" alt=""/>
                   </figure>
                 </div>
@@ -289,7 +267,7 @@ class TopicA extends Component {
           <div className="center w-100 mw8 ph3 ph5-ns tc mb5 hideme hidediv">
             <h2>影人一指然</h2>
             <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
-            <div className="swiper-pagination mt4"></div>
+            <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2">
               <div className="swiper-wrapper ">
                 <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-1" onClick={this.onOpenModal}>
@@ -310,22 +288,10 @@ class TopicA extends Component {
                   </figure>
                   <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-3'][0]}</h4>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-4" onClick={this.onOpenModal}>
-                  <figure className="db center w-100  pn">
-                    <img src="/images/1920x1080.png" alt=""/>
-                  </figure>
-                  <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-4'][0]}</h4>
-                </div>
-                <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-5" onClick={this.onOpenModal}>
-                  <figure className="db center w-100  pn">
-                    <img src="/images/1920x1080.png" alt=""/>
-                  </figure>
-                  <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-5'][0]}</h4>
-                </div>
               </div>
             </div>
-            <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div>
+            {/*<div className="swiper-button-next"></div>
+            <div className="swiper-button-prev"></div>*/}
           </div>
           <Modal open={open} onClose={this.onCloseModal} little>
             {this.modalContent(modalId)}
@@ -343,7 +309,7 @@ class TopicA extends Component {
             <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -352,7 +318,7 @@ class TopicA extends Component {
                     <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-1'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-2" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -361,7 +327,7 @@ class TopicA extends Component {
                     <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-2'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-3" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -370,7 +336,7 @@ class TopicA extends Component {
                     <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-3'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-4" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -379,7 +345,7 @@ class TopicA extends Component {
                     <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-4'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-5" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -388,7 +354,7 @@ class TopicA extends Component {
                     <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-5'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                   <div className="bg-white pb4  cp" data-id="exhibit-6" onClick={this.onOpenModal}>
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
@@ -398,7 +364,7 @@ class TopicA extends Component {
                   </div>
                 </div>
                 <div className="hide" id="more">
-                  <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                  <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
                     <div className="bg-white pb4  cp" data-id="exhibit-7" onClick={this.onOpenModal}>
                       <figure className="db center w-100  pn">
                         <img src="/images/1920x1080.png" alt=""/>
