@@ -200,15 +200,15 @@ class TopicA extends Component {
       <div>
         {/*--- Navigation---*/}
         <div id="section-nav">
-          <a href="#section-1">section 1</a>
-          <a href="#section-2">section 2</a>
-          <a href="#section-3">section 3</a>
-          <a href="#section-4">section 4</a>
+          <a href="#section-1">主題引言</a>
+          <a href="#section-2">講師介紹</a>
+          <a href="#section-3">參展單位</a>
+          <a href="#section-4">額外資訊</a>
         </div>
         <header id="section-1" className="min-vh-100 pv5 df">
           <div className="center w-100 mw8 ph3 ph5-ns">
             <div className="mw9 center ph2">
-              <div className="cf df intro mb5">
+              <div className="cf df intro">
                 <div className="o1 w-100 w-50-l pr4-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l">
                     <img src="/images/1024x768.png" alt=""/>
@@ -232,7 +232,7 @@ class TopicA extends Component {
                     <img src="/images/1024x768.png" alt=""/>
                   </figure>
                 </div>
-                <div className="o1-l w-100 w-50-l pr4-l tl-l tc df dfc">
+                <div className="o1-l w-100 w-50-l pr4-l tl df dfc">
                   <h3 className="w-100">遊工只長小見</h3>
                   <h5 className="w-100 mt3 mw6 mw-none-l">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h5>
                 </div>
@@ -243,7 +243,7 @@ class TopicA extends Component {
                     <img src="/images/1024x768.png" alt=""/>
                   </figure>
                 </div>
-                <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
+                <div className="o2 w-100 w-50-l pl4-l tl df dfc">
                   <h3 className="w-100">遊工只長小見</h3>
                   <h5 className="w-100 mt3 mw6 mw-none-l">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h5>
                 </div>
@@ -254,7 +254,7 @@ class TopicA extends Component {
                     <img src="/images/1024x768.png" alt=""/>
                   </figure>
                 </div>
-                <div className="o1-l w-100 w-50-l pr4-l tl-l tc df dfc">
+                <div className="o1-l w-100 w-50-l pr4-l tl df dfc">
                   <h3 className="w-100">遊工只長小見</h3>
                   <h5 className="w-100 mt3 mw6 mw-none-l">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h5>
                 </div>
@@ -274,19 +274,19 @@ class TopicA extends Component {
                   <figure className="db center w-100  pn">
                     <img src="/images/1920x1080.png" alt=""/>
                   </figure>
-                  <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-1'][0]}</h4>
+                  <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['lecturer-1'][0]}</h4>
                 </div>
                 <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-2" onClick={this.onOpenModal}>
                   <figure className="db center w-100  pn">
                     <img src="/images/1920x1080.png" alt=""/>
                   </figure>
-                  <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-2'][0]}</h4>
+                  <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['lecturer-2'][0]}</h4>
                 </div>
                 <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-3" onClick={this.onOpenModal}>
                   <figure className="db center w-100  pn">
                     <img src="/images/1920x1080.png" alt=""/>
                   </figure>
-                  <h4 className="center mt3 pn mw6 mw-none-l">{modalString['lecturer-3'][0]}</h4>
+                  <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['lecturer-3'][0]}</h4>
                 </div>
               </div>
             </div>
@@ -314,8 +314,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-1'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-1'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-1'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-1'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
@@ -323,8 +323,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-2'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-2'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-2'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-2'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
@@ -332,8 +332,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-3'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-3'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-3'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-3'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
@@ -341,8 +341,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-4'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-4'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-4'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-4'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
@@ -350,8 +350,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-5'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-5'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-5'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-5'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv mb3 mb0-l">
@@ -359,8 +359,8 @@ class TopicA extends Component {
                     <figure className="db center w-100  pn">
                       <img src="/images/1920x1080.png" alt=""/>
                     </figure>
-                    <h4 className="center mt3 pn">{modalString['exhibit-6'][0]}</h4>
-                    <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-6'][1].substring(0, 50)}...</h6>
+                    <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-6'][0]}</h4>
+                    <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-6'][1].substring(0, 50)}...</h6>
                   </div>
                 </div>
                 <div className="hide" id="more">
@@ -369,8 +369,8 @@ class TopicA extends Component {
                       <figure className="db center w-100  pn">
                         <img src="/images/1920x1080.png" alt=""/>
                       </figure>
-                      <h4 className="center mt3 pn">{modalString['exhibit-7'][0]}</h4>
-                      <h6 className="center ph4 pn mt2 mw6 mw-none-l">{modalString['exhibit-7'][1].substring(0, 50)}...</h6>
+                      <h4 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['exhibit-7'][0]}</h4>
+                      <h6 className="center ph4 tl pn mt2 mw6 mw-none-l">{modalString['exhibit-7'][1].substring(0, 50)}...</h6>
                     </div>
                   </div>
                 </div>

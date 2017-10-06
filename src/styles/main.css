@@ -63,6 +63,16 @@ h5{font-size: 1.25em; line-height: 1.55}
 h6{font-size: 1em;}
 p {font-size: 1em;}
 
+@media screen and (max-width: 479px) {
+  h1{font-size: 3em; line-height: 1.35} 
+  h2{font-size: 2em; line-height: 1.4} 
+  h3{font-size: 1.5em; line-height: 1.45} 
+  h4{font-size: 1.25em; line-height: 1.55} 
+  h5{font-size: 1.1em; line-height: 1.6} 
+  h6{font-size: 1em;}
+  p {font-size: 1em;}  
+}
+
 /* Overrides */
 .mw8 {max-width: 80rem}
 .w5 {width: 20rem}
@@ -88,7 +98,7 @@ p {font-size: 1em;}
 #section-nav a {
   text-indent: -65px;
   overflow: hidden;
-  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all .1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #section-nav a:before {
@@ -180,6 +190,7 @@ p {font-size: 1em;}
 
 .hideme {
   opacity: 0;
+  pointer-events: none;
   transform: translateY(10px);
   transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -303,4 +314,11 @@ footer {
 
 footer div {
   justify-content: space-between !important;
+}
+
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
