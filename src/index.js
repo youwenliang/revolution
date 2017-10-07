@@ -7,7 +7,7 @@ import './index.css';
 import $ from 'jquery';
 
 ReactDOM.render((
-  <BrowserRouter basename="revolution">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 ), document.getElementById('root'));
