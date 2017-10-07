@@ -1,5 +1,5 @@
 {
-  "name": "za-tone",
+  "name": "revolution",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,5 +35,5 @@
     "prestart": "npm run css",
     "prebuild": "npm run css"
   },
-  "homepage": "https://youwenliang.github.io/za-tone"
+  "homepage": "https://youwenliang.github.io/revolution"
 }

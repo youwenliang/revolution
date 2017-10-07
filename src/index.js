@@ -7,7 +7,7 @@ import './index.css';
 import $ from 'jquery';
 
 ReactDOM.render((
-  <BrowserRouter basename="za-tone">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 ), document.getElementById('root'));
@@ -24,7 +24,7 @@ $(document).ready(function() {
         $(this).removeClass('hideme');
       }  
     });
-    if(window.location.href.indexOf('topic') !== -1) {
+    if($('#section-1').length) {
       for (var i = 1; i < 5; i++) {
         if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
           $('.active').removeClass('active');

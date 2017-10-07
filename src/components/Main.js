@@ -20,7 +20,7 @@ class Main extends Component {
         $(this).removeClass('hideme');
       }  
     });
-    if(window.location.href.indexOf('topic') !== -1) {
+    if($('#section-1').length) {
       for (var i = 1; i < 5; i++) {
         if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
           $('.active').removeClass('active');
@@ -48,11 +48,11 @@ class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/topic/self-exploration' component={Topic1} />
-          <Route exact path='/topic/gender-equality' component={Topic2} />
-          <Route exact path='/topic/aesthetic-education' component={Topic3} />
-          <Route exact path='/topic/pursue-your-dreams' component={Topic4} />
-          <Route exact path='/topic/independent-thinking' component={Topic5} />
+          <Route exact path='/self-exploration' component={Topic1} />
+          <Route exact path='/gender-equality' component={Topic2} />
+          <Route exact path='/aesthetic-education' component={Topic3} />
+          <Route exact path='/self-realization' component={Topic4} />
+          <Route exact path='/independent-thinking' component={Topic5} />
           <Redirect from='*' to='/' />
         </Switch>
       </main>

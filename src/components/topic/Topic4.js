@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 class TopicD extends Component {
   componentDidMount() {
-    document.title = "Za-Tone | topic D";
+    document.title = "Revolution | topic D";
   }
   render() {
     return (

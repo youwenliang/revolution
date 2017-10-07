@@ -4,7 +4,7 @@ import loadImage from 'image-promise';
 
 class Home extends Component {
   componentDidMount() {
-    document.title = "Za-Tone";
+    document.title = "Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -33,7 +33,7 @@ class Home extends Component {
         	<div className="center w-100 mw8 ph3 ph5-ns">
             <h3 className="tc">2017</h3>
             <figure className="center w-100 mw7 mh0 mb3">
-              <img src="/images/1920x1080.png" alt=""/>
+              <img src="images/1920x1080.png" alt=""/>
             </figure>
             <h1 className="tc">雜學起義</h1>
             <h3 className="mt2 tc">我有定士連受同能國馬小</h3>
@@ -51,10 +51,10 @@ class Home extends Component {
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/topic/self-exploration'>
+                  <Link to='/self-exploration'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3">自我認識</h4>
                       <h6 className="center mt2 ph4 mw6">自我認識的簡短介紹，自我認識的簡短介紹．</h6>
@@ -62,10 +62,10 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/topic/gender-equality'>
+                  <Link to='/gender-equality'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3">性別平等</h4>
                       <h6 className="center mt2 ph4 mw6">性別平等的簡短介紹，性別平等的簡短介紹．</h6>
@@ -73,10 +73,10 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/topic/aesthetic-education'>
+                  <Link to='/aesthetic-education'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3">美感教育</h4>
                       <h6 className="center mt2 ph4 mw6">美感教育的簡短介紹，美感教育的簡短介紹．</h6>
@@ -84,10 +84,10 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/topic/pursue-your-dreams'>
+                  <Link to='/self-realization'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3">追求夢想</h4>
                       <h6 className="center mt2 ph4 mw6">追求夢想的簡短介紹，追求夢想的簡短介紹．</h6>
@@ -95,10 +95,10 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/topic/independent-thinking'>
+                  <Link to='/independent-thinking'>
                     <div className="bg-white pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3">獨立思考</h4>
                       <h6 className="center mt2 ph4 mw6">獨立思考的簡短介紹，獨立思考的簡短介紹．</h6>
@@ -109,7 +109,7 @@ class Home extends Component {
                   <Link to='/'>
                     <div className="bg-silver pa4 df dfc dfjc br4 topic">
                       <figure className="db center home-image ma0">
-                        <img src="/images/400x400.png" alt=""/>
+                        <img src="images/400x400.png" alt=""/>
                       </figure>
                       <h4 className="center mt3 white">????</h4>
                       <h6 className="center mt2 ph4 white mw6">????簡短介紹，????簡短介紹．</h6>
