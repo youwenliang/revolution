@@ -1,5 +1,4 @@
 @import "tachyons";
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -28,10 +27,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-* {
- font-family:'Noto Sans TC',Roboto Slab,Hoefler Text,'微軟正黑體',Songti TC,serif
-}
-
 html {
   height: 100%;
 }
@@ -43,6 +38,7 @@ body {
   min-height: 100%;
   padding-bottom: 100px;
   font-size: 14px;
+  font-family:'Noto Sans TC', Roboto Slab, Hoefler Text, '微軟正黑體', Songti TC, serif;
   line-height: 1.428571429;
   color: #333;
   overflow-x: hidden;

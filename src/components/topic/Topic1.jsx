@@ -226,7 +226,7 @@ class TopicA extends Component {
         <section className="bg-near-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph3 ph5-ns tc">
             <div className="mw9 center ph2">
-              <div className="cf df intro mb5">
+              <div className="cf df intro mb5 hideme hidediv">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
                     <img src="images/1024x768.png" alt=""/>
@@ -237,7 +237,7 @@ class TopicA extends Component {
                   <h4 className="w-100 mt3 mw6 mw-none-l">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro mb5">
+              <div className="cf df intro mb5 hideme hidediv">
                 <div className="o1 w-100 w-50-l pr4-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
                     <img src="images/1024x768.png" alt=""/>
@@ -248,7 +248,7 @@ class TopicA extends Component {
                   <h4 className="w-100 mt3 mw6 mw-none-l">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro">
+              <div className="cf df intro hideme hidediv">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
                     <img src="images/1024x768.png" alt=""/>
@@ -270,19 +270,19 @@ class TopicA extends Component {
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2">
               <div className="swiper-wrapper ">
-                <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-1" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-1" onClick={this.onOpenModal}>
                   <figure className="db center w-100  pn">
                     <img src="images/1920x1080.png" alt=""/>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['lecturer-1'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-2" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-2" onClick={this.onOpenModal}>
                   <figure className="db center w-100  pn">
                     <img src="images/1920x1080.png" alt=""/>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn mw6 mw-none-l">{modalString['lecturer-2'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb3" data-id="lecturer-3" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-3" onClick={this.onOpenModal}>
                   <figure className="db center w-100  pn">
                     <img src="images/1920x1080.png" alt=""/>
                   </figure>

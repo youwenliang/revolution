@@ -35,5 +35,5 @@
     "prestart": "npm run css",
     "prebuild": "npm run css"
   },
-  "homepage": "https://youwenliang.github.io/revolution"
+  "homepage": "https://revolution.toneskill.co"
 }
