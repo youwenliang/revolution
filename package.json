@@ -10,7 +10,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fontawesome": "^1.6.1",
-    "react-helmet": "^5.1.3",
+    "react-helmet": "^5.2.0",
     "react-responsive-modal": "^1.8.0",
     "react-router-dom": "^4.1.2",
     "swiper": "^3.4.2",
@@ -35,5 +35,5 @@
     "prestart": "npm run css",
     "prebuild": "npm run css"
   },
-  "homepage": "https://revolution.toneskill.co"
+  "homepage": "http://revolution.toneskill.co"
 }

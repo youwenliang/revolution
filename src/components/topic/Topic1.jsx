@@ -4,6 +4,7 @@ import FontAwesome from 'react-fontawesome';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
+import { Helmet } from "react-helmet";
 
 var modalId;
 var modalString = {
@@ -21,7 +22,7 @@ var modalString = {
 
 class TopicA extends Component {
   componentDidMount() {
-    document.title = "Revolution | 自我認識";
+    document.title = "自我認識 - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 

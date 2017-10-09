@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
+import { Helmet } from "react-helmet";
 
 class Home extends Component {
   componentDidMount() {
-    document.title = "Revolution";
+    document.title = "雜學起義 Zashare Revolution - 台灣非典型教育革命";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
