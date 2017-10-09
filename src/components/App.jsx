@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 
 class App extends Component {
   socialShare = () => {
-  	console.log(window.location.href.replace('/#',''));
+    var link = window.location.href.replace('/#','');
+  	console.log(link);
+    window.open('https://www.facebook.com/dialog/share?app_id=360075034440109&display=popup&href='+link+'&redirect_uri=https://www.facebook.com/');
   }
   
   render() {

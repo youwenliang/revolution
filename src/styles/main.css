@@ -104,6 +104,7 @@ h5, p {
 #section-nav a {
   text-indent: -65px;
   overflow: hidden;
+  margin: 5px 0;
   transition: all .1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
