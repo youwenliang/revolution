@@ -271,21 +271,24 @@ class TopicA extends Component {
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2 mw6 mw-none-l center">
               <div className="swiper-wrapper">
-                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-1" onClick={this.onOpenModal}>
-                  <figure className="db center w-100  pn">
+                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-1" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
+                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn fw5">{modalString['lecturer-1'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-2" onClick={this.onOpenModal}>
-                  <figure className="db center w-100  pn">
+                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-2" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
+                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn fw5">{modalString['lecturer-2'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb4" data-id="lecturer-3" onClick={this.onOpenModal}>
-                  <figure className="db center w-100  pn">
+                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-3" onClick={this.onOpenModal}>
+                  <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
+                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn fw5">{modalString['lecturer-3'][0]}</h3>
                 </div>
@@ -311,54 +314,60 @@ class TopicA extends Component {
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-1" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-1" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-1'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-1'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-2" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-2" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-2'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-2'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-3" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-3" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-3'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-3'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-4" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-4" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-4'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-4'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-5" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-5" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-5'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-5'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-6" onClick={this.onOpenModal}>
-                    <figure className="db center w-100  pn">
+                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-6" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
                       <img src="images/1920x1080.png" alt=""/>
+                      <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-6'][0]}</h3>
                     <p className="center tl pn mt2 ">{modalString['exhibit-6'][1].substring(0, 50)}...</p>
@@ -366,9 +375,10 @@ class TopicA extends Component {
                 </div>
                 <div className="hide" id="more">
                   <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                    <div className="pb4 cp mw6 mw-none-l center" data-id="exhibit-7" onClick={this.onOpenModal}>
-                      <figure className="db center w-100  pn">
+                    <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-7" onClick={this.onOpenModal}>
+                      <figure className="db center w-100 pn topImg">
                         <img src="images/1920x1080.png" alt=""/>
+                        <h3 className="absolute white">測試文字</h3>
                       </figure>
                       <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-7'][0]}</h3>
                       <p className="center tl pn mt2 ">{modalString['exhibit-7'][1].substring(0, 50)}...</p>
