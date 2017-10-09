@@ -13,6 +13,28 @@ import $ from 'jquery';
 class Main extends Component {
   updateActions = () => {
     window.scrollTo(0, 0);
+
+    /* Switch Topic Images */
+    if($('.topic-image').length) {
+      var original = $('.topic-image img').attr('src').replace('images/', '');
+      if($(window).width() < 960) {
+        $('.topic-image img').attr('src', 'images/small_' + original);
+      } else {
+        $('.topic-image img').attr('src', 'images/' + original);
+      }
+    }
+    if($('.topic').length) {
+      $('.topic').hover(function(){
+        var $img = $(this).find('img');
+        var src = $img.attr('src').replace('images/', '');
+        if(src.indexOf('move') < 0) $img.attr('src', 'images/move_' + src);
+      }, function(){
+        var $img = $(this).find('img');
+        var static_src = $img.attr('src').replace('images/move_', '');
+        $img.attr('src', 'images/' + static_src);
+      });
+    }
+
     $('.hideme').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
       var bottom_of_window = $(window).scrollTop() + $(window).height();

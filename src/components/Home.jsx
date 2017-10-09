@@ -31,7 +31,7 @@ class Home extends Component {
     return (
       <div>
         <header className="min-vh-100 pv5 df">
-        	<div className="center w-100 mw8 ph3 ph5-ns">
+        	<div className="center w-100 mw8 ph5-l ph3">
             <h1 className="tc mb5">2017</h1>
             <figure className="center w-100 mw7 mh0 mb3">
               <img src="images/1920x1080.png" alt=""/>
@@ -48,14 +48,14 @@ class Home extends Component {
           </div>
         </section>
         <section className="bg-near-white pv5">
-        	<div className="center w-100 mw8 ph3 ph5-ns tc mb5-l mb0">
+        	<div className="center w-100 mw8 ph5-l ph3 tc mb5-l mb0">
             <h1 className="fw5">影人一指然</h1>
             <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/respect-life'>
-                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                    <div className="bg-white pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -66,7 +66,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/gender-equality'>
-                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                    <div className="bg-white pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -77,7 +77,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/aesthetic-education'>
-                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                    <div className="bg-white pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -88,7 +88,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/self-realization'>
-                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                    <div className="bg-white pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -99,7 +99,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/critical-thinking'>
-                    <div className="bg-white pa4 df dfc dfjc br4 topic">
+                    <div className="bg-white pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -110,7 +110,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/'>
-                    <div className="bg-silver pa4 df dfc dfjc br4 topic">
+                    <div className="bg-silver pa4 df dfc dfjc br4 topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
