@@ -137,20 +137,40 @@ h5, p {
 }
 
 /* Share */
+.container {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px;
+  width: 100%;
+}
+
 #fb-share {
   top: 20px;
   right: 20px;
   width: 48px;
   height: 48px;
   z-index: 10;
+  background: #4065b4;
+  font-size: 18px;
+  opacity: 0.9;
+  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#fb-share:hover {
+  opacity: 1;
+  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #za-share {
   top: 20px;
   left: 20px;
-  width: 100px;
   height: 48px;
   z-index: 10; 
+  line-height: 20px;
 }
 
 /* Home */
@@ -161,7 +181,7 @@ h5, p {
 
 .topic:hover {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: rgba(12,12,13,.10) 0 4px 8px;
+  background: #ccc;
 }
 
 .home-image {
@@ -236,6 +256,16 @@ h5, p {
 }
 
 /* Custom Classes */
+
+.tracked-tight { letter-spacing: -.05em; }
+.tracked { letter-spacing: .1em; }
+.tracked-m { letter-spacing: .25em; }
+.tracked-l { letter-spacing: .5em; }
+.tracked-mega { letter-spacing: .75em; }
+
+.mh3 {
+  min-height: 4rem;
+}
 
 .ds {
   overflow-y: hidden;

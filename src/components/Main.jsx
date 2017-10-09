@@ -48,11 +48,11 @@ class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/self-exploration' component={Topic1} />
+          <Route exact path='/respect-life' component={Topic1} />
           <Route exact path='/gender-equality' component={Topic2} />
           <Route exact path='/aesthetic-education' component={Topic3} />
           <Route exact path='/self-realization' component={Topic4} />
-          <Route exact path='/independent-thinking' component={Topic5} />
+          <Route exact path='/critical-thinking' component={Topic5} />
           <Redirect from='*' to='/' />
         </Switch>
       </main>
