@@ -30,11 +30,13 @@ $(document).ready(function() {
   });
 
   $(window).scroll( function(){
-    $('.hideme').each( function(i){
+    $('.hidediv').each( function(i){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
       if( bottom_of_window > bottom_of_object ){
         $(this).removeClass('hideme');
+        $(this).removeClass('hideme-left');
+        $(this).removeClass('hideme-right');
       }  
     });
     if($('#section-1').length) {

@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
-import { Helmet } from "react-helmet";
+import $ from 'jquery';
 
 var modalId;
 var modalString = {
@@ -22,7 +22,8 @@ var modalString = {
 
 class TopicA extends Component {
   componentDidMount() {
-    document.title = "美感教育 - 雜學起義 Zashare Revolution";
+    console.log("topicA did mount");
+    document.title = "尊重生命 - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -46,13 +47,27 @@ class TopicA extends Component {
 
     /* Preload Image */
     var images  = [];
-    // images.push('images/large.jpg');
+    images.push('images/1920x1080.png');
+    images.push('images/600x600.png');
+    images.push('images/1024x768.png');
+    images.push('images/small_1024x768.png');
 
     loadImage(images)
     .then(function (allImgs) {
       setTimeout(function(){
         document.getElementById('loading').classList.add('fade');
         document.body.classList.remove('ds');
+        setTimeout(function(){
+          $('.hidediv').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+              $(this).removeClass('hideme');
+              $(this).removeClass('hideme-left');
+              $(this).removeClass('hideme-right');
+            }  
+          });
+        }, 400);
       }, 400);
       console.log(allImgs.length, 'images loaded!', allImgs);
     })
@@ -68,10 +83,7 @@ class TopicA extends Component {
     var more = document.getElementById('more');
     if(more.classList.contains('hide')) {
       more.classList.remove('hide');
-      e.target.innerText = 'See Less';
-    } else {
-      more.classList.add('hide');
-      e.target.innerText = 'See More';
+      e.target.style.display = 'none';
     }
   };
 
@@ -211,53 +223,59 @@ class TopicA extends Component {
             <div className="mw9 center ph2">
               <div className="cf df intro">
                 <div className="o1 w-100 w-50-l pr4-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l topic-image">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l topic-image hideme-right hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
-                  <h1 className="w-100 fw7">品在事直國究</h1>
-                  <h3 className="w-100 mt2 mw6 mw-none-l">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
+                  <h1 className="w-100 fw7 hideme-right hidediv">品在事直國究</h1>
+                  <h3 className="w-100 mt2 mw6 mw-none-l hideme-right hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
                 </div>
               </div>
             </div>
           </div>
         </header>
+        {/* Banner */}
+        <section className="bg-dark-gray">
+          <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
+            <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
+          </div>
+        </section>
         {/*--- Section 1 ---*/}
         <section className="bg-near-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="mw9 center ph2">
-              <div className="cf df intro mb5 hideme hidediv">
+              <div className="cf df intro mb5">
                 <div className="o2-l w-100 w-50-l pl4-l mw6 mw-none-l">
-                  <figure className="mh0 ml0-l center mb3">
+                  <figure className="mh0 ml0-l center mb3 hideme-left hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7">遊工只長小見</h2>
-                  <h4 className="w-100 mt3">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                  <h2 className="w-100 fw7 hideme-left hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme-left hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro mb5 hideme hidediv">
+              <div className="cf df intro mb5">
                 <div className="o1 w-100 w-50-l pr4-l mw6 mw-none-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme-right hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7">遊工只長小見</h2>
-                  <h4 className="w-100 mt3">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                  <h2 className="w-100 fw7 hideme-right hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme-right hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro hideme hidediv">
+              <div className="cf df intro">
                 <div className="o2-l w-100 w-50-l pl4-l mw6 mw-none-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme-left hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7">遊工只長小見</h2>
-                  <h4 className="w-100 mt3">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                  <h2 className="w-100 fw7 hideme-left hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme-left hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
             </div>
@@ -266,8 +284,8 @@ class TopicA extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-white pv5 df">
           <div className="center w-100 mw8 ph5-l ph3 tc mb5 hideme hidediv">
-            <h1 className="fw5">影人一指然</h1>
-            <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h1 className="fw5 hideme hidediv">影人一指然</h1>
+            <h4 className="mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2 mw6 mw-none-l center">
               <div className="swiper-wrapper">
@@ -301,6 +319,7 @@ class TopicA extends Component {
             {this.modalContent(modalId)}
           </Modal>
         </section>
+        {/* Banner */}
         <section className="bg-dark-gray">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
@@ -309,8 +328,8 @@ class TopicA extends Component {
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5">
           <div className="center w-100 mw8 ph5-l ph3 tc">
-            <h1 className="fw5">影人一指然</h1>
-            <h4 className="mt3">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h1 className="fw5 hideme hidediv">影人一指然</h1>
+            <h4 className="mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
@@ -386,7 +405,7 @@ class TopicA extends Component {
                   </div>
                 </div>
               </div>
-              <button className="mt4" onClick={this.showMore}>See More</button>
+              <div className="center mt4 button w4 cp ba b--black-30 fw5 pa2 f5 bg-white" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>

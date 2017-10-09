@@ -26,7 +26,6 @@ class Main extends Component {
     if($('.topic').length) {
       $('.topic').hover(function(){
         var src = $(this).find('img').attr('src');
-        console.log(src.split('/')[0]);console.log(src.split('/')[1]);
         if(src.indexOf('move') < 0) $(this).find('img').attr('src', src.split('/')[0]+"/move_"+src.split('/')[1]);
       }, function(){
         var src = $(this).find('img').attr('src');
@@ -34,13 +33,6 @@ class Main extends Component {
       });
     }
 
-    $('.hideme').each( function(i){
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if( bottom_of_window > bottom_of_object ){
-        $(this).removeClass('hideme');
-      }  
-    });
     if($('#section-1').length) {
       for (var i = 1; i < 5; i++) {
         if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
