@@ -25,13 +25,12 @@ class Main extends Component {
     }
     if($('.topic').length) {
       $('.topic').hover(function(){
-        var $img = $(this).find('img');
-        var src = $img.attr('src').replace('images/', '');
-        if(src.indexOf('move') < 0) $img.attr('src', 'images/move_' + src);
+        var src = $(this).find('img').attr('src');
+        console.log(src.split('/')[0]);console.log(src.split('/')[1]);
+        if(src.indexOf('move') < 0) $(this).find('img').attr('src', src.split('/')[0]+"/move_"+src.split('/')[1]);
       }, function(){
-        var $img = $(this).find('img');
-        var static_src = $img.attr('src').replace('images/move_', '');
-        $img.attr('src', 'images/' + static_src);
+        var src = $(this).find('img').attr('src');
+        if(src.indexOf('move') >= 0) $(this).find('img').attr('src', src.split('/')[0]+"/"+src.split('/')[1].replace('move_',''));
       });
     }
 
