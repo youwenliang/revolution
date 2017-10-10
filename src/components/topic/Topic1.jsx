@@ -433,44 +433,54 @@ class TopicA extends Component {
                   </div>
                 </div>
               </div>
-              <div className="center mt4 button w4 cp ba b--black-30 fw5 pa2 f5 bg-white" onClick={this.showMore}>閱讀更多</div>
+              <div className="center mt4 button w4 cp fw5 pa2 f5 bg-light-silver bg-animate hover-bg-silver white" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5">
           <div className="center w-100 mw8 ph5-l ph3 tc">
-            <div className="mw9 center">
+            <h4 className="center fw4 mt3 mw7 hideme hidediv">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素，照一現快府血氣國國意中須快國意中須素，照一現快府半頭血氣國意中須素，照一現快府血意中須素，照一現快府半頭小細</h4>
+            <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
-                    <figure className="db center mw5 br-100">
+                    <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
-                    <figure className="db center mw5 br-100">
+                    <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
-                    <figure className="db center mw5 br-100">
+                    <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        {/* Banner */}
+        <section className="banner">
+          <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
           </div>
         </section>
       </div>
