@@ -6,6 +6,9 @@ import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 
+var pageName = "性別平等";
+var pageURL = "gender-equality";
+
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
@@ -47,7 +50,7 @@ var modalString = {
 
 class TopicA extends Component {
   componentDidMount() {
-    document.title = "性別平等 - 雜學起義 Zashare Revolution";
+    document.title = pageName + " - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -82,7 +85,7 @@ class TopicA extends Component {
         document.getElementById('loading').classList.add('fade');
         document.body.classList.remove('ds');
         setTimeout(function(){
-          $('#respect-life .hidediv').each(function(i){
+          $('#'+pageURL+' .hidediv').each(function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -168,7 +171,7 @@ class TopicA extends Component {
   render() {
     const { open } = this.state;
     return (
-      <div id="respect-life">
+      <div id={pageURL}>
         {/*--- Navigation---*/}
         <div id="section-nav">
           <a href="#section-1">主題引言</a>
@@ -181,14 +184,14 @@ class TopicA extends Component {
             <div className="mw9 center ph2">
               <div className="cf df intro">
                 <div className="o1 w-100 w-50-l pr4-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l topic-image hideme-right hidediv">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 mb0-l topic-image hideme hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
-                  <h1 className="w-100 fw5 hideme-right hidediv">品在事直國究</h1>
-                  <h3 className="w-100 mt2 mw6 mw-none-l hideme-right hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
-                  <div id="fb-like" className="fb-like w-100 mt3 hideme-right hidediv" data-href="http://revolution.toneskill.co/gender-equality" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                  <h1 className="w-100 fw5 hideme hidediv">品在事直國究</h1>
+                  <h3 className="w-100 mt2 mw6 mw-none-l hideme hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
+                  <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                 </div>
               </div>
             </div>
@@ -217,24 +220,24 @@ class TopicA extends Component {
               </div>
               <div className="cf df intro mb6">
                 <div className="o1 w-100 w-50-l pr4-l mw6 mw-none-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme-right hidediv">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw5 hideme-right hidediv">遊工只長小見</h2>
-                  <h4 className="w-100 mt3 hideme-right hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                  <h2 className="w-100 fw5 hideme hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
               <div className="cf df intro">
                 <div className="o2-l w-100 w-50-l pl4-l mw6 mw-none-l">
-                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme-left hidediv">
+                  <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw5 hideme-left hidediv">遊工只長小見</h2>
-                  <h4 className="w-100 mt3 hideme-left hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                  <h2 className="w-100 fw5 hideme hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
             </div>

@@ -6,6 +6,9 @@ import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 
+var pageName = "尊重生命";
+var pageURL = "respect-life";
+
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
@@ -47,7 +50,7 @@ var modalString = {
 
 class TopicA extends Component {
   componentDidMount() {
-    document.title = "尊重生命 - 雜學起義 Zashare Revolution";
+    document.title = pageName + " - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -82,7 +85,7 @@ class TopicA extends Component {
         document.getElementById('loading').classList.add('fade');
         document.body.classList.remove('ds');
         setTimeout(function(){
-          $('#respect-life .hidediv').each(function(i){
+          $('#'+pageURL+' .hidediv').each(function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -168,7 +171,7 @@ class TopicA extends Component {
   render() {
     const { open } = this.state;
     return (
-      <div id="respect-life">
+      <div id={pageURL}>
         {/*--- Navigation---*/}
         <div id="section-nav">
           <a href="#section-1">主題引言</a>
@@ -188,7 +191,7 @@ class TopicA extends Component {
                 <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
                   <h1 className="w-100 fw5 hideme hidediv">品在事直國究</h1>
                   <h3 className="w-100 mt2 mw6 mw-none-l hideme hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
-                  <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv" data-href="http://revolution.toneskill.co/self-realization" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                  <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                 </div>
               </div>
             </div>

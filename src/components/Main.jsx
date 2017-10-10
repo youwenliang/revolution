@@ -83,6 +83,7 @@ class Main extends Component {
     });
   }
   componentDidMount(prevProps, prevState) {
+    console.log('mount!');
     this.updateActions();
     window.fbAsyncInit = function() {
       FB.init({
@@ -90,6 +91,7 @@ class Main extends Component {
         xfbml      : true,
         version    : 'v2.1'
       });
+      console.log("WHAT");
     };
 
     (function(d, s, id) {
@@ -101,8 +103,9 @@ class Main extends Component {
     }(document, 'script', 'facebook-jssdk'));
   }
   componentDidUpdate(prevProps, prevState) {
+    console.log('update!');
     this.updateActions();
-    FB.XFBML.parse();
+    if (typeof FB !== 'undefined') FB.XFBML.parse();
   }
 
   render() {
