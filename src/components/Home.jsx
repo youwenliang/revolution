@@ -52,8 +52,8 @@ class Home extends Component {
               <img src="images/1920x1080.png" alt=""/>
             </figure>
             <h1 className="f-headline lh-solid tc tracked fw9 hideme hidediv">雜學起義</h1>
-            <h1 className="mt2 f1 lh-title tc hideme hidediv">Zashare Revolution!</h1>
-            <h2 className="mt3 tc tracked-mega hideme hidediv">台灣非典型教育革命</h2>
+            <h2 className="mt2 f1 lh-title tc hideme hidediv">Zashare Revolution!</h2>
+            <h3 className="mt3 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
           </div>
         </header>
         {/* Banner */}

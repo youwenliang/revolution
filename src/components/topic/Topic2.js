@@ -6,11 +6,36 @@ import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 
-var modalId;
+/* Lightbox Contents */
+var modalId = "";
 var modalString = {
-  'lecturer-1':['講師名字1', '講師內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'lecturer-2':['講師名字2', '講師內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'lecturer-3':['講師名字3', '講師內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
+  'lecturer-1-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'lecturer-1'      :['講師名字1', 
+                      '講師內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
+                      '名字',
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+                      '標題標題', 
+                      '字幕字幕', 
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                     ],
+  'lecturer-2-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'lecturer-2'      :['講師名字2', 
+                      '講師內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
+                      '名字',
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+                      '標題標題', 
+                      '字幕字幕', 
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                     ],
+  'lecturer-3-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'lecturer-3'      :['講師名字3', 
+                      '講師內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
+                      '名字',
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+                      '標題標題', 
+                      '字幕字幕', 
+                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                     ],
   'exhibit-1' :['參展名字兩行兩行兩行兩行兩行兩行兩行兩行兩行兩行1', '參展內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'exhibit-2' :['參展名字一行2', '參展內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
   'exhibit-3' :['參展名字一行3', '參展內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
@@ -22,8 +47,7 @@ var modalString = {
 
 class TopicA extends Component {
   componentDidMount() {
-    console.log("topicA did mount");
-    document.title = "尊重生命 - 雜學起義 Zashare Revolution";
+    document.title = "性別平等 - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -101,110 +125,44 @@ class TopicA extends Component {
   };
 
   modalContent = (a) => {
-    switch(a) {
-      case "lecturer-1":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <h3 className="mb3 fw5">{modalString['lecturer-1'][0]}</h3>
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <p>{modalString['lecturer-1'][1]}</p>
+    console.log(a.indexOf('lecturer'));
+    if(a.indexOf('lecturer') >= 0) {
+      return (
+        <div className="ph4-l ph4-m ph3 es h-100">
+          <h2 className="mb3 fw5">{modalString[a][0]}</h2>
+          <figure className="w-100 mh0 mb3">
+            <img src={modalString[a+'-image'][0]} alt=""/>
+          </figure>
+          <p className="mb4">{modalString[a][1]}</p>
+          <div className="bg-white df dfc-s center pa4 pa0-l pr4-l mb4">
+            <div className="o1 w-100 w-30-l">
+              <figure className="db center ma0 mw5">
+                <img src={modalString[a+'-image'][1]} alt=""/>
+              </figure>
+            </div>
+            <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
+              <h4 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][2]}</h4>
+              <p className="w-100 mt2 tc tl-l ">{modalString[a][3]}</p>
+            </div>
           </div>
-        );
-      case "lecturer-2":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <h3 className="mb3 fw5">{modalString['lecturer-2'][0]}</h3>
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <p>{modalString['lecturer-2'][1]}</p>
+          <hr/>
+          <h3 className="w-100 fw5 mv3">{modalString[a][4]}</h3>
+          <div className="bg-near-white df dfc-s center pa4 pa0-l pr4-l mb4">
+            <div className="o1 w-100 w-30-l">
+              <figure className="db center ma0 mw5">
+                <img src={modalString[a+'-image'][2]} alt=""/>
+              </figure>
+            </div>
+            <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
+              <h4 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][5]}</h4>
+              <p className="w-100 mt2 tc tl-l ">{modalString[a][6]}</p>
+            </div>
           </div>
-        );
-      case "lecturer-3":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <h3 className="mb3 fw5">{modalString['lecturer-3'][0]}</h3>
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <p>{modalString['lecturer-3'][1]}</p>
-          </div>
-        );
-      case "exhibit-1":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-1'][0]}</h3>
-            <p>{modalString['exhibit-1'][1]}</p>
-          </div>
-        );
-      case "exhibit-2":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-2'][0]}</h3>
-            <p>{modalString['exhibit-2'][1]}</p>
-          </div>
-        );
-      case "exhibit-3":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-3'][0]}</h3>
-            <p>{modalString['exhibit-3'][1]}</p>
-          </div>
-        );
-      case "exhibit-4":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-4'][0]}</h3>
-            <p>{modalString['exhibit-4'][1]}</p>
-          </div>
-        );
-      case "exhibit-5":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-5'][0]}</h3>
-            <p>{modalString['exhibit-5'][1]}</p>
-          </div>
-        );
-      case "exhibit-6":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-6'][0]}</h3>
-            <p>{modalString['exhibit-6'][1]}</p>
-          </div>
-        );
-      case "exhibit-7":
-        return (
-          <div className="ph4-l ph4-m ph3 es h-100">
-            <figure className="w-100 mh0 mb3">
-              <img src="images/1920x1080.png" alt=""/>
-            </figure>
-            <h3 className="mb3 fw5">{modalString['exhibit-7'][0]}</h3>
-            <p>{modalString['exhibit-7'][1]}</p>
-          </div>
-        );
-      default:
-        break;
-    } 
+        </div>
+      );
+    } else {
+
+    }
   }
 
   render() {
@@ -228,15 +186,16 @@ class TopicA extends Component {
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
-                  <h1 className="w-100 fw7 hideme-right hidediv">品在事直國究</h1>
+                  <h1 className="w-100 fw5 hideme-right hidediv">品在事直國究</h1>
                   <h3 className="w-100 mt2 mw6 mw-none-l hideme-right hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
+                  <div id="fb-like" className="fb-like w-100 mt3 hideme-right hidediv" data-href="http://revolution.toneskill.co/gender-equality" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                 </div>
               </div>
             </div>
           </div>
         </header>
         {/* Banner */}
-        <section className="bg-dark-gray">
+        <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
@@ -245,25 +204,25 @@ class TopicA extends Component {
         <section className="bg-near-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="mw9 center ph2">
-              <div className="cf df intro mb5">
-                <div className="o2-l w-100 w-50-l pl4-l mw6 mw-none-l">
-                  <figure className="mh0 ml0-l center mb3 hideme-left hidediv">
-                    <img src="images/1024x768.png" alt=""/>
+              <div className="cf df dfc intro mb6">
+                <div className="w-100 mw7-l mw6">
+                  <figure className="mh0 ml0-l center mb3 hideme hidediv">
+                    <img src="images/1920x1080.png" alt=""/>
                   </figure>
                 </div>
-                <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7 hideme-left hidediv">遊工只長小見</h2>
-                  <h4 className="w-100 mt3 hideme-left hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
+                <div className="w-100 tl df dfc mw7-l mw6">
+                  <h2 className="w-100 fw5 hideme hidediv">遊工只長小見</h2>
+                  <h4 className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro mb5">
+              <div className="cf df intro mb6">
                 <div className="o1 w-100 w-50-l pr4-l mw6 mw-none-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme-right hidediv">
                     <img src="images/1024x768.png" alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7 hideme-right hidediv">遊工只長小見</h2>
+                  <h2 className="w-100 fw5 hideme-right hidediv">遊工只長小見</h2>
                   <h4 className="w-100 mt3 hideme-right hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
@@ -274,7 +233,7 @@ class TopicA extends Component {
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l">
-                  <h2 className="w-100 fw7 hideme-left hidediv">遊工只長小見</h2>
+                  <h2 className="w-100 fw5 hideme-left hidediv">遊工只長小見</h2>
                   <h4 className="w-100 mt3 hideme-left hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
@@ -284,8 +243,8 @@ class TopicA extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-white pv5 df">
           <div className="center w-100 mw8 ph5-l ph3 tc mb5 hideme hidediv">
-            <h1 className="fw5 hideme hidediv">影人一指然</h1>
-            <h4 className="mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h2 className="fw4 hideme hidediv">影人一指然</h2>
+            <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2 mw6 mw-none-l center">
               <div className="swiper-wrapper">
@@ -320,7 +279,7 @@ class TopicA extends Component {
           </Modal>
         </section>
         {/* Banner */}
-        <section className="bg-dark-gray">
+        <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
@@ -328,8 +287,8 @@ class TopicA extends Component {
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5">
           <div className="center w-100 mw8 ph5-l ph3 tc">
-            <h1 className="fw5 hideme hidediv">影人一指然</h1>
-            <h4 className="mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h2 className="fw4 hideme hidediv">影人一指然</h2>
+            <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
@@ -443,12 +402,6 @@ class TopicA extends Component {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        {/*--- Section 5 ---*/}
-        <section className="bg-near-white">
-          <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3>給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
         </section>
       </div>
