@@ -173,7 +173,7 @@ class TopicA extends Component {
     if(a.indexOf('lecturer') >= 0) {
       console.log('lecture');
       return (
-        <div className="ph4-l ph4-m ph3 es h-100 pv4-l pv4-m pv3">
+        <div className="ph4-l ph4-m ph3 oh h-100 pv4-l pv4-m pv3">
           <h3 className="mb3 fw5">{modalString[a][0]}</h3>
           <figure className="w-100 mh0 mb3">
             <img src={modalString[a+'-image'][0]} alt=""/>
@@ -208,7 +208,7 @@ class TopicA extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       return (
-        <div className="ph4-l ph4-m ph3 es h-100 pb4-l pb4-m pb3">
+        <div className="ph4-l ph4-m ph3 oh h-100 pb4-l pb4-m pb3">
           <figure className="w-100 mh0 mb3 modal-full">
             <img src={modalString[a+'-image'][0]} alt=""/>
           </figure>

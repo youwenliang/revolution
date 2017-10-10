@@ -338,8 +338,13 @@ hr {
   overflow-y: hidden;
 }
 
-.es {
+.oys {
   overflow-y: scroll;
+}
+
+.oh {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .cp {

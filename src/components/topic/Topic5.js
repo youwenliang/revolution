@@ -11,7 +11,9 @@ var pageURL = "critical-thinking";
 
 class TopicE extends Component {
   render() {
-    return;
+    return (
+      <div></div>
+    );
   }
 }
 
