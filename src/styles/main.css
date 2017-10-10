@@ -40,7 +40,8 @@ body {
   font-size: 14px;
   font-family:'Noto Sans TC', Roboto Slab, Hoefler Text, '微軟正黑體', Songti TC, serif;
   line-height: 1.428571429;
-  color: #333;
+  letter-spacing: 2px;
+  color: #4f4f4f;
   overflow-x: hidden;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -62,21 +63,22 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing:1px
 }
 h1 {
-  font-size: 30px;
+  font-size: 60px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 40px;
+  letter-spacing: 4px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 h5, p {
-  font-size: 15px;
-  letter-spacing: .5px;
-  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 /* Overrides */
@@ -115,7 +117,7 @@ h5, p {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid #9D9FA2;
   position: absolute;
   right: -20px;
   margin: 6px auto;
@@ -129,12 +131,13 @@ h5, p {
 
 #section-nav a:hover:before {
   background: #333;
+  border: 1px solid #333;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #section-nav a.active:before {
-  background: #999;
-  border: 1px solid #999;
+  background: #9D9FA2;
+  border: 1px solid #9D9FA2;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -148,6 +151,10 @@ h5, p {
   transform: translate(-50%, 0);
   padding: 15px;
   width: 100%;
+}
+
+.banner {
+  background-color: #4867B0;
 }
 
 #fb-share {
@@ -262,6 +269,9 @@ h5, p {
   opacity: 0;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
+#section-3 .content-block {
+  min-height: 26rem;
+}
 
 .content-block:hover .topImg img{
   transform: scale(1.1);
@@ -315,8 +325,12 @@ h5, p {
 .tracked-l { letter-spacing: .5em; }
 .tracked-mega { letter-spacing: .75em; }
 
+hr {
+  border-top: 1px solid #CBCCCE !important;
+}
+
 .mh3 {
-  min-height: 4rem;
+  min-height: 5rem;
 }
 
 .ds {
@@ -346,6 +360,12 @@ h5, p {
 
 .dfc {
   flex-direction: column;
+}
+
+@media screen and (max-width: 959px) {
+  .dfc-s {
+    flex-direction: column;
+  }  
 }
 
 .dfr {
@@ -414,4 +434,8 @@ footer div {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+img {
+  vertical-align: top;
 }

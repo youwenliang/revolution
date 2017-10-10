@@ -58,7 +58,7 @@ class TopicA extends Component {
         document.getElementById('loading').classList.add('fade');
         document.body.classList.remove('ds');
         setTimeout(function(){
-          $('.hidediv').each( function(i){
+          $('#respect-life .hidediv').each(function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
@@ -210,7 +210,7 @@ class TopicA extends Component {
   render() {
     const { open } = this.state;
     return (
-      <div>
+      <div id="respect-life">
         {/*--- Navigation---*/}
         <div id="section-nav">
           <a href="#section-1">主題引言</a>

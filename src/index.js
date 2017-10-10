@@ -16,38 +16,6 @@ registerServiceWorker();
 $(document).ready(function() {
   console.log('load');
   if(isFacebookApp()) $('body').css('font-size', '12px');
-
-  $(window).on('resize', function(){
-    if($('.topic-image').length) {
-      if($(window).width() < 960) {
-        var original = $('.topic-image img').attr('src').replace('images/', '');
-        if(original.indexOf('small') < 0) $('.topic-image img').attr('src', 'images/small_' + original);
-      } else {
-        var original = $('.topic-image img').attr('src').replace('images/', '');
-        if(original.indexOf('small') >= 0) $('.topic-image img').attr('src', 'images/' + original.replace('small_', ''));
-      }
-    }
-  });
-
-  $(window).scroll( function(){
-    $('.hidediv').each( function(i){
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if( bottom_of_window > bottom_of_object ){
-        $(this).removeClass('hideme');
-        $(this).removeClass('hideme-left');
-        $(this).removeClass('hideme-right');
-      }  
-    });
-    if($('#section-1').length) {
-      for (var i = 1; i < 5; i++) {
-        if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
-          $('.active').removeClass('active');
-          $('a[href="#section-'+i+'"]').addClass('active');
-        }
-      }
-    }
-  });
 });
 
 function isFacebookApp() {
