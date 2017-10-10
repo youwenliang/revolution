@@ -39,13 +39,55 @@ var modalString = {
                       '字幕字幕', 
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
                      ],
-  'exhibit-1' :['參展名字兩行兩行兩行兩行兩行兩行兩行兩行兩行兩行1', '參展內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-2' :['參展名字一行2', '參展內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-3' :['參展名字一行3', '參展內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-4' :['參展名字兩行兩行兩行兩行兩行兩行兩行兩行兩行兩行4', '參展內容4大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-5' :['參展名字兩行兩行兩行兩行兩行兩行兩行兩行兩行兩行5', '參展內容5大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-6' :['參展名字一行6', '參展內容6大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？'],
-  'exhibit-7' :['參展名字一行7', '參展內容7大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？']
+  'exhibit-1-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-1'       :['標題標題', 
+                      '1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-2-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-2'       :['標題標題', 
+                      '2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-3-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-3'       :['標題標題', 
+                      '3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-4-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-4'       :['標題標題', 
+                      '4大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-5-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-5'       :['標題標題', 
+                      '5大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-6-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-6'       :['標題標題', 
+                      '6大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
+  'exhibit-7-image' :['images/1920x1080.png', 'images/400x400.png'],
+  'exhibit-7'       :['標題標題', 
+                      '7大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
+                      '標題標題', 
+                      'https://www.xxx.com',
+                      'https://www.xxx.com'
+                     ],
 }
 
 class TopicA extends Component {
@@ -128,11 +170,11 @@ class TopicA extends Component {
   };
 
   modalContent = (a) => {
-    console.log(a.indexOf('lecturer'));
     if(a.indexOf('lecturer') >= 0) {
+      console.log('lecture');
       return (
-        <div className="ph4-l ph4-m ph3 es h-100">
-          <h2 className="mb3 fw5">{modalString[a][0]}</h2>
+        <div className="ph4-l ph4-m ph3 es h-100 pv4-l pv4-m pv3">
+          <h3 className="mb3 fw5">{modalString[a][0]}</h3>
           <figure className="w-100 mh0 mb3">
             <img src={modalString[a+'-image'][0]} alt=""/>
           </figure>
@@ -150,7 +192,7 @@ class TopicA extends Component {
           </div>
           <hr/>
           <h3 className="w-100 fw5 mv3">{modalString[a][4]}</h3>
-          <div className="bg-near-white df dfc-s center pa4 pa0-l pr4-l mb4">
+          <div className="bg-near-white df dfc-s center pa4 pa0-l pr4-l mb3">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5">
                 <img src={modalString[a+'-image'][2]} alt=""/>
@@ -163,9 +205,33 @@ class TopicA extends Component {
           </div>
         </div>
       );
-    } else {
-
-    }
+    } else if(a.indexOf('exhibit') >= 0) {
+      console.log('exhibit');
+      return (
+        <div className="ph4-l ph4-m ph3 es h-100 pb4-l pb4-m pb3">
+          <figure className="w-100 mh0 mb3 modal-full">
+            <img src={modalString[a+'-image'][0]} alt=""/>
+          </figure>
+          <div className="bg-white df dfc-s center pa4 pa0-l pr4-l mv4-ns">
+            <div className="o1 w-100 w-30-l">
+              <figure className="db center ma0 mw5">
+                <img src={modalString[a+'-image'][1]} alt=""/>
+              </figure>
+            </div>
+            <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
+              <h4 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][0]}</h4>
+              <p className="w-100 mt2 tc tl-l ">{modalString[a][1]}</p>
+            </div>
+          </div>
+          <hr/>
+          <h3 className="w-100 fw5 mv3">{modalString[a][2]}</h3>
+          <div className="pl4 mb3">
+            <p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p>
+            <p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p>
+          </div>
+        </div>
+      );
+    } else console.log('???');
   }
 
   render() {

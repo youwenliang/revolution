@@ -55,6 +55,7 @@ section {
 a {
   color: #4f4f4f;
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 /* Typography */
@@ -330,7 +331,7 @@ hr {
 }
 
 .mh3 {
-  min-height: 5rem;
+  min-height: 4rem;
 }
 
 .ds {
@@ -401,19 +402,30 @@ hr {
 }
 
 /* Modal */
+.overlay-0-0 {
+  display: block !important;
+  top: 0;
+  z-index: 1000;
+  padding: 1.2rem;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
 .modal-0-2 {
   width: 100% !important;
-  max-height: 80vh;
-  height: 100%;
-  padding: 56px 0px 32px 0px !important;
+  padding: 0px !important;
   border-radius: 3px;
   max-width: 800px !important;
+  margin: 0 auto 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
-@media screen and (max-width: 479px) {
-  .modal-0-2 {
-    padding: 56px 0px 16px 0px !important;
-  }
+.modal-full {
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
 }
 
 /* Footer */
