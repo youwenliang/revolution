@@ -47,7 +47,7 @@ class Home extends Component {
       <div id="home">
         <header className="min-vh-100 pv5 df">
         	<div className="center w-100 mw8 ph5-l ph3">
-            <h1 className="tc mb5 hideme hidediv">2017</h1>
+            <h2 className="tc mb5 hideme hidediv">2017</h2>
             <figure className="center w-100 mw6 mh0 mb3 hideme hidediv">
               <img src="images/1920x1080.png" alt=""/>
             </figure>
