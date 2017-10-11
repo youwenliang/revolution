@@ -75,6 +75,16 @@ h2 {
   font-size: 40px;
   letter-spacing: 4px;
 }
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+
 h3 {
   font-size: 24px;
 }
@@ -211,9 +221,7 @@ h5, p {
 }
 @media screen and (max-width: 479px) {
   #za-share {
-    opacity: 0;
-    pointer-events: none;
-    transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+    display: none;
   }
 }
 
@@ -316,9 +324,6 @@ h5, p {
   opacity: 0;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
-#section-3 .content-block {
-  min-height: 26rem;
-}
 
 .content-block:hover .topImg img{
   transform: scale(1.1);
@@ -385,7 +390,7 @@ hr {
 }
 
 .mh3 {
-  min-height: 4rem;
+  min-height: 4.5rem;
 }
 
 .ds {
@@ -554,8 +559,4 @@ a {
 ::-moz-selection {
   background: #4867B0; /* Gecko Browsers */
   color: #fff;
-}
-
-* {
-  overflow-x: hidden;
 }

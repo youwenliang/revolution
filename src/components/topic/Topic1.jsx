@@ -189,7 +189,7 @@ class TopicA extends Component {
             <img src={modalString[a+'-image'][0]} alt=""/>
           </figure>
           <p className="mb4">{modalString[a][1]}</p>
-          <div className="bg-white df dfc-s center pa4 pa0-l pr4-l mb4">
+          <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5">
                 <img src={modalString[a+'-image'][1]} alt=""/>
@@ -202,7 +202,7 @@ class TopicA extends Component {
           </div>
           <hr/>
           <h3 className="w-100 fw5 mv3">{modalString[a][4]}</h3>
-          <div className="bg-near-white df dfc-s center pa4 pa0-l pr4-l mb3">
+          <div className="bg-near-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb3">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5">
                 <img src={modalString[a+'-image'][2]} alt=""/>
@@ -222,7 +222,7 @@ class TopicA extends Component {
           <figure className="w-100 mh0 mb3 modal-full">
             <img src={modalString[a+'-image'][0]} alt=""/>
           </figure>
-          <div className="bg-white df dfc-s center pa4 pa0-l pr4-l mv4-ns">
+          <div className="bg-white df dfc-s center pa0 pv3 pa4-m pa0-l pr4-l mv4-ns">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5">
                 <img src={modalString[a+'-image'][1]} alt=""/>
@@ -230,12 +230,12 @@ class TopicA extends Component {
             </div>
             <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
               <h4 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][0]}</h4>
-              <p className="w-100 mt2 tc tl-l ">{modalString[a][1]}</p>
+              <p className="w-100 mt2 tc tl-l mw6">{modalString[a][1]}</p>
             </div>
           </div>
           <hr/>
           <h3 className="w-100 fw5 mv3">{modalString[a][2]}</h3>
-          <div className="pl4 mb3">
+          <div className="pl4-ns pl0 mb3">
             <p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p>
             <p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p>
           </div>
@@ -284,7 +284,7 @@ class TopicA extends Component {
         <section className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="mw9 center ph2">
-              <div className="cf df dfc intro mb6">
+              <div className="cf df dfc intro mb6-l mb5">
                 <div className="w-100 mw7-l mw6">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
                     <img src="images/1920x1080.png" alt=""/>
@@ -295,7 +295,7 @@ class TopicA extends Component {
                   <h4 className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</h4>
                 </div>
               </div>
-              <div className="cf df intro mb6">
+              <div className="cf df intro mb6-l mb5">
                 <div className="o1 w-100 w-50-l pr4-l mw6 mw-none-l">
                   <figure className="mw6 mw-none-l mh0 ml0-l center mb3 hideme hidediv">
                     <img src="images/1024x768.png" alt=""/>
@@ -322,7 +322,7 @@ class TopicA extends Component {
         </section>
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-near-white pv5 df">
-          <div className="center w-100 mw8 ph5-l ph3 tc mb5 hideme hidediv">
+          <div className="center w-100 mw8 ph5-l ph3 tc mb4 hideme hidediv">
             <h2 className="fw4 hideme hidediv">影人一指然</h2>
             <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
@@ -464,8 +464,8 @@ class TopicA extends Component {
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
-                    <h3 className="center mt4 fw5">大一陽語體</h3>
-                    <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <h3 className="center mt4 fw5">次要次要</h3>
+                    <h5 className="center ph4-ns ph0 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
                       <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                     </a>
@@ -476,8 +476,8 @@ class TopicA extends Component {
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
-                    <h3 className="center mt4 fw5">大一陽語體</h3>
-                    <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <h3 className="center mt4 fw5">主要主要</h3>
+                    <h5 className="center ph4-ns ph0 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
                       <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                     </a>
@@ -488,8 +488,8 @@ class TopicA extends Component {
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
-                    <h3 className="center mt4 fw5">大一陽語體</h3>
-                    <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <h3 className="center mt4 fw5">次要次要</h3>
+                    <h5 className="center ph4-ns ph0 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
                       <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                     </a>
