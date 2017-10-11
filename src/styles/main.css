@@ -110,6 +110,10 @@ h5, p {
   #section-nav {
     display: none;
   }
+
+  #section-nav + p{
+    display: none;
+  }
 }
 #section-nav + p {
   position: fixed;
@@ -122,6 +126,8 @@ h5, p {
   -ms-user-select: none;
   user-select: none;
 }
+
+
 
 #section-nav a {
   text-indent: -65px;
@@ -203,12 +209,14 @@ h5, p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
   pointer-events: all;
 }
-
-#za-share.hide {
-  opacity: 0;
-  pointer-events: none;
-  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+@media screen and (max-width: 479px) {
+  #za-share {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+  }
 }
+
 #za-share.transparent {
   opacity: 0.5;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -323,16 +331,24 @@ h5, p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-#more {
-  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1); 
-  opacity: 1;
-}
-
-#more.hide {
+#more_1.hide {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
   height: 0;
   opacity: 0;
   overflow: hidden;
+}
+
+#more_2.hide {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 959px) {
+  #more_2.hide {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
 }
 
 /* Loading Gif */
@@ -538,4 +554,8 @@ a {
 ::-moz-selection {
   background: #4867B0; /* Gecko Browsers */
   color: #fff;
+}
+
+* {
+  overflow-x: hidden;
 }

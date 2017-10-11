@@ -149,11 +149,15 @@ class TopicA extends Component {
   };
 
   showMore = (e) => {
-    var more = document.getElementById('more');
+    var more = document.getElementById('more_2');
     if(more.classList.contains('hide')) {
       more.classList.remove('hide');
-      e.target.style.display = 'none';
     }
+    var more_1 = document.getElementById('more_1');
+    if(more_1.classList.contains('hide')) {
+      more_1.classList.remove('hide');
+    }
+    e.target.style.display = 'none';
   };
 
   state = {
@@ -400,45 +404,47 @@ class TopicA extends Component {
                     <p className="center tl pn mt2 ">{modalString['exhibit-3'][1].substring(0, 50)}...</p>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-4" onClick={this.onOpenModal}>
-                    <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
-                      <h3 className="absolute white">測試文字</h3>
-                    </figure>
-                    <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-4'][0]}</h3>
-                    <p className="center tl pn mt2 ">{modalString['exhibit-4'][1].substring(0, 50)}...</p>
-                  </div>
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-5" onClick={this.onOpenModal}>
-                    <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
-                      <h3 className="absolute white">測試文字</h3>
-                    </figure>
-                    <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-5'][0]}</h3>
-                    <p className="center tl pn mt2 ">{modalString['exhibit-5'][1].substring(0, 50)}...</p>
-                  </div>
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                  <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-6" onClick={this.onOpenModal}>
-                    <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
-                      <h3 className="absolute white">測試文字</h3>
-                    </figure>
-                    <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-6'][0]}</h3>
-                    <p className="center tl pn mt2 ">{modalString['exhibit-6'][1].substring(0, 50)}...</p>
-                  </div>
-                </div>
-                <div className="hide" id="more">
+                <div className="hide" id="more_2">
                   <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
-                    <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-7" onClick={this.onOpenModal}>
+                    <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-4" onClick={this.onOpenModal}>
                       <figure className="db center w-100 pn topImg">
                         <img src="images/1920x1080.png" alt=""/>
                         <h3 className="absolute white">測試文字</h3>
                       </figure>
-                      <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-7'][0]}</h3>
-                      <p className="center tl pn mt2 ">{modalString['exhibit-7'][1].substring(0, 50)}...</p>
+                      <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-4'][0]}</h3>
+                      <p className="center tl pn mt2 ">{modalString['exhibit-4'][1].substring(0, 50)}...</p>
+                    </div>
+                  </div>
+                  <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
+                    <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-5" onClick={this.onOpenModal}>
+                      <figure className="db center w-100 pn topImg">
+                        <img src="images/1920x1080.png" alt=""/>
+                        <h3 className="absolute white">測試文字</h3>
+                      </figure>
+                      <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-5'][0]}</h3>
+                      <p className="center tl pn mt2 ">{modalString['exhibit-5'][1].substring(0, 50)}...</p>
+                    </div>
+                  </div>
+                  <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
+                    <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-6" onClick={this.onOpenModal}>
+                      <figure className="db center w-100 pn topImg">
+                        <img src="images/1920x1080.png" alt=""/>
+                        <h3 className="absolute white">測試文字</h3>
+                      </figure>
+                      <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-6'][0]}</h3>
+                      <p className="center tl pn mt2 ">{modalString['exhibit-6'][1].substring(0, 50)}...</p>
+                    </div>
+                  </div>
+                  <div className="hide" id="more_1">
+                    <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
+                      <div className="pb4 cp mw6 mw-none-l center content-block" data-id="exhibit-7" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src="images/1920x1080.png" alt=""/>
+                          <h3 className="absolute white">測試文字</h3>
+                        </figure>
+                        <h3 className="center tl mt3 pn mh3 fw5">{modalString['exhibit-7'][0]}</h3>
+                        <p className="center tl pn mt2 ">{modalString['exhibit-7'][1].substring(0, 50)}...</p>
+                      </div>
                     </div>
                   </div>
                 </div>
