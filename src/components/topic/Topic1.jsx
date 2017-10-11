@@ -459,7 +459,9 @@ class TopicA extends Component {
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
-                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    <a href={"https://www.facebook.com/sharer/sharer.php?app_id=360075034440109&kid_directed_site=0&sdk=joey&u=http://revolution.toneskill.co/"+pageURL+"&display=popup&ref=plugin&src=share_button"} target="_blank">
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    </a>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
