@@ -163,10 +163,16 @@ class TopicA extends Component {
   onOpenModal = (e) => {
     modalId = e.target.dataset.id;
     this.setState({ open: true });
+    setTimeout(function(){
+      $('.modal-0-2').addClass('modal-show');
+    }, 100);
   };
 
   onCloseModal = () => {
     this.setState({ open: false });
+    setTimeout(function(){
+      $('.modal-0-2').addClass('modal-show');
+    }, 200);
   };
 
   modalContent = (a) => {
@@ -345,6 +351,9 @@ class TopicA extends Component {
           </div>
           <Modal open={open} onClose={this.onCloseModal} little>
             {this.modalContent(modalId)}
+            <div className="modal-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><path className="fill-white" d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path></svg>
+            </div>
           </Modal>
         </section>
         {/* Banner */}

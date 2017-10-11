@@ -1,6 +1,7 @@
 @import "tachyons";
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,6 +57,10 @@ a {
   color: #4f4f4f;
   text-decoration: none;
   word-wrap: break-word;
+}
+
+img {
+  vertical-align: top;
 }
 
 /* Typography */
@@ -428,10 +433,49 @@ hr {
   margin: 0 auto 20px;
   overflow-y: hidden;
   overflow-x: hidden;
+  overflow: visible;
+  transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+  top: 100%;
+  opacity: 0;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-0-2 {
+    margin: 0 auto 120px;
+  }
+  .modal-close {
+    display: block;
+  }
+}
+
+.modal-close {
+  width: 48px;
+  height: 48px;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -84px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: none;
+  padding: 10px;
+  display: none;
+}
+.fill-white {
+  fill: white;
 }
 .modal-full {
   width: calc(100% + 4rem);
   margin-left: -2rem;
+}
+.modal-show {
+  top: 0%;
+  opacity: 1;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Footer */
@@ -452,8 +496,4 @@ footer div {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-img {
-  vertical-align: top;
 }
