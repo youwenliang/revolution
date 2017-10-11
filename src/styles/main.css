@@ -159,6 +159,7 @@ h5, p {
   transform: translate(-50%, 0);
   padding: 15px;
   width: 100%;
+  pointer-events: none;
 }
 
 .banner {
@@ -170,11 +171,12 @@ h5, p {
   right: 20px;
   width: 48px;
   height: 48px;
-  z-index: 10;
+  z-index: 8;
   background: #4065b4;
   font-size: 18px;
   opacity: 0.9;
   transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: all;
 }
 
 #fb-share:hover {
@@ -186,8 +188,16 @@ h5, p {
   top: 20px;
   left: 20px;
   height: 48px;
-  z-index: 10; 
+  z-index: 11; 
   line-height: 20px;
+  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: all;
+}
+
+#za-share.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Home */
@@ -315,7 +325,7 @@ h5, p {
   background-size: 300px;
   background-position: center center;
   opacity: 1;
-  z-index: 9;
+  z-index: 10;
   transition: opacity 0s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
