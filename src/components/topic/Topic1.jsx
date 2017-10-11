@@ -237,7 +237,7 @@ class TopicA extends Component {
           </div>
         </div>
       );
-    } else console.log('???');
+    }
   }
 
   render() {
@@ -459,7 +459,7 @@ class TopicA extends Component {
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
-                    <a href={"https://www.facebook.com/sharer/sharer.php?app_id=360075034440109&kid_directed_site=0&sdk=joey&u=http://revolution.toneskill.co/"+pageURL+"&display=popup&ref=plugin&src=share_button"} target="_blank">
+                    <a href="" target="_blank">
                       <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
                     </a>
                   </div>
@@ -471,7 +471,9 @@ class TopicA extends Component {
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
-                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    <a href="" target="_blank">
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    </a>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
@@ -481,7 +483,9 @@ class TopicA extends Component {
                     </figure>
                     <h3 className="center mt4 fw5">大一陽語體</h3>
                     <h5 className="center ph4 mt2 mw6 mw-none-l">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
-                    <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    <a href="" target="_blank">
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -491,7 +495,7 @@ class TopicA extends Component {
         {/* Banner */}
         <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
           </div>
         </section>
       </div>
