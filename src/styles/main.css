@@ -111,6 +111,17 @@ h5, p {
     display: none;
   }
 }
+#section-nav + p {
+  position: fixed;
+  top: calc(50% - 80px);
+  right: 25px;
+  z-index: 8;
+  color: #9D9FA2;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 #section-nav a {
   text-indent: -65px;
@@ -174,13 +185,12 @@ h5, p {
   z-index: 8;
   background: #4065b4;
   font-size: 18px;
-  opacity: 0.9;
   transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
   pointer-events: all;
 }
 
 #fb-share:hover {
-  opacity: 1;
+  background: #345291;
   transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -190,13 +200,22 @@ h5, p {
   height: 48px;
   z-index: 11; 
   line-height: 20px;
-  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
   pointer-events: all;
 }
 
 #za-share.hide {
   opacity: 0;
   pointer-events: none;
+  transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#za-share.transparent {
+  opacity: 0.5;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#za-share:hover {
+  opacity: 1;
   transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -231,10 +250,12 @@ h5, p {
 
 .o1-l, .o1 {order: 1;}
 .o2-l, .o2 {order: 2;}
+.o3-l, .o3 {order: 3;}
 
 @media screen and (max-width: 959px) {
   .o1-l {order: 2;}
   .o2-l {order: 1;}
+  .o3-l {order: 3;}
 }
 
 /* Scroll Transition Divs */

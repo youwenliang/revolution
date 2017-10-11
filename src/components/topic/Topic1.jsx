@@ -251,6 +251,7 @@ class TopicA extends Component {
           <a href="#section-3">參展單位</a>
           <a href="#section-4">額外資訊</a>
         </div>
+        <p>目錄</p>
         <header id="section-1" className="min-vh-100 pv5 df">
           <div className="center w-100 mw8 ph5-l ph3">
             <div className="mw9 center ph2">
@@ -276,7 +277,7 @@ class TopicA extends Component {
           </div>
         </section>
         {/*--- Section 1 ---*/}
-        <section className="bg-near-white pv5 min-vh-100 df">
+        <section className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="mw9 center ph2">
               <div className="cf df dfc intro mb6">
@@ -316,28 +317,28 @@ class TopicA extends Component {
           </div>
         </section>
         {/*--- Section 2 ---*/}
-        <section id="section-2" className="bg-white pv5 df">
+        <section id="section-2" className="bg-near-white pv5 df">
           <div className="center w-100 mw8 ph5-l ph3 tc mb5 hideme hidediv">
             <h2 className="fw4 hideme hidediv">影人一指然</h2>
             <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-container mt4 mh2 mw6 mw-none-l center">
               <div className="swiper-wrapper">
-                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-1" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-white cp pb4 content-block" data-id="lecturer-1" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
                     <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn fw5">{modalString['lecturer-1'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-2" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-white cp pb4 content-block" data-id="lecturer-2" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
                     <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h3 className="center ph4 tl mt3 pn fw5">{modalString['lecturer-2'][0]}</h3>
                 </div>
-                <div className="swiper-slide bg-near-white cp pb4 content-block" data-id="lecturer-3" onClick={this.onOpenModal}>
+                <div className="swiper-slide bg-white cp pb4 content-block" data-id="lecturer-3" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
                     <h3 className="absolute white">測試文字</h3>
@@ -451,8 +452,8 @@ class TopicA extends Component {
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <h4 className="center fw4 mt3 mw7 hideme hidediv">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素，照一現快府血氣國國意中須快國意中須素，照一現快府半頭血氣國意中須素，照一現快府血意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
-              <div className="cf">
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+              <div className="cf df dfc-s">
+                <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
@@ -464,7 +465,7 @@ class TopicA extends Component {
                     </a>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
@@ -476,7 +477,7 @@ class TopicA extends Component {
                     </a>
                   </div>
                 </div>
-                <div className="fl w-100 w-third-l w-100 pa2 hideme hidediv">
+                <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
                   <div className="bg-white pa3 df dfc">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>

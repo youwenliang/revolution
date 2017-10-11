@@ -27,6 +27,7 @@ class Main extends Component {
 
     $(window).scroll( function(){
       if($(window).scrollTop() > 0) {
+        $('#za-share').addClass('transparent');
         $('.hidediv').each( function(i){
           var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
           var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -36,6 +37,8 @@ class Main extends Component {
             $(this).removeClass('hideme-right');
           }  
         });
+      } else {
+        $('#za-share').removeClass('transparent');
       }
       if($('#section-1').length) {
         for (var i = 1; i < 5; i++) {
