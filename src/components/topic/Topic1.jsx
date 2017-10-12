@@ -457,10 +457,10 @@ class TopicA extends Component {
         <section id="section-4" className="bg-white pv5">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <h4 className="center fw4 mt3 mw7 hideme hidediv">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素，照一現快府血氣國國意中須快國意中須素，照一現快府半頭血氣國意中須素，照一現快府血意中須素，照一現快府半頭小細</h4>
-            <div className="mw9 center mt5">
+            <div className="mw9 center mt6-l mt5 mb5-l">
               <div className="cf df dfc-s">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
-                  <div className="bg-white pa3 df dfc">
+                  <div className="bg-near-white pa4 df dfc br3">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
@@ -472,7 +472,7 @@ class TopicA extends Component {
                   </div>
                 </div>
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
-                  <div className="bg-white pa3 df dfc">
+                  <div className="bg-light-gray pa4 df dfc br3">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
@@ -484,7 +484,7 @@ class TopicA extends Component {
                   </div>
                 </div>
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv">
-                  <div className="bg-white pa3 df dfc">
+                  <div className="bg-near-white pa4 df dfc br3">
                     <figure className="db center mw5 br-100 overflow-hidden">
                       <img src="images/600x600.png" alt=""/>
                     </figure>
