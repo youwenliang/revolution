@@ -519,6 +519,9 @@ hr {
   .modal-close {
     display: block;
   }
+  .closeIcon-0-3 {
+    display: none;
+  }
 }
 
 .modal-close {

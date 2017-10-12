@@ -166,6 +166,7 @@ class TopicA extends Component {
 
   onOpenModal = (e) => {
     modalId = e.target.dataset.id;
+    console.log(modalId);
     this.setState({ open: true });
     setTimeout(function(){
       $('.modal-0-2').addClass('modal-show');
@@ -245,7 +246,7 @@ class TopicA extends Component {
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <video width="100%" controls autoplay>
+        <video width="100%" autoPlay>
           <source src="/images/videos/movie.mp4" type="video/mp4" />
         </video>
       );
@@ -264,6 +265,13 @@ class TopicA extends Component {
           <a href="#section-4">額外資訊</a>
         </div>
         <p>目錄</p>
+
+        <Modal open={open} onClose={this.onCloseModal} little>
+          {this.modalContent(modalId)}
+          <div className="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><path className="fill-white" d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path></svg>
+          </div>
+        </Modal>
         <header id="section-1" className="min-vh-100 pv5 df relative">
           <div className="center w-100 mw8 ph5-l ph3">
             <div className="mw9 center ph2">
@@ -315,7 +323,7 @@ class TopicA extends Component {
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc mw6 mw-none-l afs">
                   <h2 className="w-100 fw5 hideme hidediv">遊工只長小見</h2>
                   <p className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</p>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}><p>聽聽其他人的經驗 ＞</p></div>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
               <div className="cf df intro">
@@ -327,7 +335,7 @@ class TopicA extends Component {
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc mw6 mw-none-l afs">
                   <h2 className="w-100 fw5 hideme hidediv">遊工只長小見</h2>
                   <p className="w-100 mt3 hideme hidediv">容呢客有她她事財據。影人一指然人醫幾呢家至眼投重術玩爸面腳國成，電天要學在我性發因地法國無血氣國意中須素，照一現快府半頭小細？</p>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}><p>聽聽其他人的經驗 ＞</p></div>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
             </div>
@@ -367,12 +375,6 @@ class TopicA extends Component {
             {/*<div className="swiper-button-next"></div>
             <div className="swiper-button-prev"></div>*/}
           </div>
-          <Modal open={open} onClose={this.onCloseModal} little>
-            {this.modalContent(modalId)}
-            <div className="modal-close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><path className="fill-white" d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path></svg>
-            </div>
-          </Modal>
         </section>
         {/* Banner */}
         <section className="banner">
