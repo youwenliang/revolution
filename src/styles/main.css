@@ -584,6 +584,7 @@ video {
   width: 100%    !important;
   height: auto   !important;
   pointer-events: none;
+  vertical-align: top;
 }
 
 ::selection {
