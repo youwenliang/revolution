@@ -11,6 +11,7 @@ class Home extends Component {
 
     /* Preload Image */
     var images  = [];
+    images.push('images/loading.gif');
     images.push('images/1920x1080.png');
     images.push('images/400x400.png');
     images.push('images/move_400x400.png');

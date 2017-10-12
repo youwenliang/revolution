@@ -104,6 +104,16 @@ h5, p {
 .bg-blue {background-color: #4867b0;}
 .hover-bg-dark-blue:hover {background-color: #345291;}
 
+#scrolling {
+  bottom: 8vh;
+}
+
+@media screen and (max-width: 959px) {
+  #scrolling {
+    display: none;
+  }  
+}
+
 /* Navigation */
 #section-nav {
   position: fixed;
@@ -265,8 +275,8 @@ h5, p {
 }
 
 .o1-l, .o1 {order: 1;}
-.o2-l, .o2 {order: 2;}
-#section-4 .o2-l > div {transform: scale(1.1); z-index: 1;}
+.o2-l, .o2 {order: 2; z-index: 1;}
+#section-4 .o2-l > div {transform: scale(1.2); z-index: 1; position: relative;}
 .o3-l, .o3 {order: 3;}
 
 @media screen and (max-width: 959px) {
@@ -429,6 +439,10 @@ hr {
   flex-direction: column;
 }
 
+.afs {
+  align-items: flex-start;
+}
+
 @media screen and (max-width: 959px) {
   .dfc-s {
     flex-direction: column;
@@ -441,6 +455,10 @@ hr {
 
 .button {
   border-radius: 6px;
+}
+
+.button-round {
+  border-radius: 100px;
 }
 
 /* Swiper */
@@ -533,6 +551,11 @@ hr {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.modal-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Footer */
 footer {
   position: absolute;
@@ -552,6 +575,12 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  pointer-events: none;
 }
 
 ::selection {
