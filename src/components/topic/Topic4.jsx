@@ -295,7 +295,7 @@ class TopicD extends Component {
         {/* Banner */}
         <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br/>不小心說出來，還會有點難為情….</h3>
+            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情….</h3>
           </div>
         </section>
         {/*--- Section 1 ---*/}
@@ -326,7 +326,7 @@ class TopicD extends Component {
                   <h2 className="w-100 fw5 lh-copy blue hideme hidediv">尋夢：夢想，藏在哪裡？</h2>
                   <h4 className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
 </h4>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
               <div className="center cf df intro mb6-l mb5 mw6 mw-none-l">
@@ -340,7 +340,7 @@ class TopicD extends Component {
                   <h4 className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
 </h4>
 
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
             </div>
@@ -384,7 +384,7 @@ class TopicD extends Component {
         {/* Banner */}
         <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
+            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情….</h3>
           </div>
         </section>
         {/*--- Section 3 ---*/}
@@ -480,38 +480,38 @@ class TopicD extends Component {
             <div className="mw9 center mt6-l mt5 mb5-l">
               <div className="center cf df dfc-s mw6 mw-none-l">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba b--light-silver pa4 df dfc br3">
+                  <div className="bg-white ba b--moon-gray pa4 df dfc br3">
                     <figure className="db center mw5">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-05.png"} alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">次要次要</h3>
                     <h5 className="center ph4-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
-                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba b--light-silver pa4 df dfc br3">
+                  <div className="bg-white ba b--moon-gray pa4 df dfc br3">
                     <figure className="db center mw5">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-04.png"} alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">主要主要</h3>
                     <h5 className="center ph4-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
-                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba b--light-silver pa4 df dfc br3">
+                  <div className="bg-white ba b--moon-gray pa4 df dfc br3">
                     <figure className="db center mw5">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-06.png"} alt=""/>
                     </figure>
                     <h3 className="center mt4 fw5">次要次要</h3>
                     <h5 className="center ph4-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
                     <a href="" target="_blank">
-                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white">分享</div>
+                      <div className="center mt4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>

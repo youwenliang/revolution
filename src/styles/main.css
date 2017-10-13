@@ -42,7 +42,7 @@ body {
   font-family:'Noto Sans TC', Roboto Slab, Hoefler Text, '微軟正黑體', Songti TC, serif;
   line-height: 1.61;
   letter-spacing: 2px;
-  color: #4f4f4f;
+  color: #58595B;
   overflow-x: hidden;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -75,16 +75,6 @@ h2 {
   font-size: 40px;
   letter-spacing: 4px;
 }
-@media screen and (max-width: 479px) {
-  h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-size: 30px;
-    letter-spacing: 3px;
-  }
-}
-
 h3 {
   font-size: 24px;
 }
@@ -96,6 +86,26 @@ h5, p {
   letter-spacing: 2px;
   line-height: 1.5;
 }
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5, p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+}
 
 /* Overrides */
 .mw8 {max-width: 80rem}
@@ -103,6 +113,9 @@ h5, p {
 .h5 {height: 20rem}
 .blue {color: #4867b0;}
 .bg-blue {background-color: #4867b0;}
+.light-blue {color: #7396CE;}
+.bg-light-blue {background-color: #7396CE;}
+.hover-bg-blue:hover {background-color: #4867b0;}
 .hover-bg-dark-blue:hover {background-color: #345291;}
 
 #scrolling {
@@ -255,11 +268,6 @@ h5, p {
   border-radius: 10px;
   min-height: 400px;
   /*transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);*/
-}
-
-.topic:hover {
-  /*transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);*/
-  background: #fefef6;
 }
 
 .topic:hover .home-image {
@@ -483,10 +491,12 @@ hr {
 
 .button {
   border-radius: 6px;
+  transition: all .15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .button-round {
   border-radius: 100px;
+  transition: all .15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Swiper */
@@ -510,7 +520,10 @@ hr {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
-  }  
+  }
+  .dn-s {
+    display: none;
+  }
 }
 
 /* Modal */

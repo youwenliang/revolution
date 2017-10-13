@@ -61,7 +61,7 @@ class Main extends Component {
       }
     });
 
-    /* Switch Topic Images */
+    /* Switch Cover Videos */
     if($('.cover-video').length) {
       var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
       var video = document.getElementById('cover-video');
