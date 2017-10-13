@@ -105,7 +105,7 @@ class Home extends Component {
                   <Link to='/self-realization'>
                     <div className="bg-white pa4 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
+                        <img src="images/self-realization/cover_image.png" alt=""/>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
                       <p className="center mt2 ph4 mw6">追求夢想的簡短介紹，追求夢想的簡短介紹．</p>

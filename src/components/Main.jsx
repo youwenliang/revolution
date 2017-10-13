@@ -84,10 +84,10 @@ class Main extends Component {
     if($('.topic').length) {
       $('.topic').hover(function(){
         var src = $(this).find('img').attr('src');
-        if(src.indexOf('move') < 0) $(this).find('img').attr('src', src.split('/')[0]+"/move_"+src.split('/')[1]);
+        if(src.indexOf('move') < 0) $(this).find('img').attr('src', src.split('cover_image')[0]+"cover_image_move.gif");
       }, function(){
         var src = $(this).find('img').attr('src');
-        if(src.indexOf('move') >= 0) $(this).find('img').attr('src', src.split('/')[0]+"/"+src.split('/')[1].replace('move_',''));
+        if(src.indexOf('move') >= 0) $(this).find('img').attr('src', src.split('cover_image')[0]+"cover_image.png");
       });
     }
 
