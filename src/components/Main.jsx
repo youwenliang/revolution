@@ -15,12 +15,23 @@ class Main extends Component {
   updateActions = () => {
     window.scrollTo(0, 0);
     $(window).on('resize', function(){
-      if($('.topic-image').length) {
-        var original = $('.topic-image img').attr('src').replace('images/', '');
+      if($('.cover-video').length) {
+        var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
+        var video = document.getElementById('cover-video');
         if($(window).width() < 960) {
-          if(original.indexOf('small') < 0) $('.topic-image img').attr('src', 'images/small_' + original);
+          if(original_src.indexOf('small') < 0) {
+            video.pause();
+            $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
+            video.load();
+            video.play();
+          }
         } else {
-          if(original.indexOf('small') >= 0) $('.topic-image img').attr('src', 'images/' + original.replace('small_', ''));
+          if(original_src.indexOf('small') >= 0) {
+            video.pause();
+            $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
+            video.load();
+            video.play();
+          }
         }
       }
     });
@@ -51,12 +62,23 @@ class Main extends Component {
     });
 
     /* Switch Topic Images */
-    if($('.topic-image').length) {
-      var original_src = $('.topic-image img').attr('src').replace('images/', '');
+    if($('.cover-video').length) {
+      var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
+      var video = document.getElementById('cover-video');
       if($(window).width() < 960) {
-        $('.topic-image img').attr('src', 'images/small_' + original_src);
+        if(original_src.indexOf('small') < 0) {
+          video.pause();
+          $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
+          video.load();
+          video.play();
+        }
       } else {
-        $('.topic-image img').attr('src', 'images/' + original_src);
+        if(original_src.indexOf('small') >= 0) {
+          video.pause();
+          $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
+          video.load();
+          video.play();
+        }
       }
     }
     if($('.topic').length) {

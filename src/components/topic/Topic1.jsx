@@ -12,7 +12,9 @@ var pageURL = "respect-life";
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
-  'lecturer-1-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'video-1'         :'aqz-KE-bpKQ',
+  'video-2'         :'aqz-KE-bpKQ',
+  'lecturer-1-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
   'lecturer-1'      :['講師名字1', 
                       '講師內容1大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
                       '名字',
@@ -21,7 +23,7 @@ var modalString = {
                       '字幕字幕', 
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
                      ],
-  'lecturer-2-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'lecturer-2-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
   'lecturer-2'      :['講師名字2', 
                       '講師內容2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
                       '名字',
@@ -30,7 +32,7 @@ var modalString = {
                       '字幕字幕', 
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
                      ],
-  'lecturer-3-image':['images/1920x1080.png', 'images/400x400.png', 'images/400x400.png'],
+  'lecturer-3-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
   'lecturer-3'      :['講師名字3', 
                       '講師內容3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼，長告科時害起指，就的歡種自結麼已難目此光重像還。財身了收中差然雖面子四前在形法遊到座公河原常！速子投片都，在得果高雖單子形多北布養會裡一可間不果方們過同信案白立間物合發，才黃法育樣人集？',
                       '名字',
@@ -187,9 +189,7 @@ class TopicA extends Component {
       return (
         <div className="ph4-l ph4-m ph3 oh h-100 pv4-l pv4-m pv3">
           <h3 className="mb3 fw5">{modalString[a][0]}</h3>
-          <figure className="w-100 mh0 mb3">
-            <img src={modalString[a+'-image'][0]} alt=""/>
-          </figure>
+          <div className="video-container mh0 mb3"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameborder="0" allowfullscreen></iframe></div>
           <p className="mb4">{modalString[a][1]}</p>
           <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
             <div className="o1 w-100 w-30-l">
@@ -246,9 +246,7 @@ class TopicA extends Component {
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <video width="100%" autoPlay>
-          <source src="/images/videos/movie.mp4" type="video/mp4" />
-        </video>
+        <div className="video-container"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameborder="0" allowfullscreen></iframe></div>
       );
     }
   }
@@ -282,15 +280,15 @@ class TopicA extends Component {
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl-l tc df dfc">
-                  <h1 className="w-100 fw5 hideme hidediv">品在事直國究</h1>
-                  <h3 className="w-100 mt2 mw6 mw-none-l hideme hidediv">無血氣國意中須素，照一現快府半頭小細，我有定士連受</h3>
+                  <h1 className="w-100 fw5 f1 hideme hidediv blue">作文題目：我的夢想</h1>
+                  <h3 className="w-100 mv4 mw6 mw-none-l hideme hidediv">小時候的你，寫過這個作文題目吧！你還記得自己寫下什麼嗎？<br/><br/>時間過得很快，曾為這個題目苦惱的你，也不知不覺的長大了。身為大人的你，已經知道「夢想」是什麼了嗎？</h3>
                   <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                 </div>
               </div>
             </div>
           </div>
           <div className="center w-100 df dfjc absolute" id="scrolling">
-            <img src="images/scroll.gif" className="center o-30" width="90" height="90" alt="scroll" />
+            <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
           </div>
         </header>
         {/* Banner */}
