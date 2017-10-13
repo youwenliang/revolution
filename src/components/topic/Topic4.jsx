@@ -52,46 +52,46 @@ var modalString = {
                       'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-2-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-2'       :['標題標題', 
-                      '2大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-2'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-3-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-3'       :['標題標題', 
-                      '3大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-3'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-4-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-4'       :['標題標題', 
-                      '4大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-4'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-5-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-5'       :['標題標題', 
-                      '5大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-5'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-6-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-6'       :['標題標題', 
-                      '6大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-6'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
   'exhibit-7-image' :['images/1920x1080.png', 'images/400x400.png'],
-  'exhibit-7'       :['標題標題', 
-                      '7大片班小我有不術依是發錯常子氣。比得也來開經樂國技再了畫地處學日政容全邊些，人名球，張樣哥一因樂想。到不區態的國是洋我聽與，到你沒一打精叫情列成喜中現合星然無，從國總，在科苦畫進！表連府小的為出士直統去小那眼？',
-                      '標題標題', 
-                      'https://www.xxx.com',
-                      'https://www.xxx.com'
+  'exhibit-7'       :['【臺灣吧】用動畫說故事，新媒體的教育革命', 
+                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+                      '相關連結', 
+                      'http://www.taiwanbar.cc/',
+                      'https://www.facebook.com/taiwanbarstudio/'
                      ],
 }
 
@@ -202,7 +202,7 @@ class TopicD extends Component {
               </figure>
             </div>
             <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
-              <h3 className="w-100 fw5 tc tl-l mt3 mt0-l"><span className="fw7">{modalString['lecturer-1'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-1'][0].split('/')[1]}</span></h3>
+              <h3 className="w-100 fw5 tc tl-l mt3 mt0-l"><span className="fw7">{modalString[a][0].split('/')[0]}</span><span className="o-50">/{modalString[a][0].split('/')[1]}</span></h3>
               <p className="w-100 mt2 tl">{modalString[a][4]}</p>
             </div>
           </div>
@@ -224,19 +224,19 @@ class TopicD extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       return (
-        <div className="pa5-l pa4-m pa3 oh h-100">
+        <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
           <figure className="w-100 mh0 mb3 modal-full">
             <img src={modalString[a+'-image'][0]} alt=""/>
           </figure>
-          <div className="bg-white df dfc-s center pa0 pv3 pa4-m pa0-l pr4-l mv4-ns">
+          <div className="bg-white df dfc-s center pa0 pv3 mv4-ns">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5-l mw4">
                 <img src={modalString[a+'-image'][1]} alt=""/>
               </figure>
             </div>
-            <div className="o2 w-100 w-70-l tl-l tc df dfc">
+            <div className="o2 w-100 w-70-l tl-l tc df dfc pl4-l pl0 mw6">
               <h2 className="w-100 fw5 f35 tc tl-l mt3 mt0-l">{modalString[a][0].split('】')[0].replace('【','')}</h2>
-              <h4 className="w-100 mt2 tl mw6">{modalString[a][1]}</h4>
+              <h4 className="w-100 mt2 tl">{modalString[a][1]}</h4>
             </div>
           </div>
           <hr/>
@@ -417,7 +417,7 @@ class TopicD extends Component {
                       <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-2'][0]}</h3>
-                    <p className="center tl pn mt2 ph3">{modalString['exhibit-2'][1].substring(0, 50)}...</p>
+                    <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-2'][1].substring(0, 45)}...</p>
                   </div>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
@@ -427,7 +427,7 @@ class TopicD extends Component {
                       <h3 className="absolute white">測試文字</h3>
                     </figure>
                     <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-3'][0]}</h3>
-                    <p className="center tl pn mt2 ph3">{modalString['exhibit-3'][1].substring(0, 50)}...</p>
+                    <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-3'][1].substring(0, 45)}...</p>
                   </div>
                 </div>
                 <div className="hide" id="more_2">
@@ -438,7 +438,7 @@ class TopicD extends Component {
                         <h3 className="absolute white">測試文字</h3>
                       </figure>
                       <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-4'][0]}</h3>
-                      <p className="center tl pn mt2 ph3">{modalString['exhibit-4'][1].substring(0, 50)}...</p>
+                      <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-4'][1].substring(0, 45)}...</p>
                     </div>
                   </div>
                   <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
@@ -448,7 +448,7 @@ class TopicD extends Component {
                         <h3 className="absolute white">測試文字</h3>
                       </figure>
                       <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-5'][0]}</h3>
-                      <p className="center tl pn mt2 ph3">{modalString['exhibit-5'][1].substring(0, 50)}...</p>
+                      <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-5'][1].substring(0, 45)}...</p>
                     </div>
                   </div>
                   <div className="fl w-100 w-third-l pa2 hideme hidediv mb3 mb0-l">
@@ -458,7 +458,7 @@ class TopicD extends Component {
                         <h3 className="absolute white">測試文字</h3>
                       </figure>
                       <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-6'][0]}</h3>
-                      <p className="center tl pn mt2 ph3">{modalString['exhibit-6'][1].substring(0, 50)}...</p>
+                      <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-6'][1].substring(0, 45)}...</p>
                     </div>
                   </div>
                   <div className="hide" id="more_1">
@@ -469,7 +469,7 @@ class TopicD extends Component {
                           <h3 className="absolute white">測試文字</h3>
                         </figure>
                         <h3 className="center tl mt3 pn mh3 fw5 ph3">{modalString['exhibit-7'][0]}</h3>
-                        <p className="center tl pn mt2 ph3">{modalString['exhibit-7'][1].substring(0, 50)}...</p>
+                        <p className="f18 center tl pn mt2 ph3">{modalString['exhibit-7'][1].substring(0, 45)}...</p>
                       </div>
                     </div>
                   </div>
