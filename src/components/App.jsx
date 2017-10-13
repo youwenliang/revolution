@@ -23,7 +23,7 @@ class App extends Component {
         <div id="loading"></div>
         <div className="container fixed">
           <Link to='/'>
-            <figure className="db cp df dfjc" id="za-share">
+            <figure className="db cp df dfjc hide" id="za-share">
               <img src="/images/index_za_logo.svg" height="28px" alt="Za Share" title="Za Share" />
             </figure>
           </Link>

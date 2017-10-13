@@ -22,6 +22,7 @@ class Main extends Component {
           if(original_src.indexOf('small') < 0) {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
+            $('.cover-video').attr('poster', 'images/' + original_src + '_poster_small.png');
             video.load();
             video.play();
           }
@@ -29,6 +30,7 @@ class Main extends Component {
           if(original_src.indexOf('small') >= 0) {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
+            $('.cover-video').attr('poster', 'images/' + original_src.replace('_small','') + '_poster.png');
             video.load();
             video.play();
           }
@@ -69,6 +71,7 @@ class Main extends Component {
         if(original_src.indexOf('small') < 0) {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
+          $('.cover-video').attr('poster', 'images/' + original_src + '_poster_small.png');
           video.load();
           video.play();
         }
@@ -76,6 +79,7 @@ class Main extends Component {
         if(original_src.indexOf('small') >= 0) {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
+          $('.cover-video').attr('poster', 'images/' + original_src.replace('_small','') + '_poster.png');
           video.load();
           video.play();
         }
