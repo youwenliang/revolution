@@ -138,6 +138,7 @@ class TopicD extends Component {
               $(this).removeClass('hideme-right');
             }  
           });
+          // $('.fadein').css('opacity', 1);
         }, 400);
       }, 400);
       console.log(allImgs.length, 'images loaded!', allImgs);
@@ -279,7 +280,7 @@ class TopicD extends Component {
 					  <source src={"images/"+pageURL+"/cover_video.mp4"} type="video/mp4" />
 					</video>
                 </div>
-                <div className="o2 w-100 w-50-l pl4-l tl df dfc">
+                <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
                   <h1 className="w-100 f1 fw5 blue hideme hidediv">作文題目：我的夢想</h1>
                   <h3 className="w-100 mv4 hideme hidediv">小時候的你，寫過這個作文題目吧！你還記得自己寫下什麼嗎？<br/><br/>時間過得很快，曾為這個題目苦惱的你，也不知不覺的長大了。身為大人的你，已經知道「夢想」是什麼了嗎？</h3>
                   <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
@@ -287,7 +288,7 @@ class TopicD extends Component {
               </div>
             </div>
           </div>
-          <div className="center w-100 df dfjc absolute" id="scrolling">
+          <div className="center w-100 df dfjc absolute fadein" id="scrolling">
             <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
           </div>
         </header>
@@ -309,10 +310,10 @@ class TopicD extends Component {
                 </div>
                 <div className="o1-l w-100 w-50-l pr5-l tl df dfc afs">
                   <h2 className="w-100 fw5 hideme hidediv lh-copy blue">從小到大，沒有一堂課，教我們如何實現夢想</h2>
-                  <p className="w-100 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？
+                  <h4 className="w-100 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？
                   <br/><br/>夢想，可以很簡單，但也可以很難實現夢想的過程，必須先經歷「尋夢」和「圓夢」兩階段。
                   <br/><br/>尋夢過程，「多方體驗」、「自我認識」和「獨立思考」會是三大重點。在這個階段，我們會更加瞭解自己，並且理解現實，最後終將內化出一個適合自己的夢想。
-                  <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，</p>
+                  <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，</h4>
                 </div>
               </div>
               <div className="center cf df intro mb6-l mb5 mw6 mw-none-l">
@@ -323,8 +324,8 @@ class TopicD extends Component {
                 </div>
                 <div className="o2 w-100 w-50-l pl5-l tl df dfc afs">
                   <h2 className="w-100 fw5 lh-copy blue hideme hidediv">尋夢：夢想，藏在哪裡？</h2>
-                  <p className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
-</p>
+                  <h4 className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
+</h4>
                   <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
@@ -336,8 +337,8 @@ class TopicD extends Component {
                 </div>
                 <div className="o1-l w-100 w-50-l pr5-l tl df dfc afs">
                   <h2 className="w-100 fw5 hideme hidediv lh-copy blue">尋夢：夢想，藏在哪裡？</h2>
-                  <p className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
-</p>
+                  <h4 className="w-100 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
+</h4>
 
                   <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-blue bg-animate hover-bg-dark-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
