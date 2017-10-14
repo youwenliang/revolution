@@ -54,9 +54,13 @@ section {
 }
 
 a {
-  color: #4f4f4f;
+  color: #4867b0;
   text-decoration: none;
   word-wrap: break-word;
+}
+
+#home a {
+  color: #58595B;
 }
 
 img {
@@ -162,9 +166,8 @@ h5, p {
   user-select: none;
 }
 
-
-
 #section-nav a {
+  color: #4f4f4f;
   text-indent: -65px;
   overflow: hidden;
   margin: 5px 0;
