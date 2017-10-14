@@ -13,7 +13,7 @@ class Home extends Component {
     var video_loop = document.getElementById('home-video-loop');
     video.pause();
 
-    document.getElementById('home-video').addEventListener('ended',myHandler,false);
+    document.getElementById('home-video').addEventListener('ended', myHandler, false);
     function myHandler(e) {
       console.log('done');
       $('#home-video-loop').css({'z-index': 1, 'opacity': 1});
@@ -23,10 +23,9 @@ class Home extends Component {
     /* Preload Image */
     var images  = [];
     images.push('images/loading.gif');
-    images.push('images/1920x1080.png');
-    images.push('images/400x400.png');
-    images.push('images/move_400x400.png');
     images.push('images/home_video_poster.png');
+    images.push('images/self-realization/cover_image.png');
+    images.push('images/self-realization/cover_image_move.gif');
 
   	loadImage(images)
   	.then(function (allImgs) {
@@ -43,6 +42,7 @@ class Home extends Component {
               $(this).removeClass('hideme-right');
             }  
           });
+          $('.fadein').removeClass('fadein');
           setTimeout(function(){
             video.play();
             $('#home-video').attr('poster', 'images/home_video_poster.png');
@@ -61,19 +61,24 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
-        <header className="min-vh-100 pv5 df">
-        	<div className="center w-100 mw8 ph5-l ph3 tc">
-            <h2 className="tc mb4 hideme hidediv">2017</h2>
-            <div className="relative w-100 mw6 center hideme hidediv">
-              <video id="home-video" className="home-video" width="100%" muted preload="auto">
-              <source src="images/home_video.mp4" type="video/mp4" /></video>
-              <video id="home-video-loop" className="home-video absolute" width="100%" muted preload="auto" loop>
-              <source src="images/home_video_loop.mp4" type="video/mp4" /></video>
+        <header className="df dfjc min-vh-100 ">
+          <div className="df dfc">
+          	<div className="center w-100 mw8 ph5-l ph3 tc">
+              <h2 className="tmb4 hideme hidediv">2017</h2>
+              <div className="center w-100 mw6 hideme hidediv relative">
+                <video id="home-video" className="home-video" width="100%" muted preload="auto">
+                <source src="images/home_video.mp4" type="video/mp4" /></video>
+                <video id="home-video-loop" className="home-video absolute" width="100%" muted preload="auto" loop>
+                <source src="images/home_video_loop.mp4" type="video/mp4" /></video>
+              </div>
+              <figure className="center w-100 mw6 ma0 db hideme hidediv">
+                <img src="images/home-title.png" alt=""/>
+              </figure>
+              <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
             </div>
-            <figure className="db center w-100 mw6 ma0 hideme hidediv">
-              <img src="images/home-title.png" alt=""/>
-            </figure>
-            <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
+            <div className="center w-100 df dfjc mt4 fadein" id="scrolling">
+              <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
+            </div>
           </div>
         </header>
         {/* Banner */}
@@ -83,14 +88,14 @@ class Home extends Component {
           </div>
         </section>
         <section className="bg-near-white pv5">
-        	<div className="center w-100 mw8 ph5-l ph3 tc mb5-l mb0">
+        	<div className="center w-100 mw8 ph5-l ph3 mb5-l mb0 tc">
             <h2 className="fw4 hideme hidediv">影人一指然</h2>
             <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/self-realization'>
-                    <div className="bg-white ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-white ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/self-realization/cover_image.png" alt=""/>
                       </figure>
@@ -101,7 +106,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/respect-life'>
-                    <div className="bg-white ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-white ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -112,7 +117,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/gender-equality'>
-                    <div className="bg-white ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-white ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -123,7 +128,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/aesthetic-education'>
-                    <div className="bg-white ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-white ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -134,7 +139,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/critical-thinking'>
-                    <div className="bg-white ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-white ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
@@ -145,7 +150,7 @@ class Home extends Component {
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/'>
-                    <div className="bg-silver ba b--moon-gray pa4 df dfc dfjc topic mw6 mw-none-l center">
+                    <div className="bg-silver ba b--moon-gray pa3 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
                         <img src="images/400x400.png" alt=""/>
                       </figure>
