@@ -87,11 +87,15 @@ class Main extends Component {
     }
     if($('.topic').length) {
       $('.topic').hover(function(){
-        var src = $(this).find('img').attr('src');
-        if(src.indexOf('move') < 0) $(this).find('img').attr('src', src.split('cover_image')[0]+"cover_image_move.gif");
+        var gif = $(this).find('video').get(0);
+        if(gif !== undefined) {
+          gif.play();
+        }
       }, function(){
-        var src = $(this).find('img').attr('src');
-        if(src.indexOf('move') >= 0) $(this).find('img').attr('src', src.split('cover_image')[0]+"cover_image.png");
+        var gif = $(this).find('video').get(0);
+        if(gif !== undefined) {
+          gif.pause();
+        }
       });
     }
 

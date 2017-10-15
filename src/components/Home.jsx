@@ -24,8 +24,6 @@ class Home extends Component {
     var images  = [];
     images.push('images/loading.gif');
     images.push('images/home_video_poster.png');
-    images.push('images/self-realization/cover_image.png');
-    images.push('images/self-realization/cover_image_move.gif');
 
   	loadImage(images)
   	.then(function (allImgs) {
@@ -65,12 +63,12 @@ class Home extends Component {
           <div className="df dfc">
           	<div className="center w-100 mw8 ph5-l ph3 tc">
               <h2 className="hideme hidediv">2017</h2>
-              <div className="center w-100 mw6 hideme hidediv relative t30">
+              <figure className="center w-100 mw6 hideme hidediv relative t30">
                 <video id="home-video" className="home-video" width="100%" muted preload="auto">
                 <source src="images/home_video.mp4" type="video/mp4" /></video>
                 <video id="home-video-loop" className="home-video absolute" width="100%" muted preload="auto" loop>
                 <source src="images/home_video_loop.mp4" type="video/mp4" /></video>
-              </div>
+              </figure>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
                 <img className="home-title" src="images/home-title.svg" alt=""/>
               </figure>
@@ -97,7 +95,9 @@ class Home extends Component {
                   <Link to='/self-realization'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/self-realization/cover_image.png" alt=""/>
+                        <video className="topic-video" width="100%" muted preload="auto">
+                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        </video>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
                       <p className="center mt2 ph4 mw6 tl">追求夢想的簡短介紹簡短介紹簡短介紹．</p>
@@ -108,7 +108,9 @@ class Home extends Component {
                   <Link to='/respect-life'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
+                        <video className="topic-video" width="100%" muted preload="auto">
+                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        </video>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
                       <p className="center mt2 ph4 mw6 tl">尊重生命的簡短介紹簡短介紹簡短介紹．</p>
@@ -119,7 +121,9 @@ class Home extends Component {
                   <Link to='/gender-equality'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
+                        <video className="topic-video" width="100%" muted preload="auto">
+                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        </video>
                       </figure>
                       <h3 className="center mt3 fw5">性別平等</h3>
                       <p className="center mt2 ph4 mw6 tl">性別平等的簡短介紹簡短介紹簡短介紹．</p>
@@ -130,7 +134,9 @@ class Home extends Component {
                   <Link to='/aesthetic-education'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
+                        <video className="topic-video" width="100%" muted preload="auto">
+                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        </video>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
                       <p className="center mt2 ph4 mw6 tl">美感教育的簡短介紹簡短介紹簡短介紹．</p>
@@ -141,7 +147,9 @@ class Home extends Component {
                   <Link to='/critical-thinking'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
+                        <video className="topic-video" width="100%" muted preload="auto">
+                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        </video>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
                       <p className="center mt2 ph4 mw6 tl">思辨能力的簡短介紹簡短介紹簡短介紹．</p>
@@ -152,10 +160,9 @@ class Home extends Component {
                   <Link to='/'>
                     <div className="bg-silver ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <img src="images/400x400.png" alt=""/>
                       </figure>
-                      <h3 className="center mt3 fw5">????</h3>
-                      <p className="center mt2 ph4 mw6 tl">????簡短介紹簡短介紹簡短介紹．</p>
+                      <h3 className="center mt3 fw5 white">????</h3>
+                      <p className="center mt2 ph4 mw6 tl white">????簡短介紹簡短介紹簡短介紹．</p>
                     </div>
                   </Link>
                 </div>
