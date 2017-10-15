@@ -199,7 +199,7 @@ p {
 .container {
   /*max-width: 1170px;*/
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   z-index: 100;
   left: 50%;
   transform: translate(-50%, 0);

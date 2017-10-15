@@ -22,11 +22,6 @@ class App extends Component {
       <div className="App">
         <div id="loading"></div>
         <div className="container fixed">
-          <Link to='/'>
-            <figure className="db cp df dfjc hide" id="za-share">
-              <img src="/images/index_za_logo.svg" height="28px" alt="Za Share" title="Za Share" />
-            </figure>
-          </Link>
           <div className="br-100 db cp df dfjc" id="fb-share" onClick={this.socialShare}>
           	<FontAwesome name='facebook' className="white" alt="Share to Facebook" title="Share to Facebook" />
           </div>
