@@ -73,10 +73,10 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing:1px
 }
 h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 4px;
 }
 h3 {
@@ -85,7 +85,11 @@ h3 {
 h4 {
   font-size: 20px;
 }
-h5, p {
+h5 {
+  font-size: 18px; 
+}
+
+p {
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 1.5;
@@ -95,24 +99,11 @@ h5, p {
 .f18 {font-size: 18px;}
 
 @media screen and (max-width: 479px) {
-  h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-size: 32px;
-    letter-spacing: 3px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 18px;
-  }
   .f35 {font-size: 1.5rem;}
 }
 
 /* Overrides */
-.mw8 {max-width: 75rem}
+.mw8 {max-width: 65rem}
 .w5 {width: 20rem}
 .h5 {height: 20rem}
 .blue {color: #4867b0;}
@@ -275,7 +266,7 @@ h5, p {
 /* Home */
 .topic {
   border-radius: 10px;
-  min-height: 400px;
+  min-height: 360px;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .topic:hover {
@@ -296,7 +287,6 @@ h5, p {
 }
 
 .home-title {
-  padding: 0px 30px;
   box-sizing: border-box;
   margin: 15px 0;
 }
@@ -332,8 +322,6 @@ h5, p {
   opacity: 0;
 }
 #home header figure {
-  transform: scale(1.1);
-  top: -15px;
   z-index: 2
 }
 
@@ -481,6 +469,11 @@ h5, p {
 .tracked-mega { letter-spacing: .75em; }
 .mw200 {max-width: 200px;}
 .ph15 {padding-left: 1.5rem; padding-right: 1.5rem;}
+.t30 {top: 30px;}
+
+@media screen and (max-width: 479px) {
+  .tracked-mega {letter-spacing: .5em;}
+}
 
 hr {
   border-top: 1px solid #CBCCCE !important;
