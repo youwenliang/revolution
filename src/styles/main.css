@@ -295,6 +295,12 @@ h5, p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.home-title {
+  padding: 0px 30px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+
 /* Topic */
 .intro {
   min-height: 400px;

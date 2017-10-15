@@ -64,7 +64,7 @@ class Home extends Component {
         <header className="df dfjc min-vh-100 ">
           <div className="df dfc">
           	<div className="center w-100 mw8 ph5-l ph3 tc">
-              <h2 className="tmb4 hideme hidediv">2017</h2>
+              <h2 className="mb4 hideme hidediv">2017</h2>
               <div className="center w-100 mw6 hideme hidediv relative">
                 <video id="home-video" className="home-video" width="100%" muted preload="auto">
                 <source src="images/home_video.mp4" type="video/mp4" /></video>
@@ -72,7 +72,7 @@ class Home extends Component {
                 <source src="images/home_video_loop.mp4" type="video/mp4" /></video>
               </div>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
-                <img src="images/home-title.png" alt=""/>
+                <img className="home-title" src="images/home-title.png" alt=""/>
               </figure>
               <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
             </div>
