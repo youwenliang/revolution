@@ -503,7 +503,7 @@ class TopicD extends Component {
                   </div>
                 </div>
               </div>
-              <div className="center mt4 button cp fw5 bg-light-blue bg-animate hover-bg-blue white" onClick={this.showMore}>閱讀更多</div>
+              <div className="center button cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>

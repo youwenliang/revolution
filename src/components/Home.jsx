@@ -34,6 +34,7 @@ class Home extends Component {
   	  setTimeout(function(){
   	  	document.getElementById('loading').classList.add('fade');
   	  	document.body.classList.remove('ds');
+
         setTimeout(function(){
           $('#home .hidediv').each(function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
@@ -47,8 +48,8 @@ class Home extends Component {
           $('.fadein').removeClass('fadein');
           setTimeout(function(){
             video.play();
-            $('#home-video').attr('poster', 'images/home_video_poster.png');
-          },400);
+            // $('#home-video').attr('poster', 'images/home_video_poster.png');
+          },200);
         }, 400);
   	  }, 400);
   	  console.log(allImgs.length, 'images loaded!', allImgs);
@@ -76,9 +77,9 @@ class Home extends Component {
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
                 <img className="home-title" src="images/home-title.svg" alt=""/>
               </figure>
-              <h4 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h4>
+              <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
             </div>
-            <div className="center w-100 df dfjc mt2 fadein" id="scrolling">
+            <div className="center w-100 df dfjc fadein" id="scrolling">
               <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
             </div>
           </div>

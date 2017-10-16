@@ -116,7 +116,9 @@ p {
 .bw2 {border-width:.1rem;}
 
 #scrolling {
-  transition: all .8s cubic-bezier(0.23, 1, 0.32, 1) .8s;
+  align-items: flex-end;
+  height: 15vh;
+  transition: opacity .8s cubic-bezier(0.23, 1, 0.32, 1) .8s, transform .8s cubic-bezier(0.23, 1, 0.32, 1) .8s;
 }
 
 @media screen and (max-width: 959px) {
@@ -467,7 +469,7 @@ p {
 .tracked { letter-spacing: .1em; }
 .tracked-m { letter-spacing: .25em; }
 .tracked-l { letter-spacing: .5em; }
-.tracked-mega { letter-spacing: .75em; margin-right: -.75em; }
+.tracked-mega { letter-spacing: .75em; margin-right: -.75em; white-space: nowrap; }
 .mw200 {max-width: 200px;}
 .mw160 {max-width: 160px;}
 .ph15 {padding-left: 1.5rem; padding-right: 1.5rem;}
@@ -480,7 +482,7 @@ p {
 }
 
 @media screen and (max-width: 479px) {
-  .tracked-mega {letter-spacing: .5em; margin-right: -.5em;}
+  .tracked-mega {letter-spacing: .5em !important; margin-right: -.5em !important; font-size: 20px;}
   .s95 {
     transform: scale(1.0);
     max-width: 90vw;
