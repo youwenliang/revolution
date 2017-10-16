@@ -301,7 +301,7 @@ class TopicD extends Component {
           </div>
         </Modal>
         <header id="section-1" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
-          <div className="df dfc t30 relative">
+          <div className="w-100 df dfc t30 relative">
             <div className="center w-100 mw8 ph5-l ph3">
               <div className="center mw9 ph2">
                 <div className="center cf df mw6 mw-none-l intro">

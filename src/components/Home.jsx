@@ -4,11 +4,15 @@ import loadImage from 'image-promise';
 import $ from 'jquery';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.randomNum = Math.floor(Math.random() * 2) + 1;
+  }
   componentDidMount() {
     document.title = "雜學起義 Zashare Revolution - 台灣非典型教育革命";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
-
+    
     var video = document.getElementById('home-video');
     var video_loop = document.getElementById('home-video-loop');
     video.pause();
@@ -23,7 +27,7 @@ class Home extends Component {
     /* Preload Image */
     var images  = [];
     images.push('images/loading.gif');
-    images.push('images/home_video_poster.png');
+    images.push('images/self-realization/thumbnail_video_poster.png');
 
   	loadImage(images)
   	.then(function (allImgs) {
@@ -61,20 +65,20 @@ class Home extends Component {
       <div id="home">
         <header className="df dfjc min-vh-100 ">
           <div className="df dfc s95">
-          	<div className="center w-100 mw8 ph5-l ph3 tc">
+          	<div className="center w-100 mw8 ph5-l tc">
               <h2 className="hideme hidediv t25">2017</h2>
               <figure className="center w-100 mw6 hideme hidediv relative t30">
-                <video id="home-video" className="home-video" width="100%" muted preload="auto">
-                <source src="images/home_video.mp4" type="video/mp4" /></video>
+                <video id="home-video" className="home-video relative" width="100%" muted preload="auto">
+                <source src={"images/home_video"+this.randomNum+".mp4"} type="video/mp4" /></video>
                 <video id="home-video-loop" className="home-video absolute" width="100%" muted preload="auto" loop>
-                <source src="images/home_video_loop.mp4" type="video/mp4" /></video>
+                <source src={"images/home_video_loop"+this.randomNum+".mp4"} type="video/mp4" /></video>
               </figure>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
                 <img className="home-title" src="images/home-title.svg" alt=""/>
               </figure>
               <h4 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h4>
             </div>
-            <div className="center w-100 df dfjc mt4 fadein" id="scrolling">
+            <div className="center w-100 df dfjc mt2 fadein" id="scrolling">
               <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
             </div>
           </div>
@@ -95,8 +99,8 @@ class Home extends Component {
                   <Link to='/self-realization'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto">
-                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
+                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
@@ -108,8 +112,8 @@ class Home extends Component {
                   <Link to='/respect-life'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto">
-                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
+                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
@@ -121,8 +125,8 @@ class Home extends Component {
                   <Link to='/gender-equality'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto">
-                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
+                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                       </figure>
                       <h3 className="center mt3 fw5">性別平等</h3>
@@ -134,8 +138,8 @@ class Home extends Component {
                   <Link to='/aesthetic-education'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto">
-                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
+                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
@@ -147,8 +151,8 @@ class Home extends Component {
                   <Link to='/critical-thinking'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto">
-                          <source src="images/self-realization/cover_video_small.mp4" type="video/mp4" />
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
+                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
