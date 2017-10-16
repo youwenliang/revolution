@@ -45,62 +45,90 @@ var modalString = {
                       '字幕字幕', 
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
                      ],
-  'exhibit-1-image' :['images/'+pageURL+'/exhibit_1_cover.jpg', 'images/'+pageURL+'/exhibit_1_logo.jpg'],
   'exhibit-1'       :['臺灣吧',
                       '【臺灣吧】用動畫說故事，新媒體的教育革命', 
                       '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
-                      '相關連結', 
+                      
                       'http://www.taiwanbar.cc/',
                       'https://www.facebook.com/taiwanbarstudio/'
                      ],
-  'exhibit-2-image' :['images/'+pageURL+'/exhibit_2_cover.jpg', 'images/'+pageURL+'/exhibit_2_logo.jpg'],
   'exhibit-2'       :['宜蘭人文國中小士林行動教室',
                       '【宜蘭人文中小】適性教育，一起無框架學習', 
                       '以開展天賦為教育核心，實踐「生活即教育、社會即學校」，運用行動學習模式，並以經驗知識取代套裝知識，搭配多元智能理論，再配合每個孩子的發展階段與興趣，彈性調整課程內容與進行方式。以達到適性化、個別化，充分開展學生天賦的理想。',
-                      '相關連結', 
+                      
                       'http://www.explorationalclassroom.com/',
                       'https://www.facebook.com/jwpsnews/'
                      ],
-  'exhibit-3-image' :['images/'+pageURL+'/exhibit_3_cover.jpg', 'images/'+pageURL+'/exhibit_3_logo.jpg'],
   'exhibit-3'       :['青醒',
                       '【青醒】青年覺醒，點燃一場學習的革命', 
                       '《Awakening青醒》是一個以行動為導向的國際草根媒體平台，以「青年探索與行動的攻略」自許，取名自「青年覺醒」。青年覺醒，過程即是目的：從改變自己的學習歷程開始，Awakening試圖點燃一場學習革命，啟動華人教育的典範轉移。',
-                      '相關連結', 
+                      
                       'http://www.awakeningedu.org/',
                       'https://www.facebook.com/Awakening.edu/'
                      ],
-  'exhibit-4-image' :['images/'+pageURL+'/exhibit_4_cover.jpg', 'images/'+pageURL+'/exhibit_4_logo.jpg'],
-  'exhibit-4'       :['臺灣吧',
-                      '【臺灣吧】用動畫說故事，新媒體的教育革命', 
-                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
-                      '相關連結', 
-                      'http://www.taiwanbar.cc/',
-                      'https://www.facebook.com/taiwanbarstudio/'
+  'exhibit-4'       :['接棒啟蒙計畫',
+                      '【接棒】與未來接棒，讓求學選擇不再迷茫', 
+                      '我們都知道我們身處在一個不完美的教育體制下，但一切都有解了！接棒是非營利的教育組織，是一個可以將社會善意轉化成高中生探索自我價值的平台。我們相信，天賦、熱情、態度與機會是一個學生活出卓越人生的關鍵！',
+                      
+                      'http://thebatonproject.org/',
+                      'https://www.facebook.com/BatonEnlightenmentProject/'
                      ],
-  'exhibit-5-image' :['images/'+pageURL+'/exhibit_5_cover.jpg', 'images/'+pageURL+'/exhibit_5_logo.jpg'],
-  'exhibit-5'       :['臺灣吧',
-                      '【臺灣吧】用動畫說故事，新媒體的教育革命', 
-                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
-                      '相關連結', 
-                      'http://www.taiwanbar.cc/',
-                      'https://www.facebook.com/taiwanbarstudio/'
+  'exhibit-5'       :['可能性',
+                      '【可能性】用副本，發掘你的無限可能', 
+                      '可能性 Possibility，透過自媒體和資訊設計的力量，讓更多關於生涯選擇的可能性得以被看見，同時也藉我們的倡議，幫助更多人去思考、挖掘並去實踐潛藏在自己身上的可能性。我們相信，教育環境唯有連年輕人都願意開始主動捲起袖子，才有可能推得動真正的改革。',
+                      
+                      '',
+                      'https://www.facebook.com/Possibility.tw/'
                      ],
-  'exhibit-6-image' :['images/'+pageURL+'/exhibit_6_cover.jpg', 'images/'+pageURL+'/exhibit_6_logo.jpg'],
-  'exhibit-6'       :['臺灣吧',
-                      '【臺灣吧】用動畫說故事，新媒體的教育革命', 
-                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
-                      '相關連結', 
-                      'http://www.taiwanbar.cc/',
-                      'https://www.facebook.com/taiwanbarstudio/'
+  'exhibit-6'       :['N次坊',
+                      '【N次坊】是學生，也是講師！', 
+                      'Ｎ次坊的工作坊定位是從 0 到 1 的「入門工作坊」。學生講者透過Ｎ次坊將技能系統化設計成工作坊、分享而深化自身技能，並將熱情感染給更多人去體驗；透過多方學習，不斷疊加，養成分享的態度，達到學習Ｎ次方。',
+                      
+                      '',
+                      'https://www.facebook.com/npower.workshop/'
                      ],
-  'exhibit-7-image' :['images/'+pageURL+'/exhibit_7_cover.jpg', 'images/'+pageURL+'/exhibit_7_logo.jpg'],
-  'exhibit-7'       :['臺灣吧',
-                      '【臺灣吧】用動畫說故事，新媒體的教育革命', 
-                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
-                      '相關連結', 
-                      'http://www.taiwanbar.cc/',
-                      'https://www.facebook.com/taiwanbarstudio/'
+  'exhibit-7'       :['他群',
+                      '【他群】運用天賦，讓世界變得更好吧 ！', 
+                      '他群，一個協助他人「自我探索」且促進「社會意識」的教育設計團隊。我們利用「概念遊戲化」將許多的概念轉譯成實體的原創遊戲（議想世界＆夢想之道）。將遊戲融入到課程與活動當中，讓參與者能在遊戲的體驗中探索自我且深刻地認識社會議題，進而找到人生其他的可能性。',
+                      
+                      'https://taqun.club/',
+                      'https://www.facebook.com/taqun.taipei/'
                      ],
+  'exhibit-8'       :['交點文化股份有限公司',
+                      '【交點】創造交點，打開對自己的另一種想像', 
+                      '交點相信，分享，是夢想啟程的起點，分享讓善的漣漪持續下去。每個月交點固定舉辦聚會，讓人與人相遇、交流。並透過活動舉辦、顧問諮詢、課程服務，希望未來可以打造一個資源共享的環境，提供給社會上的年輕人們，讓他們在追尋夢想的道路上，不再孤單。',
+                      
+                      'http://crosspoint.tw/',
+                      'https://www.facebook.com/crosspoint0505/'
+                     ],
+  'exhibit-9'       :['YOTTA 線上教育平台',
+                      '【YOTTA】學習無限大，技能學習最佳平台', 
+                      'YOTTA是來自臺灣，全中文的跨領域教育平台。我們致力於數位教學內容規劃，並結合實體課程資源、虛實整合，創造嶄新學習體驗。平台上的課程分成三大主題：生活、專業技能，以及語言。眾多實務導向的課程，幫助你快速習得實用技能，轉化成實體收入。',
+                      
+                      'http://www.yottau.com.tw/',
+                      'https://www.facebook.com/yottau/'
+                     ],
+  'exhibit-10'       :['技職3.0',
+                      '【技職3.0】為技職，深築一條從根本改善的路', 
+                      '獨立媒體《技職3.0》長期關注「技職教育」與「職業訓練」議題，以監督政府施政、凝聚技職圈並傳承技職技藝工匠精神為使命。2016年起辦理系列實體活動《技職研討會》、《技職講堂》以及《技職咖啡館》，深度耕耘技職教育與職業訓練圈。',
+                      
+                      'http://www.tvet3.info/',
+                      'https://www.facebook.com/Craftsmanship.Insights/'
+                     ],
+  'exhibit-11'       :['Yourator 新創職涯資訊平台',
+                      '【Yourator】尋找夢想工作，開拓職涯新視野', 
+                      'Yourator 是新世代專屬的新創求職與職涯資訊平台，Yourator 的使命在於發掘有核心價值並擴張成長的新創公司，以策展式的招募介面，協助新世代取得完整清楚的新創團隊經營內容、創業理念、社會價值及團隊文化。',
+                      
+                      'https://www.yourator.co/',
+                      'https://www.facebook.com/yourator.co/'
+                     ],
+  'exhibit-12'       :['SHOKUZiNE 職人',
+                      '【職人】建立夢想的方式還有多少可能？', 
+                      '一個重拾專業、尊重專業的時代 一份翻轉臺灣職業認識的原創社會企業內容 透過書寫職人故事、記錄教育及業界現場，《職人》SHOKUZiNE自許成為傳遞夢想的媒體，替孩子點亮未來的閃閃火光。',
+                      
+                      'https://www.shokuzine.com/',
+                      'https://www.facebook.com/SHOKUZiNE/'
+                     ]
 }
 
 class TopicD extends Component {
@@ -132,7 +160,7 @@ class TopicD extends Component {
     for ( var i = 1; i <= 6; i++) {
       images.push('images/'+pageURL+'/雜ＸTONE_icon-0'+i+'.png');
     }
-    for ( var j = 1; i <= 3; j++) {
+    for ( var j = 1; j <= 12; j++) {
       images.push('images/'+pageURL+'/exhibit_'+j+'_cover.jpg');
       images.push('images/'+pageURL+'/exhibit_'+j+'_logo.jpg');
     }
@@ -247,16 +275,19 @@ class TopicD extends Component {
       );
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
+      let links = null;
+      if(modalString[a][3] == '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][4]}</a></p></div>;
+      else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][4]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
           <figure className="w-100 mh0 mb3 modal-full">
-            <img src={modalString[a+'-image'][0]} alt=""/>
+            <img src={'images/'+pageURL+'/exhibit_'+a.split('-')[1]+'_cover.jpg'} alt=""/>
           </figure>
           <div className="bg-white df dfc-s center pa0 pv3 mv4-ns">
             <div className="o1 w-100 w-30-l">
               <a href={modalString[a][4]} target="_blank">
                 <figure className="db center ma0 mw5-l mw4">
-                  <img src={modalString[a+'-image'][1]} alt=""/>
+                  <img src={'images/'+pageURL+'/exhibit_'+a.split('-')[1]+'_logo.jpg'} alt=""/>
                 </figure>
               </a>
             </div>
@@ -266,11 +297,8 @@ class TopicD extends Component {
             </div>
           </div>
           <hr/>
-          <h3 className="w-100 fw5 mt1 mb4">{modalString[a][3]}</h3>
-          <div className="mb3 pl4-l pl0">
-            <p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p>
-            <p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][5]}</a></p>
-          </div>
+          <h3 className="w-100 fw5 mt1 mb4">相關連結：</h3>
+          {links}
         </div>
       );
     } else if(a.indexOf('video') >= 0) {
@@ -324,7 +352,7 @@ class TopicD extends Component {
           </div>
         </header>
         {/* Banner */}
-        <section className="banner">
+        <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情….</h3>
           </div>
@@ -388,7 +416,6 @@ class TopicD extends Component {
                 <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
-                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-1'][1]}</h4>
                   <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-1'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-1'][0].split('/')[1]}</span></h5>
@@ -396,7 +423,6 @@ class TopicD extends Component {
                 <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-2" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
-                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-2'][1]}</h4>
                   <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-2'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-2'][0].split('/')[1]}</span></h5>
@@ -404,7 +430,6 @@ class TopicD extends Component {
                 <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-3" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
                     <img src="images/1920x1080.png" alt=""/>
-                    <h3 className="absolute white">測試文字</h3>
                   </figure>
                   <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-3'][1]}</h4>
                   <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-3'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-3'][0].split('/')[1]}</span></h5>
@@ -416,7 +441,7 @@ class TopicD extends Component {
           </div>
         </section>
         {/* Banner */}
-        <section className="banner">
+        <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情….</h3>
           </div>
@@ -431,8 +456,7 @@ class TopicD extends Component {
                 <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
                   <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src={modalString['exhibit-1-image'][0]} alt=""/>
-                      <h3 className="absolute white">{modalString['exhibit-1'][0]}</h3>
+                      <img src={'images/'+pageURL+'/exhibit_1_cover.jpg'} alt=""/>
                     </figure>
                     <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-1'][1]}</h4>
                     <p className="center tl pn mt2 ph15">{modalString['exhibit-1'][2].substring(0, 30)}...</p>
@@ -441,8 +465,7 @@ class TopicD extends Component {
                 <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
                   <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-2" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src={modalString['exhibit-2-image'][0]} alt=""/>
-                      <h3 className="absolute white">{modalString['exhibit-2'][0]}</h3>
+                      <img src={'images/'+pageURL+'/exhibit_2_cover.jpg'} alt=""/>
                     </figure>
                     <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-2'][1]}</h4>
                     <p className="center tl pn mt2 ph15">{modalString['exhibit-2'][2].substring(0, 30)}...</p>
@@ -451,8 +474,7 @@ class TopicD extends Component {
                 <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
                   <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-3" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src={modalString['exhibit-3-image'][0]} alt=""/>
-                      <h3 className="absolute white">{modalString['exhibit-3'][0]}</h3>
+                      <img src={'images/'+pageURL+'/exhibit_3_cover.jpg'} alt=""/>
                     </figure>
                     <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-3'][1]}</h4>
                     <p className="center tl pn mt2 ph15">{modalString['exhibit-3'][2].substring(0, 30)}...</p>
@@ -460,50 +482,91 @@ class TopicD extends Component {
                 </div>
                 <div className="hide" id="more_2">
                   <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
+                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-4" onClick={this.onOpenModal}>
                       <figure className="db center w-100 pn topImg">
-                        <img src={modalString['exhibit-1-image'][0]} alt=""/>
-                        <h3 className="absolute white">{modalString['exhibit-1'][0]}</h3>
+                        <img src={'images/'+pageURL+'/exhibit_4_cover.jpg'} alt=""/>
                       </figure>
-                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-1'][1]}</h4>
-                      <p className="center tl pn mt2 ph15">{modalString['exhibit-1'][2].substring(0, 30)}...</p>
+                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-4'][1]}</h4>
+                      <p className="center tl pn mt2 ph15">{modalString['exhibit-4'][2].substring(0, 30)}...</p>
                     </div>
                   </div>
                   <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
+                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-5" onClick={this.onOpenModal}>
                       <figure className="db center w-100 pn topImg">
-                        <img src={modalString['exhibit-1-image'][0]} alt=""/>
-                        <h3 className="absolute white">{modalString['exhibit-1'][0]}</h3>
+                        <img src={'images/'+pageURL+'/exhibit_5_cover.jpg'} alt=""/>
                       </figure>
-                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-1'][1]}</h4>
-                      <p className="center tl pn mt2 ph15">{modalString['exhibit-1'][2].substring(0, 30)}...</p>
+                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-5'][1]}</h4>
+                      <p className="center tl pn mt2 ph15">{modalString['exhibit-5'][2].substring(0, 30)}...</p>
                     </div>
                   </div>
                   <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
+                    <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-6" onClick={this.onOpenModal}>
                       <figure className="db center w-100 pn topImg">
-                        <img src={modalString['exhibit-1-image'][0]} alt=""/>
-                        <h3 className="absolute white">{modalString['exhibit-1'][0]}</h3>
+                        <img src={'images/'+pageURL+'/exhibit_6_cover.jpg'} alt=""/>
                       </figure>
-                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-1'][1]}</h4>
-                      <p className="center tl pn mt2 ph15">{modalString['exhibit-1'][2].substring(0, 30)}...</p>
+                      <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-6'][1]}</h4>
+                      <p className="center tl pn mt2 ph15">{modalString['exhibit-6'][2].substring(0, 30)}...</p>
                     </div>
                   </div>
                   <div className="hide" id="more_1">
-                    <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-7" onClick={this.onOpenModal}>
                         <figure className="db center w-100 pn topImg">
-                          <img src={modalString['exhibit-1-image'][0]} alt=""/>
-                          <h3 className="absolute white">{modalString['exhibit-1'][0]}</h3>
+                          <img src={'images/'+pageURL+'/exhibit_7_cover.jpg'} alt=""/>
                         </figure>
-                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-1'][1]}</h4>
-                        <p className="center tl pn mt2 ph15">{modalString['exhibit-1'][2].substring(0, 30)}...</p>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-7'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-7'][2].substring(0, 30)}...</p>
+                      </div>
+                    </div>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-8" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src={'images/'+pageURL+'/exhibit_8_cover.jpg'} alt=""/>
+                        </figure>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-8'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-8'][2].substring(0, 30)}...</p>
+                      </div>
+                    </div>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-9" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src={'images/'+pageURL+'/exhibit_9_cover.jpg'} alt=""/>
+                        </figure>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-9'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-9'][2].substring(0, 30)}...</p>
+                      </div>
+                    </div>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-10" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src={'images/'+pageURL+'/exhibit_10_cover.jpg'} alt=""/>
+                        </figure>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-10'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-10'][2].substring(0, 30)}...</p>
+                      </div>
+                    </div>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-11" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src={'images/'+pageURL+'/exhibit_11_cover.jpg'} alt=""/>
+                        </figure>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-11'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-11'][2].substring(0, 30)}...</p>
+                      </div>
+                    </div>
+                    <div className="fl w-100 w-third-l pa3-l pa2 mb3 mb0-l">
+                      <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-12" onClick={this.onOpenModal}>
+                        <figure className="db center w-100 pn topImg">
+                          <img src={'images/'+pageURL+'/exhibit_12_cover.jpg'} alt=""/>
+                        </figure>
+                        <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-12'][1]}</h4>
+                        <p className="center tl pn mt2 ph15">{modalString['exhibit-12'][2].substring(0, 30)}...</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="center button cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv" onClick={this.showMore}>閱讀更多</div>
+              <div className="center button mt4 cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
@@ -554,7 +617,7 @@ class TopicD extends Component {
           </div>
         </section>
         {/* Banner */}
-        <section className="banner">
+        <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc">
             <h3 className="center fw5 mt3 mw7-l hideme hidediv mw6 white">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭</h3>
 

@@ -6,7 +6,7 @@ import $ from 'jquery';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.randomNum = Math.floor(Math.random() * 2) + 1;
+    this.randomNum = Math.floor(Math.random() * 3) + 1;
   }
   componentDidMount() {
     document.title = "雜學起義 Zashare Revolution - 台灣非典型教育革命";
@@ -15,6 +15,7 @@ class Home extends Component {
     
     var video = document.getElementById('home-video');
     var video_loop = document.getElementById('home-video-loop');
+    video.load();
     video.pause();
 
     document.getElementById('home-video').addEventListener('ended', myHandler, false);
@@ -24,6 +25,10 @@ class Home extends Component {
       video_loop.play();
     }
 
+    video.addEventListener('canplaythrough', function() {
+      console.log('video loaded');
+    }, false);
+
     /* Preload Image */
     var images  = [];
     images.push('images/loading.gif');
@@ -31,10 +36,9 @@ class Home extends Component {
 
   	loadImage(images)
   	.then(function (allImgs) {
-  	  setTimeout(function(){
-  	  	document.getElementById('loading').classList.add('fade');
-  	  	document.body.classList.remove('ds');
-
+  	  setTimeout(function(){        
+        document.getElementById('loading').classList.add('fade');
+        document.body.classList.remove('ds');
         setTimeout(function(){
           $('#home .hidediv').each(function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
@@ -85,7 +89,7 @@ class Home extends Component {
           </div>
         </header>
         {/* Banner */}
-        <section className="banner">
+        <section className="banner bg-dark-gray">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
