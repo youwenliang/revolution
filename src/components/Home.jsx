@@ -60,9 +60,9 @@ class Home extends Component {
     return (
       <div id="home">
         <header className="df dfjc min-vh-100 ">
-          <div className="df dfc">
+          <div className="df dfc s95">
           	<div className="center w-100 mw8 ph5-l ph3 tc">
-              <h2 className="hideme hidediv">2017</h2>
+              <h2 className="hideme hidediv t25">2017</h2>
               <figure className="center w-100 mw6 hideme hidediv relative t30">
                 <video id="home-video" className="home-video" width="100%" muted preload="auto">
                 <source src="images/home_video.mp4" type="video/mp4" /></video>
@@ -72,7 +72,7 @@ class Home extends Component {
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
                 <img className="home-title" src="images/home-title.svg" alt=""/>
               </figure>
-              <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
+              <h4 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h4>
             </div>
             <div className="center w-100 df dfjc mt4 fadein" id="scrolling">
               <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
@@ -86,7 +86,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="bg-near-white pv5">
-        	<div className="center w-100 mw8 ph5-l ph3 mb5-l mb0 tc">
+        	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc">
             <h2 className="fw4 hideme hidediv">影人一指然</h2>
             <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5">

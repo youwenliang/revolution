@@ -1,3 +1,4 @@
+/*global FB*/
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
@@ -166,6 +167,17 @@ class TopicD extends Component {
     });
   };
 
+  socialShare = () => {
+    var link = window.location.href.replace('/#','');
+    console.log(link);
+    if (typeof FB !== 'undefined') {
+      FB.ui({
+        method: 'share',
+        href: link,
+      }, function(response){});
+    }
+  }
+
   showMore = (e) => {
     var more = document.getElementById('more_2');
     if(more.classList.contains('hide')) {
@@ -206,7 +218,7 @@ class TopicD extends Component {
         <div className="pa5-l pa4-m pa3 oh h-100">
           <h3 className="f35 fw5 mb3">{modalString['lecturer-1'][1]}</h3>
           <div className="video-container mh0 mb3"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameborder="0" allowfullscreen></iframe></div>
-          <h4 className="mb5">{modalString[a][2]}</h4>
+          <p className="mb5">{modalString[a][2]}</p>
           <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw200">
@@ -250,12 +262,12 @@ class TopicD extends Component {
             </div>
             <div className="o2 w-100 w-70-l tl-l tc df dfc pl4-l pl0 mw6">
               <h2 className="w-100 fw5 f35 tc tl-l mt3 mt0-l">{modalString[a][0]}</h2>
-              <h4 className="w-100 mt2 tl">{modalString[a][2]}</h4>
+              <p className="w-100 mt2 tl">{modalString[a][2]}</p>
             </div>
           </div>
           <hr/>
           <h3 className="w-100 fw5 mt1 mb4">{modalString[a][3]}</h3>
-          <div className="mb3">
+          <div className="mb3 pl4-l pl0">
             <p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p>
             <p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][5]}</a></p>
           </div>
@@ -289,8 +301,8 @@ class TopicD extends Component {
           </div>
         </Modal>
         <header id="section-1" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
-          <div className="df dfc">
-            <div className="center w-100 mw8 ph5-l ph3 mt6-l">
+          <div className="df dfc t30 relative">
+            <div className="center w-100 mw8 ph5-l ph3">
               <div className="center mw9 ph2">
                 <div className="center cf df mw6 mw-none-l intro">
                   <div className="o1 w-100 w-50-l tc">
@@ -300,13 +312,13 @@ class TopicD extends Component {
                   </div>
                   <div className="o2 w-100 w-50-l pl5-l tl df dfc afs">
                     <h1 className="w-100 fw5 blue hideme hidediv">作文題目：我的夢想</h1>
-                    <h4 className="f18 w-100 fw3 mt4 mb3 hideme hidediv">小時候的你，寫過這個作文題目吧！你還記得自己寫下什麼嗎？<br/><br/>時間過得很快，曾為這個題目苦惱的你，也不知不覺的長大了。身為大人的你，已經知道「夢想」是什麼了嗎？</h4>
+                    <p className="w-100 fw3 mt4 mb3 hideme hidediv">小時候的你，寫過這個作文題目吧！你還記得自己寫下什麼嗎？<br/><br/>時間過得很快，曾為這個題目苦惱的你，也不知不覺的長大了。身為大人的你，已經知道「夢想」是什麼了嗎？</p>
                     <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="center w-100 df dfjc mt5 fadein" id="scrolling">
+            <div className="center w-100 df dfjc fadein" id="scrolling">
               <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
             </div>
           </div>
@@ -318,10 +330,10 @@ class TopicD extends Component {
           </div>
         </section>
         {/*--- Section 1 ---*/}
-        <section className="bg-white pv6-l pv5 min-vh-100 df">
+        <section className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="center mw9 ph2">
-              <div className="center cf df intro mb6-l mb5 mw6 mw-none-l">
+              <div className="center cf df intro mb4-l mb3 mw6 mw-none-l">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
                     <img src={"images/"+pageURL+"/雜ＸTONE_icon-01.png"} alt=""/>
@@ -329,13 +341,13 @@ class TopicD extends Component {
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
                   <h2 className="w-100 fw5 hideme hidediv lh-copy blue">從小到大，沒有一堂課，教我們如何實現夢想</h2>
-                  <h4 className="f18 w-100 fw3 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？
+                  <p className="w-100 fw3 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？
                   <br/><br/>夢想，可以很簡單，但也可以很難實現夢想的過程，必須先經歷「尋夢」和「圓夢」兩階段。
                   <br/><br/>尋夢過程，「多方體驗」、「自我認識」和「獨立思考」會是三大重點。在這個階段，我們會更加瞭解自己，並且理解現實，最後終將內化出一個適合自己的夢想。
-                  <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，並且培養出足夠的抗壓力，面對各式各樣的挫敗與挑戰。</h4>
+                  <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，並且培養出足夠的抗壓力，面對各式各樣的挫敗與挑戰。</p>
                 </div>
               </div>
-              <div className="center cf df intro mb6-l mb5 mw6 mw-none-l">
+              <div className="center cf df intro mb4-l mb3 mw6 mw-none-l">
                 <div className="o1 w-100 w-50-l pr4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
                     <img src={"images/"+pageURL+"/雜ＸTONE_icon-02.png"} alt=""/>
@@ -343,9 +355,9 @@ class TopicD extends Component {
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
                   <h2 className="w-100 fw5 lh-copy blue hideme hidediv">尋夢：夢想，藏在哪裡？</h2>
-                  <h4 className="f18 w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
-</h4>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <p className="w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
+</p>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
               <div className="center cf df intro mw6 mw-none-l">
@@ -356,10 +368,10 @@ class TopicD extends Component {
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
                   <h2 className="w-100 fw5 hideme hidediv lh-copy blue">尋夢：夢想，藏在哪裡？</h2>
-                  <h4 className="f18 w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
-</h4>
+                  <p className="w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？
+</p>
 
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
             </div>
@@ -491,7 +503,7 @@ class TopicD extends Component {
                   </div>
                 </div>
               </div>
-              <div className="center mt4 button w4-l w5 cp fw5 pa2-l pa3 f5 bg-light-blue bg-animate hover-bg-blue white" onClick={this.showMore}>閱讀更多</div>
+              <div className="center mt4 button cp fw5 bg-light-blue bg-animate hover-bg-blue white" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
@@ -502,38 +514,38 @@ class TopicD extends Component {
             <div className="mw9 center mt6-l mt5 mb5-l">
               <div className="center cf df dfc-s mw6 mw-none-l">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba bw2 b--moon-gray pa3 pl0-l df dfc br3">
-                    <figure className="db center mw200">
+                  <div className="bg-white ba bw2 b--moon-gray pa3 pl1-l df dfc br3">
+                    <figure className="db center mw160">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-05.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5">次要次要</h3>
-                    <h5 className="center ph4-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <p className="center pr4-ns pl3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
                     <a href="" target="_blank">
-                      <div className="center mv4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                      <div className="center mv4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba bw2 b--moon-gray pa4 df dfc br3">
-                    <figure className="db center mw5">
+                  <div className="bg-white ba bw2 b--moon-gray pa3 df dfc br3">
+                    <figure className="db center mw200">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-04.png"} alt=""/>
                     </figure>
                     <h3 className="center mt2 fw5">主要主要</h3>
-                    <h5 className="center ph3-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <p className="center ph2-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用所了不陽會我．</p>
                     <a href="" target="_blank">
-                      <div className="center mb3 mt4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                      <div className="center mb3 mt4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
-                  <div className="bg-white ba bw2 b--moon-gray pa3 pr0-l df dfc br3">
-                    <figure className="db center mw200">
+                  <div className="bg-white ba bw2 b--moon-gray pa3 pr1-l df dfc br3">
+                    <figure className="db center mw160">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-06.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5">次要次要</h3>
-                    <h5 className="center ph4-ns ph0 mt2">在較城是功不持天只政差是時：刻會是用所了不陽會我．</h5>
+                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
                     <a href="" target="_blank">
-                      <div className="center mv4 button w4 cp fw5 pa2 f5 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                      <div className="center mv4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
@@ -545,7 +557,9 @@ class TopicD extends Component {
         <section className="banner">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc">
             <h3 className="center fw5 mt3 mw7-l hideme hidediv mw6 white">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭</h3>
-            <div className="fb-share-button hideme hidediv mt5" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a className="fb-xfbml-parse-ignore" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+
+            <div className="center mv4 button cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white blue" onClick={this.socialShare}>
+              <FontAwesome name='facebook-official' className="blue mr2" alt="Share to Facebook" title="Share to Facebook" />分享</div>
           </div>
         </section>
       </div>

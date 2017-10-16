@@ -104,6 +104,7 @@ p {
 
 /* Overrides */
 .mw8 {max-width: 65rem}
+.mw70 {max-width: 68.5rem}
 .w5 {width: 20rem}
 .h5 {height: 20rem}
 .blue {color: #4867b0;}
@@ -311,7 +312,7 @@ p {
 .o3-l, .o3 {order: 3;}
 
 .cover-video {
-  transform: scale(1.4) translateX(-40px) translateY(-20px);
+  transform: scale(1.4) translateX(-40px);
 }
 .home-video {
   transform: scale(1.1);
@@ -468,8 +469,15 @@ p {
 .tracked-l { letter-spacing: .5em; }
 .tracked-mega { letter-spacing: .75em; }
 .mw200 {max-width: 200px;}
+.mw160 {max-width: 160px;}
 .ph15 {padding-left: 1.5rem; padding-right: 1.5rem;}
 .t30 {top: 30px;}
+.t25 {top: 25px;}
+.s95 {
+  transform: scale(.95);
+  max-width: 85vh;
+  min-width: 35vw;
+}
 
 @media screen and (max-width: 479px) {
   .tracked-mega {letter-spacing: .5em;}
@@ -535,6 +543,7 @@ hr {
   border-radius: 6px;
   transition: all .15s cubic-bezier(0.23, 1, 0.32, 1);
   width: 150px; padding: 12px;
+  font-size: 18px;
 }
 
 .button-round {
