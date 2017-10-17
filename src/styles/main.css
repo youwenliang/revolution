@@ -602,9 +602,10 @@ hr {
 .swiper-pagination-bullet {
   margin: 0 5px;
 }
-
-.swiper-button-next {display: none;}
-.swiper-button-prev {display: none;}
+.swiper-button-disabled {opacity: .1 !important}
+.swiper-pagination-bullet-active {background: #4867B0 !important;}
+.swiper-button-next {display: none; -webkit-filter: grayscale(100%); opacity: .6}
+.swiper-button-prev {display: none; -webkit-filter: grayscale(100%); opacity: .6}
 
 @media screen and (max-width: 959px) {
   .swiper-button-next {right: 4px; display: block; right: calc(((100% - 480px)/2 - 16px)/2); margin-top: 40px; transform: scale(.6);}
@@ -612,8 +613,8 @@ hr {
 }
 
 @media screen and (max-width: 560px) {
-  .swiper-button-next {right: 4px;}
-  .swiper-button-prev {left: 4px;}
+  .swiper-button-next {right: 4px; margin-top: 70px;}
+  .swiper-button-prev {left: 4px; margin-top: 70px;}
 }
 
 /* Modal */
