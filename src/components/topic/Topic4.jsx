@@ -17,7 +17,7 @@ var modalString = {
   'video-2'         :'aqz-KE-bpKQ',
   'lecturer-1-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
   'lecturer-1'      :['葉丙成 / 台大教授', 
-                      '講師的一段話，講師的兩段話，兩行兩行兩行．',
+                      '講師的一段話，講師的兩段，兩行兩行兩行．',
                       '在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北',
                       '名字',
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
@@ -37,7 +37,7 @@ var modalString = {
                      ],
   'lecturer-3-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
   'lecturer-3'      :['葉甲成 / 台大教授', 
-                      '講師的一段話，講師的話，兩行兩行兩行．',
+                      '講師的一段話，講師的兩段，兩行兩行兩行．',
                       '在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北',
                       '名字',
                       '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
@@ -244,8 +244,8 @@ class TopicD extends Component {
       console.log('lecture');
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
-          <h3 className="f35 fw5 mb3">{modalString['lecturer-1'][1]}</h3>
-          <div className="video-container mh0 mb3"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameborder="0" allowfullscreen></iframe></div>
+          <h3 className="f35 fw5 mb3 pr3-ns">{modalString['lecturer-1'][1]}</h3>
+          <div className="video-container mh0 mb3"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameBorder="0" allowFullScreen></iframe></div>
           <p className="mb5">{modalString[a][2]}</p>
           <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
             <div className="o1 w-100 w-30-l">
@@ -270,6 +270,8 @@ class TopicD extends Component {
               <h3 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][6]}</h3>
               <p className="w-100 mt2 tl">{modalString[a][7]}</p>
             </div>
+          </div>
+          <div className="modal-close mt4 mb3">
           </div>
         </div>
       );
@@ -299,12 +301,14 @@ class TopicD extends Component {
           <hr/>
           <h3 className="w-100 fw5 mt1 mb4">相關連結：</h3>
           {links}
+          <div className="modal-close mt4 mb3">
+          </div>
         </div>
       );
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <div className="video-container"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameborder="0" allowfullscreen></iframe></div>
+        <div className="video-container"><iframe width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameBorder="0" allowFullScreen></iframe></div>
       );
     }
   }
@@ -324,9 +328,6 @@ class TopicD extends Component {
 
         <Modal open={open} onClose={this.onCloseModal} little>
           {this.modalContent(modalId)}
-          <div className="modal-close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 36 36"><path className="fill-white" d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path></svg>
-          </div>
         </Modal>
         <header id="section-1" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
           <div className="w-100 df dfc t30 relative">
@@ -337,6 +338,9 @@ class TopicD extends Component {
   	                <video id="cover-video" className="cover-video mh0 ml0-l center mb3 mb0-l hideme hidediv" width="100%" autoPlay muted loop poster={"images/"+pageURL+"/cover_video_poster.png"}>
                       <source src={"images/"+pageURL+"/cover_video.mp4"} type="video/mp4" />
                     </video>
+                    <figure className="mh0 ml0-l center mb3 mb0-1 hideme hidediv">
+                      <img src={"images/"+pageURL+"/cover_video_poster_small.png"} alt=""/>
+                    </figure>
                   </div>
                   <div className="o2 w-100 w-50-l pl5-l tl df dfc afs">
                     <h1 className="w-100 fw5 blue hideme hidediv">作文題目：我的夢想</h1>
@@ -361,7 +365,7 @@ class TopicD extends Component {
         <section className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="center mw9 ph2">
-              <div className="center cf df intro mb4-l mb3 mw6 mw-none-l">
+              <div className="center cf df intro mb5 mb4-l mw6 mw-none-l">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
                     <img src={"images/"+pageURL+"/雜ＸTONE_icon-01.png"} alt=""/>
@@ -375,7 +379,7 @@ class TopicD extends Component {
                   <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，並且培養出足夠的抗壓力，面對各式各樣的挫敗與挑戰。</p>
                 </div>
               </div>
-              <div className="center cf df intro mb4-l mb3 mw6 mw-none-l">
+              <div className="center cf df intro mb5 mb4-l mw6 mw-none-l">
                 <div className="o1 w-100 w-50-l pr4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
                     <img src={"images/"+pageURL+"/雜ＸTONE_icon-02.png"} alt=""/>
@@ -406,12 +410,15 @@ class TopicD extends Component {
           </div>
         </section>
         {/*--- Section 2 ---*/}
-        <section id="section-2" className="bg-near-white pv5 df">
-          <div className="center w-100 mw8 ph5-l ph3 tc mb4 hideme hidediv">
-            <h2 className="fw4 hideme hidediv">嘿，這些人想跟你聊聊夢想！</h2>
-            <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
+        <section id="section-2" className="bg-near-white pv5-l pv5-m pv4 df">
+          <div className="center w-100 mw8 ph5-l ph3 tc-ns tl mb4">
+            <h2 className="fw4 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
-            <div className="swiper-container mt5 mh2 mw6 mw-none-l center ph3">
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
+            <div className="ph3">
+            <div className="swiper-container mt5-l mt4 mh2 mw6 mw-none-l center pb3">
               <div className="swiper-wrapper">
                 <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                   <figure className="db center w-100 pn topImg">
@@ -435,6 +442,7 @@ class TopicD extends Component {
                   <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-3'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-3'][0].split('/')[1]}</span></h5>
                 </div>
               </div>
+              </div>
             </div>
             {/*<div className="swiper-button-next"></div>
             <div className="swiper-button-prev"></div>*/}
@@ -447,11 +455,11 @@ class TopicD extends Component {
           </div>
         </section>
         {/*--- Section 3 ---*/}
-        <section id="section-3" className="bg-near-white pv5">
-          <div className="center w-100 mw8 ph5-l ph3 tc">
-            <h2 className="fw4 hideme hidediv">影人一指然</h2>
-            <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
-            <div className="mw9 center mt5">
+        <section id="section-3" className="bg-near-white pv5-l pv5-m pv4">
+          <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
+            <h2 className="fw4 hideme hidediv ph2">影人一指然</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
+            <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
                 <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
                   <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id="exhibit-1" onClick={this.onOpenModal}>
@@ -566,31 +574,31 @@ class TopicD extends Component {
                   </div>
                 </div>
               </div>
-              <div className="center button mt4 cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv" onClick={this.showMore}>閱讀更多</div>
+              <div className="center button mt4-l mt2 cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv tc" onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
         {/*--- Section 4 ---*/}
-        <section id="section-4" className="bg-white pv5">
+        <section id="section-4" className="bg-white pv5-l pv5-m pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc">
-            <h4 className="center fw4 mt3 mw7-l hideme hidediv mw6">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素，照一現快府血氣國國意中須快國意中須素，照一現快府半頭血氣國意中須素，照一現快府血意中須素，照一現快府半頭小細</h4>
+            <h4 className="center fw4 mt3 mw7-l hideme hidediv mw6">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素細．</h4>
             <div className="mw9 center mt6-l mt5 mb5-l">
               <div className="center cf df dfc-s mw6 mw-none-l">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pl1-l df dfc br3">
-                    <figure className="db center mw160">
+                    <figure className="db center mw160 mt2">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-05.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5">次要次要</h3>
                     <p className="center pr4-ns pl3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
                     <a href="" target="_blank">
-                      <div className="center mv4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 df dfc br3">
-                    <figure className="db center mw200">
+                    <figure className="db center mw200 mt3">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-04.png"} alt=""/>
                     </figure>
                     <h3 className="center mt2 fw5">主要主要</h3>
@@ -602,13 +610,13 @@ class TopicD extends Component {
                 </div>
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pr1-l df dfc br3">
-                    <figure className="db center mw160">
+                    <figure className="db center mw160 mt2">
                       <img src={"images/"+pageURL+"/雜ＸTONE_icon-06.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5">次要次要</h3>
                     <p className="center pl4-ns pr3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
                     <a href="" target="_blank">
-                      <div className="center mv4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
                     </a>
                   </div>
                 </div>

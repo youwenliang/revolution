@@ -49,6 +49,14 @@ body {
   -ms-text-size-adjust: none;
 }
 
+#root,
+.App,
+main,
+header,
+section {
+  overflow-x: hidden;
+}
+
 section {
   position: relative;
 }
@@ -139,7 +147,7 @@ p {
   z-index: 8;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 959px) {
   #section-nav {
     display: none;
   }
@@ -210,6 +218,13 @@ p {
   width: 100%;
   pointer-events: none;
 }
+
+@media screen and (max-width: 479px) {
+  .container {
+    display: none;
+  }
+}
+
 
 .banner h3 {
   letter-spacing: 3px !important;
@@ -295,7 +310,16 @@ p {
   min-height: 400px;
 }
 
+@media screen and (max-width: 479px) {
+  .intro:nth-child(1) h1 {
+    font-size: 32px;
+  }
+}
+
 @media screen and (max-width: 959px) {
+  .intro:nth-child(1) {
+    margin-top: -40px;
+  }
   .intro {
     min-height: auto;
     flex-direction: column;
@@ -354,6 +378,14 @@ p {
   pointer-events: none;
   transform: translateY(20px) scale(0.975);
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+@media screen and (max-width: 479px) {
+  .hideme {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px) scale(1);
+  }
 }
 
 .hideme-left {
@@ -477,12 +509,19 @@ p {
   min-width: 440px;
 }
 
+@media screen and (max-width: 959px) {
+  .t-25 {top: -25px;}
+}
+
 @media screen and (max-width: 479px) {
   .tracked-mega {letter-spacing: .5em !important; margin-right: -.5em !important; font-size: 20px;}
   .s95 {
     transform: scale(1.0);
     max-width: 90vw;
     min-width: auto;
+  }
+  .dn-s {
+    display: none;
   }
 }
 
@@ -551,14 +590,11 @@ hr {
 
 .button-round {
   border-radius: 100px;
+  padding: 10px 20px;
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, background-color .15s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Swiper */
-.swiper-container {
-  overflow: visible;
-}
-
 .swiper-pagination {
   position: relative;
 }
@@ -567,22 +603,17 @@ hr {
   margin: 0 5px;
 }
 
-.swiper-button-next {right: calc((100% - 1136px)/2 - 40px); margin-top: 40px;}
-.swiper-button-prev {left: calc((100% - 1136px)/2 - 40px); margin-top: 40px;}
+.swiper-button-next {display: none;}
+.swiper-button-prev {display: none;}
 
 @media screen and (max-width: 959px) {
-  .swiper-button-next {right: 10px;}
-  .swiper-button-prev {left: 10px;}  
+  .swiper-button-next {right: 4px; display: block; right: calc(((100% - 480px)/2 - 16px)/2); margin-top: 40px; transform: scale(.6);}
+  .swiper-button-prev {left: 4px; display: block; left: calc(((100% - 480px)/2 - 16px)/2); margin-top: 40px; transform: scale(.6);}  
 }
 
-@media screen and (max-width: 479px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-  .dn-s {
-    display: none;
-  }
+@media screen and (max-width: 560px) {
+  .swiper-button-next {right: 4px;}
+  .swiper-button-prev {left: 4px;}
 }
 
 /* Modal */
@@ -612,35 +643,61 @@ hr {
   opacity: 0;
 }
 
-@media screen and (max-width: 479px) {
-  .modal-0-2 {
-    margin: 0 auto 120px;
-  }
-  .modal-close {
-    display: block;
-  }
-  .closeIcon-0-3 {
-    display: none;
-  }
+.closeIcon-0-3 {
+  fill: #d0d0d0;
+  z-index: 10;
 }
 
 .modal-close {
-  width: 48px;
-  height: 48px;
-  background: #111;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -84px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  top: -21px;
+  right: 11px;
+  border: 2px solid #d0d0d0;
   border-radius: 50%;
   cursor: pointer;
-  pointer-events: none;
+  position: absolute;
   padding: 10px;
+  pointer-events: none;
+}
+
+video + figure {
   display: none;
 }
+
+@media screen and (max-width: 479px) {
+  video {
+    display: none;
+  }
+  video + figure {
+    display: block;
+  }
+  .modal-close {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: #111;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    top: 0 !important;
+    right: 0 !important;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+  }
+  .closeIcon-0-3 {
+    bottom: 42px;
+    top: auto !important;
+    left: 0;
+    right: 0 !important;
+    margin: auto;
+    fill: white;
+  }
+}
+
 .fill-white {
   fill: white;
 }
@@ -691,6 +748,7 @@ video {
   padding-top: 30px;
   height: 0px;
   overflow: hidden;
+  z-index: 11;
 }
 
 .video-container iframe,

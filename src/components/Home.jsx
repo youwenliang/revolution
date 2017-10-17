@@ -32,6 +32,9 @@ class Home extends Component {
     /* Preload Image */
     var images  = [];
     images.push('images/loading.gif');
+    images.push('images/home_video1_poster.png');
+    images.push('images/home_video2_poster.png');
+    images.push('images/home_video3_poster.png');
     images.push('images/self-realization/thumbnail_video_poster.png');
 
   	loadImage(images)
@@ -70,13 +73,16 @@ class Home extends Component {
       <div id="home">
         <header className="df dfjc min-vh-100 ">
           <div className="df dfc s95">
-          	<div className="center w-100 mw8 ph5-l tc">
+          	<div className="center w-100 mw8 ph5-l tc relative t-25">
               <h2 className="hideme hidediv t25">2017</h2>
               <figure className="center w-100 mw6 hideme hidediv relative t30">
-                <video id="home-video" className="home-video relative" width="100%" muted preload="auto">
+                <video id="home-video" className="home-video relative" width="100%" muted playsInline preload="auto">
                 <source src={"images/home_video"+this.randomNum+".mp4"} type="video/mp4" /></video>
-                <video id="home-video-loop" className="home-video absolute" width="100%" muted preload="auto" loop>
+                <video id="home-video-loop" className="home-video absolute" width="100%" muted playsInline preload="auto" loop>
                 <source src={"images/home_video_loop"+this.randomNum+".mp4"} type="video/mp4" /></video>
+                <figure>
+                  <img src={"images/home_video"+this.randomNum+"_poster.png"} />
+                </figure>
               </figure>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
                 <img className="home-title" src="images/home-title.svg" alt=""/>
@@ -94,11 +100,11 @@ class Home extends Component {
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
         </section>
-        <section className="bg-near-white pv5">
-        	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc">
-            <h2 className="fw4 hideme hidediv">影人一指然</h2>
-            <h4 className="fw4 mt3 hideme hidediv">無血氣國意中須素，照一現快府半頭小細</h4>
-            <div className="mw9 center mt5">
+        <section className="bg-near-white pv5-l pv5-m pv4">
+        	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc-l tc-m tl">
+            <h2 className="fw4 hideme hidediv ph2">影人一指然</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
+            <div className="mw9 center mt5-l mt4">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/self-realization'>
@@ -107,6 +113,9 @@ class Home extends Component {
                         <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
+                        <figure>
+                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
                       <p className="center mt2 ph4 mw6 tl">追求夢想的簡短介紹簡短介紹簡短介紹．</p>
@@ -120,6 +129,9 @@ class Home extends Component {
                         <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
+                        <figure>
+                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
                       <p className="center mt2 ph4 mw6 tl">尊重生命的簡短介紹簡短介紹簡短介紹．</p>
@@ -133,6 +145,9 @@ class Home extends Component {
                         <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
+                        <figure>
+                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5">性別平等</h3>
                       <p className="center mt2 ph4 mw6 tl">性別平等的簡短介紹簡短介紹簡短介紹．</p>
@@ -146,6 +161,9 @@ class Home extends Component {
                         <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
+                        <figure>
+                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
                       <p className="center mt2 ph4 mw6 tl">美感教育的簡短介紹簡短介紹簡短介紹．</p>
@@ -159,6 +177,9 @@ class Home extends Component {
                         <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
+                        <figure>
+                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
                       <p className="center mt2 ph4 mw6 tl">思辨能力的簡短介紹簡短介紹簡短介紹．</p>
