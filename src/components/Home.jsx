@@ -35,6 +35,9 @@ class Home extends Component {
     images.push('images/home_video1_poster.png');
     images.push('images/home_video2_poster.png');
     images.push('images/home_video3_poster.png');
+    for ( var i = 1; i <= 5; i++) {
+      images.push('images/雜ＸTONE_icon-0'+i+'.png');
+    }
     images.push('images/self-realization/thumbnail_video_poster.png');
 
   	loadImage(images)
@@ -102,7 +105,7 @@ class Home extends Component {
         </section>
         <section className="bg-near-white pv5-l pv5-m pv4">
         	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc-l tc-m tl">
-            <h2 className="fw4 hideme hidediv ph2">影人一指然</h2>
+            <h2 className="fw5 hideme hidediv ph2">影人一指然</h2>
             <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf">
@@ -123,73 +126,64 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/respect-life'>
+                  {/*<Link to='/respect-life'>*/}
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
-                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
-                        </video>
+                      <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
                       <p className="center mt2 ph4 mw6 tl">尊重生命的簡短介紹簡短介紹簡短介紹．</p>
                     </div>
-                  </Link>
+                  {/*<Link to='/critical-thinking'>*/}
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/gender-equality'>
+                  {/*<Link to='/gender-equality'>*/}
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
-                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
-                        </video>
+                      <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">性別平等</h3>
                       <p className="center mt2 ph4 mw6 tl">性別平等的簡短介紹簡短介紹簡短介紹．</p>
                     </div>
-                  </Link>
+                  {/*<Link to='/critical-thinking'>*/}
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/aesthetic-education'>
+                  {/*<Link to='/aesthetic-education'>*/}
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
-                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
-                        </video>
+                      <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
                       <p className="center mt2 ph4 mw6 tl">美感教育的簡短介紹簡短介紹簡短介紹．</p>
                     </div>
-                  </Link>
+                  {/*</Link>*/}
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/critical-thinking'>
+                  {/*<Link to='/critical-thinking'>*/}
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center home-image ma0">
-                        <video className="topic-video" width="100%" muted preload="auto" poster="images/self-realization/thumbnail_video_poster.png">
-                          <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
-                        </video>
+                      <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
                       <p className="center mt2 ph4 mw6 tl">思辨能力的簡短介紹簡短介紹簡短介紹．</p>
                     </div>
-                  </Link>
+                  {/*</Link>*/}
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
                   <Link to='/'>
                     <div className="bg-silver ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center home-image ma0">
+                      <figure className="db center home-image question ma0">
+                        <figure>
+                          <img src="images/雜ＸTONE_icon-02.png" />
+                        </figure>
                       </figure>
                       <h3 className="center mt3 fw5 white">????</h3>
                       <p className="center mt2 ph4 mw6 tl white">????簡短介紹簡短介紹簡短介紹．</p>

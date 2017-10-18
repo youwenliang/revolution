@@ -100,7 +100,7 @@ class Main extends Component {
     }
 
     if($('#section-1').length) {
-      for (var i = 1; i < 5; i++) {
+      for (var i = 0; i < 5; i++) {
         if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
           $('.active').removeClass('active');
           $('a[href="#section-'+i+'"]').addClass('active');

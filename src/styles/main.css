@@ -119,6 +119,7 @@ p {
 .bg-blue {background-color: #4867b0;}
 .light-blue {color: #7396CE;}
 .bg-light-blue {background-color: #7396CE;}
+.bg-dark-gray {background-color: #595756;}
 .hover-bg-blue:hover {background-color: #4867b0;}
 .hover-bg-dark-blue:hover {background-color: #345291;}
 .bw2 {border-width:.1rem;}
@@ -210,7 +211,6 @@ p {
 .container {
   /*max-width: 1170px;*/
   display: flex;
-  justify-content: flex-end;
   z-index: 100;
   left: 50%;
   transform: translate(-50%, 0);
@@ -218,6 +218,8 @@ p {
   width: 100%;
   pointer-events: none;
 }
+
+.fe {justify-content: flex-end !important;}
 
 @media screen and (max-width: 479px) {
   .container {
@@ -294,6 +296,13 @@ p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.topic:hover .lock {
+  animation: shake 0.41s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 .home-image {
   max-width: 12rem;
   height: 12rem;
@@ -303,6 +312,27 @@ p {
 .home-title {
   box-sizing: border-box;
   margin: 15px 0;
+}
+
+.lock, .question {
+  max-width: 9rem;
+  height: 9rem;
+  margin-top: 1rem;
+}
+
+@keyframes shake {
+  12.5% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  37.5% {
+    transform: translate3d(4px, 0, 0);
+  }
+  62.5% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  87.5% {
+    transform: translate3d(2px, 0, 0);
+  }
 }
 
 /* Topic */
@@ -493,16 +523,20 @@ p {
 
 /* Custom Classes */
 
+.space-between {justify-content: space-between;}
+.space-around {justify-content: space-around;}
 .tracked-tight { letter-spacing: -.05em; }
 .tracked { letter-spacing: .1em; }
 .tracked-m { letter-spacing: .25em; }
 .tracked-l { letter-spacing: .5em; }
 .tracked-mega { letter-spacing: .75em; margin-right: -.75em; white-space: nowrap; }
+.mw350 {max-width: 350px;}
 .mw200 {max-width: 200px;}
 .mw160 {max-width: 160px;}
 .ph15 {padding-left: 1.5rem; padding-right: 1.5rem;}
 .t30 {top: 30px;}
 .t25 {top: 25px;}
+.mb-1 {margin-bottom: -1rem;}
 .s95 {
   transform: scale(.95);
   max-width: 85vh;
@@ -511,6 +545,7 @@ p {
 
 @media screen and (max-width: 959px) {
   .t-25 {top: -25px;}
+  .mb-1 {margin-bottom: -.5rem;}
 }
 
 @media screen and (max-width: 479px) {
@@ -678,7 +713,7 @@ video + figure {
     position: relative;
     width: 48px;
     height: 48px;
-    background: #111;
+    background: #595756;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -725,8 +760,9 @@ footer {
   height: 100px;
 }
 
-footer div {
-  justify-content: space-between !important;
+#toneskill {
+  position: relative;
+  right: .5rem;
 }
 
 .button,

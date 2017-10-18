@@ -278,8 +278,8 @@ class TopicD extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       let links = null;
-      if(modalString[a][3] == '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][4]}</a></p></div>;
-      else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][4]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][5]} target="_blank">{modalString[a][4]}</a></p></div>;
+      if(modalString[a][3] == '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
+      else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
           <figure className="w-100 mh0 mb3 modal-full">
@@ -319,6 +319,7 @@ class TopicD extends Component {
       <div id={pageURL}>
         {/*--- Navigation---*/}
         <div id="section-nav">
+          <a href="#section-0">主題首頁</a>
           <a href="#section-1">主題引言</a>
           <a href="#section-2">講師介紹</a>
           <a href="#section-3">參展單位</a>
@@ -329,7 +330,7 @@ class TopicD extends Component {
         <Modal open={open} onClose={this.onCloseModal} little>
           {this.modalContent(modalId)}
         </Modal>
-        <header id="section-1" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
+        <header id="section-0" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
           <div className="w-100 df dfc t30 relative">
             <div className="center w-100 mw8 ph5-l ph3">
               <div className="center mw9 ph2">
@@ -362,7 +363,7 @@ class TopicD extends Component {
           </div>
         </section>
         {/*--- Section 1 ---*/}
-        <section className="bg-white pv5 min-vh-100 df">
+        <section id="section-1" className="bg-white pv5 min-vh-100 df">
           <div className="center w-100 mw8 ph5-l ph3 tc">
             <div className="center mw9 ph2">
               <div className="center cf df intro mb5 mb4-l mw6 mw-none-l">
@@ -412,7 +413,7 @@ class TopicD extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-near-white pv5-l pv5-m pv4 df">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl mb4">
-            <h2 className="fw4 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
+            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
             <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="swiper-pagination mt4 dn-l"></div>
             <div className="swiper-button-prev"></div>
@@ -451,14 +452,14 @@ class TopicD extends Component {
         {/* Banner */}
         <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情….</h3>
+            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情…</h3>
           </div>
         </section>
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5-l pv5-m pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw4 hideme hidediv ph2">影人一指然</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h2 className="fw5 hideme hidediv ph2">影人一指然</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">無血氣國意中須素，照一現快府半頭小細</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
                 <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
@@ -626,8 +627,8 @@ class TopicD extends Component {
         </section>
         {/* Banner */}
         <section className="banner bg-blue">
-          <div className="center w-100 mw6 mw-none-l ph3 pv5 tc">
-            <h3 className="center fw5 mt3 mw7-l hideme hidediv mw6 white">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭</h3>
+          <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
+            <h4 className="center fw5 mt4 mw7-l hideme hidediv mw6 white">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭</h4>
 
             <div className="center mv4 button cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white blue" onClick={this.socialShare}>
               <FontAwesome name='facebook-official' className="blue mr2" alt="Share to Facebook" title="Share to Facebook" />分享</div>

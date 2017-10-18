@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="loading"></div>
-        <div className="container fixed">
+        <div className="container fixed fe">
           <div className="br-100 db cp df dfjc" id="fb-share" onClick={this.socialShare}>
           	<FontAwesome name='facebook' className="white" alt="Share to Facebook" title="Share to Facebook" />
           </div>
