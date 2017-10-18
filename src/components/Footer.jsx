@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Footer extends Component {
   render() {
@@ -9,22 +8,22 @@ class Footer extends Component {
           <h3 className="center fw5 mt3 mw7-l hideme hidediv mw6 tc mb4 ph2">無血氣國意素，照一現快府半頭國．</h3>
           <hr className="ph2" />
           <div className="center df dfc-s mv4 space-around ph2">
-            <div className="mw350">
+            <div className="mw350 hideme hidediv">
               <figure className="mw200 center pb3">
-                <a href="http://zashare.org" target="_blank">
+                <a href="http://zashare.org" target="_blank" rel="noopener noreferrer">
                   <img id="zashare" src="images/雜ＸTONE_icon-04.png" alt="zashare" />
                 </a>
               </figure>
               <p>無血氣國意素，照一現快府半頭小半頭半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素．</p>
             </div>
-            <div>
+            <div className="hideme hidediv">
               <figure className="mw4 pv3">
-                <img src="images/雜ＸTONE_icon-03.png" />
+                <img src="images/雜ＸTONE_icon-03.png" alt="" />
               </figure>
             </div>
-            <div className="mw350">
+            <div className="mw350 hideme hidediv">
               <figure className="mw200 center pb3">
-                <a href="http://toneskill.co" target="_blank">
+                <a href="http://toneskill.co" target="_blank" rel="noopener noreferrer">
                   <img id="toneskill" src="images/雜ＸTONE_icon-05.png" alt="toneskill" />
                 </a>
               </figure>

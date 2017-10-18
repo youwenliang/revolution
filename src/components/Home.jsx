@@ -74,6 +74,7 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
+        {/* Header */}
         <header className="df dfjc min-vh-100 ">
           <div className="df dfc s95">
           	<div className="center w-100 mw8 ph5-l tc relative t-25">
@@ -84,7 +85,7 @@ class Home extends Component {
                 <video id="home-video-loop" className="home-video absolute" width="100%" muted playsInline preload="auto" loop>
                 <source src={"images/home_video_loop"+this.randomNum+".mp4"} type="video/mp4" /></video>
                 <figure>
-                  <img src={"images/home_video"+this.randomNum+"_poster.png"} />
+                  <img src={"images/home_video"+this.randomNum+"_poster.png"} alt="poster" />
                 </figure>
               </figure>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
@@ -103,6 +104,7 @@ class Home extends Component {
             <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
           </div>
         </section>
+        {/* Topics */}
         <section className="bg-near-white pv5-l pv5-m pv4">
         	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc-l tc-m tl">
             <h2 className="fw5 hideme hidediv ph2">影人一指然</h2>
@@ -117,7 +119,7 @@ class Home extends Component {
                           <source src="images/self-realization/thumbnail_video.mp4" type="video/mp4" />
                         </video>
                         <figure>
-                          <img src="images/self-realization/thumbnail_video_poster.png" />
+                          <img src="images/self-realization/thumbnail_video_poster.png" alt="self realization"/>
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
@@ -130,7 +132,7 @@ class Home extends Component {
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
@@ -143,7 +145,7 @@ class Home extends Component {
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">性別平等</h3>
@@ -156,7 +158,7 @@ class Home extends Component {
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
@@ -169,7 +171,7 @@ class Home extends Component {
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center lock ma0">
                         <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" />
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
@@ -182,7 +184,7 @@ class Home extends Component {
                     <div className="bg-silver ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image question ma0">
                         <figure>
-                          <img src="images/雜ＸTONE_icon-02.png" />
+                          <img src="images/雜ＸTONE_icon-02.png" alt="question" />
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5 white">????</h3>

@@ -115,6 +115,7 @@ p {
 .mw70 {max-width: 68.5rem}
 .w5 {width: 20rem}
 .h5 {height: 20rem}
+.pv4 {padding-top: 2.5rem; padding-bottom: 2.5rem;}
 .blue {color: #4867b0;}
 .bg-blue {background-color: #4867b0;}
 .light-blue {color: #7396CE;}
@@ -286,7 +287,6 @@ p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .topic:hover {
-  transform: scale(1.002);
   box-shadow: rgba(0,0,0,.1) 0px 4px 8px;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1); 
 }
@@ -335,27 +335,6 @@ p {
   }
 }
 
-/* Topic */
-.intro {
-  min-height: 400px;
-}
-
-@media screen and (max-width: 479px) {
-  .intro:nth-child(1) h1 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 959px) {
-  .intro:nth-child(1) {
-    margin-top: -40px;
-  }
-  .intro {
-    min-height: auto;
-    flex-direction: column;
-  }
-}
-
 .o1-l, .o1 {order: 1;}
 .o2-l, .o2 {order: 2; z-index: 1;}
 #section-4 .o1-l > div {transform: translateX(20px); position: relative;}
@@ -401,6 +380,9 @@ p {
 .hidediv {
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   position: relative;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .hideme {
@@ -459,7 +441,6 @@ p {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .content-block:hover {
-  transform: scale(1.002);
   box-shadow: rgba(0,0,0,.1) 0px 4px 8px;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
