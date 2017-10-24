@@ -53,8 +53,8 @@ class Main extends Component {
       } else {
         $('#za-share').removeClass('transparent');
       }
-      if($('#section-1').length) {
-        for (var i = 1; i < 5; i++) {
+      if($('#section-0').length) {
+        for (var i = 0; i < 5; i++) {
           if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
             $('.active').removeClass('active');
             $('a[href="#section-'+i+'"]').addClass('active');

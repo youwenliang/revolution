@@ -14,7 +14,7 @@ ReactDOM.render((
 registerServiceWorker();
 
 $(document).ready(function() {
-  if(isFacebookApp()) $('body').css('font-size', '12px');
+  if(isFacebookApp()) $('body').addClass('body-fb');
 });
 
 function isFacebookApp() {

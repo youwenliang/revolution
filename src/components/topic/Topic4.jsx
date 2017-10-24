@@ -1,10 +1,12 @@
 /*global FB*/
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import { Link } from 'react-router-dom';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
+import {Helmet} from "react-helmet";
 
 var pageName = "追求夢想";
 var pageURL = "self-realization";
@@ -13,37 +15,47 @@ var exhibitNum = 12;
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
-  'video-1'         :'aqz-KE-bpKQ',
-  'video-2'         :'aqz-KE-bpKQ',
-  'lecturer-1-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
-  'lecturer-1'      :['葉丙成 / 台大教授', 
-                      '講師的一段話，講師的兩段，兩行兩行兩行．',
-                      '在得果高雖單子形多北在得果高雖\n單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北',
-                      '名字',
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+  'video-1'         :'azWAceBZJdI',
+  'video-2'         :'Gmm5vRyLtr4',
+  'lecturer-1-image':['azWAceBZJdI', 'images/self-realization/lecturer1-1.png', 'images/self-realization/lecturer1-2.png'],
+  'lecturer-1'      :['葉丙成/台大電機系教授', 
+                      '夢想這件事，是試出來的！',
+                      '夢想這件事，是試出來的！只要勇敢試了，就穩贏的！',
+                      '葉丙成',
+                      '葉丙成，號丙紳，現任台大電機系教授、台大 MOOC 計畫執⾏⻑、無界塾創辦人、PaGamO 團隊創辦人。⾃幼觀父葉勝年教授對生徒之關懷，⽽立後受台大電機許博文⽼師「教授稱謂實不如師，多未傳道、解惑故」之啟發，輔以天⽣生雞婆性格，漸步上熱血教師一途。',
                       '延伸推薦', 
-                      '字幕字幕', 
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                      '我的成功，我決定', 
+                      '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
                      ],
-  'lecturer-2-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
-  'lecturer-2'      :['葉乙成 / 台大教授', 
-                      '講師的一段話，講師的兩段，兩行兩行兩行．',
-                      '在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北',
-                      '名字',
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+  'lecturer-2-image':['Gmm5vRyLtr4', 'images/self-realization/lecturer2-1.png', 'images/self-realization/lecturer2-2.png'],
+  'lecturer-2'      :['蘇仰志/雜學校創辦人', 
+                      '大家在乎的是你做了什麼，而不是你知道什麼',
+                      '勇敢去實踐，你就有機會接近實現夢想的那一刻。',
+                      '蘇仰志',
+                      '奧茲藝術負責人、不太乖教育節＆雜學校創辦人與主辦人。主張透過「展覽」與大眾溝通，提供對未來不確定的年輕朋友、家長與老師新指引，介紹教育的各種樣貌。',
                       '延伸推薦', 
-                      '字幕字幕', 
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                      '雜學校', 
+                      '雜學校一個由下而上勇敢的社會創新運動，一個亞洲最具影響力的教育創新IP, 以台灣為基地集結台世界各地多元多樣的『非典型教育創新』的國際型博覽會與平台。寄望透過各種新世代的串連與實驗，對未來教育提出更多的可能與實踐。'
                      ],
-  'lecturer-3-image':['aqz-KE-bpKQ', 'images/400x400.png', 'images/400x400.png'],
-  'lecturer-3'      :['葉甲成 / 台大教授', 
-                      '講師的一段話，講師的兩段，兩行兩行兩行．',
-                      '在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北在得果高雖單子形多北',
-                      '名字',
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹',
+  'lecturer-3-image':['uJECld1Yq48', 'images/self-realization/lecturer3-1.png', 'images/self-realization/lecturer3-2.png'],
+  'lecturer-3'      :['楊逸帆/《學習的理由》導演', 
+                      '用熱情、專長和關懷去實現夢想',
+                      '用熱情、專長和關懷去實現夢想。',
+                      '楊逸帆',
+                      '楊逸帆1995年出生於教職家庭，從小接受體制外教育。學校沒有圍牆、鐘聲與課本，學習方向由好奇心引領。曾經拍攝紀錄片《學習的理由》、同時也是《Awakening青醒》青年教改團隊創辦人。目前正在國際Alternative Education Resource Organization 擔任台灣負責人。',
                       '延伸推薦', 
-                      '字幕字幕', 
-                      '介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹'
+                      '學習的理由', 
+                      '《學習的理由》是由楊逸帆執導的一部教育紀錄片。拍攝自己在人文國中小的朋友們面對基測的過程，並追蹤他們一路到大學的改變歷程，探討升學與分流體系對青少年的影響，更觸及人們為何「換了位子就換了腦袋」此一大哉問。https://www.zeczec.com/projects/reasontostudy'
+                     ],
+  'lecturer-4-image':['Sy_q0Q8b5z8', 'images/self-realization/lecturer4-1.png', 'images/self-realization/lecturer4-2.png'],
+  'lecturer-4'      :['鄭國威/泛科學總編輯', 
+                      '不要太在乎結果，先去做你可以做的事情吧！',
+                      '不要太在乎結果，先去做你可以做的事情吧！',
+                      '鄭國威',
+                      '小時候是那種很喜歡看科學讀物，以為自己會成為科學家，但是長大之後因為數理太爛所以早早放棄科學夢的無數人其中之一。關心台灣的傳播環境跟媒體品質，現在是PanSci 泛科學網的總編輯。',
+                      '延伸推薦', 
+                      '泛科學', 
+                      'PanSci泛科學是台灣最大科學網站，邀請台灣科學研究者、教育者、愛好者、以及所有受科學影響的人們，共同暢談科學、將高深龐雜的科學發展重新放置回台灣公共論壇中，並且用理性思考社會議題中的科學面向。'
                      ],
   'exhibit-1'       :['臺灣吧',
                       '【臺灣吧】用動畫說故事，新媒體的教育革命', 
@@ -157,8 +169,13 @@ class TopicD extends Component {
 
     /* Preload Image */
     var images  = [];
+    for ( var x = 1; x <= 4; x++) {
+      for ( var y = 1; y <= 3; y++) {
+        images.push('images/'+pageURL+'/lecturer'+x+'-'+y+'.png');
+      }
+    }
     for ( var i = 1; i <= 6; i++) {
-      images.push('images/'+pageURL+'/雜ＸTONE_icon-0'+i+'.png');
+      images.push('images/'+pageURL+'/雜ＸTONE_icon-'+i+'.png');
     }
     for ( var j = 1; j <= exhibitNum; j++) {
       images.push('images/'+pageURL+'/exhibit_'+j+'_cover.jpg');
@@ -244,29 +261,29 @@ class TopicD extends Component {
       console.log('lecture');
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
-          <h3 className="f35 fw5 mb3 pr3-ns">{modalString['lecturer-1'][1]}</h3>
-          <div className="video-container mh0 mb3"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameBorder="0" allowFullScreen></iframe></div>
+          <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊夢想</h3>
+          <div className="video-container mh0 mb3"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe></div>
           <p className="mb5">{modalString[a][2]}</p>
           <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
             <div className="o1 w-100 w-30-l">
-              <figure className="db center ma0 mw200">
+              <figure className="db center ma0 mw200 mw160-s">
                 <img src={modalString[a+'-image'][1]} alt=""/>
               </figure>
             </div>
             <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
-              <h3 className="w-100 fw5 tc tl-l mt3 mt0-l"><span className="fw7">{modalString[a][0].split('/')[0]}</span><span className="o-50">/{modalString[a][0].split('/')[1]}</span></h3>
+              <h3 className="w-100 fw4 tc tl-l mt3 mt0-l"><span className="fw7">{modalString[a][0].split('/')[0]}</span><span className="o-50">/{modalString[a][0].split('/')[1]}</span></h3>
               <p className="w-100 mt2 tl">{modalString[a][4]}</p>
             </div>
           </div>
           <hr/>
           <h3 className="w-100 fw5 mt1 mb4">{modalString[a][5]}</h3>
-          <div className="bg-near-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb3">
+          <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb3">
             <div className="o1 w-100 w-30-l">
               <figure className="db center ma0 mw5">
                 <img src={modalString[a+'-image'][2]} alt=""/>
               </figure>
             </div>
-            <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc">
+            <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc pv4-l">
               <h3 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][6]}</h3>
               <p className="w-100 mt2 tl">{modalString[a][7]}</p>
             </div>
@@ -308,7 +325,7 @@ class TopicD extends Component {
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <div className="video-container"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?rel=0&amp;controls=1&amp;showinfo=0"} frameBorder="0" allowFullScreen></iframe></div>
+        <div className="video-container"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe></div>
       );
     }
   }
@@ -334,10 +351,10 @@ class TopicD extends Component {
         {/*--- Navigation---*/}
         <div id="section-nav">
           <a href="#section-0">主題首頁</a>
-          <a href="#section-1">主題引言</a>
-          <a href="#section-2">講師介紹</a>
-          <a href="#section-3">參展單位</a>
-          <a href="#section-4">額外資訊</a>
+          <a href="#section-1">議題簡介</a>
+          <a href="#section-2">名人對談</a>
+          <a href="#section-3">歷屆參展</a>
+          <a href="#section-4">加入革命</a>
         </div>
         <p>目錄</p>
         {/* Modal */}
@@ -357,10 +374,10 @@ class TopicD extends Component {
                       <img src={"images/"+pageURL+"/cover_video_poster_small.png"} alt=""/>
                     </figure>
                   </div>
-                  <div className="o2 w-100 w-50-l pl5-l tl df dfc afs">
-                    <h1 className="w-100 fw5 blue hideme hidediv">作文題目：我的夢想</h1>
-                    <p className="w-100 fw3 mt4 mb3 hideme hidediv">小時候的你，寫過這個作文題目吧！你還記得自己寫下什麼嗎？<br/><br/>時間過得很快，曾為這個題目苦惱的你，也不知不覺的長大了。身為大人的你，已經知道「夢想」是什麼了嗎？</p>
-                    <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.toneskill.co/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                  <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
+                    <h1 className="w-100 fw5 blue hideme hidediv">題目：我的夢想</h1>
+                    <h5 className="w-100 fw3 mt4 mb3 hideme hidediv">小時候的你，寫過這個作文題目吧！<br/><br/>曾為這個題目苦惱的你，也不知不覺的長大了。<br className="dn-s"/>身為大人的你，已經知道「夢想」是什麼了嗎？</h5>
+                    <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.zashare.org/#/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                   </div>
                 </div>
               </div>
@@ -383,38 +400,35 @@ class TopicD extends Component {
               <div className="center cf df dfc-s intro mb5 mw6 mw-none-l">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
-                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-01.png"} alt=""/>
+                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-1.png"} alt=""/>
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
                   <h2 className="w-100 fw5 hideme hidediv lh-copy blue">從小到大，沒有一堂課，教我們如何實現夢想</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？
-                  <br/><br/>夢想，可以很簡單，但也可以很難實現夢想的過程，必須先經歷「尋夢」和「圓夢」兩階段。
-                  <br/><br/>尋夢過程，「多方體驗」、「自我認識」和「獨立思考」會是三大重點。在這個階段，我們會更加瞭解自己，並且理解現實，最後終將內化出一個適合自己的夢想。
-                  <br/><br/>而圓夢階段，我們又將學會尋找資源、夥伴、機會，並且培養出足夠的抗壓力，面對各式各樣的挫敗與挑戰。</p>
+                  <p className="w-100 fw3 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？<br/><br/>夢想，可以很簡單，也可以很困難。<br className="dn-s"/>實現夢想的過程，必須先經歷「尋夢」和「圓夢」兩階段。<br/><br/>你的夢想呢，它藏在哪裡？</p>
                 </div>
               </div>
               <div className="center cf df dfc-s intro mb5 mw6 mw-none-l">
                 <div className="o1 w-100 w-50-l pr4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
-                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-02.png"} alt=""/>
+                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-2.png"} alt=""/>
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
-                  <h2 className="w-100 fw5 lh-copy blue hideme hidediv">尋夢：夢想，藏在哪裡？</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？</p>
+                  <h2 className="w-100 fw5 lh-copy blue hideme hidediv">夢想，藏在哪裡？</h2>
+                  <p className="w-100 fw3 mt3 hideme hidediv">夢想來自哪裡？可能是一個靈感，一次獨特的生命經驗。但社會上的各種框架和規範，很容易限制我們的想像。尋夢過程中，「多方體驗」、「自我認識」和「獨立思考」是三大重點，人們會在體驗的道路上了解自己，最終內化出一個適合自己的夢想。</p>
                   <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
               <div className="center cf df dfc-s intro mw6 mw-none-l">
                 <div className="o2-l w-100 w-50-l pl4-l">
                   <figure className="mh0 ml0-l center mb3 hideme hidediv">
-                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-03.png"} alt=""/>
+                    <img src={"images/"+pageURL+"/雜ＸTONE_icon-3.png"} alt=""/>
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
-                  <h2 className="w-100 fw5 hideme hidediv lh-copy blue">尋夢：夢想，藏在哪裡？</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">人們的夢想都來自哪裡？關於夢想，充滿不同的契機，可能是一個靈感，一種嚮往，一次獨一無二的生命經驗，啟發了心中的什麼，讓人看見自己的與眾不同。但隨著社會框架和標準規範，尋找夢想也會變得越來越困難。<br/><br/>你的夢想呢，它藏在哪裡？</p>
+                  <h2 className="w-100 fw5 hideme hidediv lh-copy blue">出發吧！和夢想一起</h2>
+                  <p className="w-100 fw3 mt3 hideme hidediv">以夢想為名的旅程中，永遠都有意外與驚喜。前方，有著解不完的選擇題，考驗著運氣與判斷力。在圓夢階段，我們將尋找資源、夥伴、機會，並且培養出足夠的抗壓性，面對各式各樣的挫敗與挑戰。</p>
                   <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
@@ -425,8 +439,8 @@ class TopicD extends Component {
         <section id="section-2" className="bg-near-white pv5-ns pv4 df">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
             <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
-            <div className="swiper-pagination mt4 dn-l"></div>
+            <h4 className="fw4 mt3 hideme hidediv ph2">聽聽他們怎麼談「夢想」，再勇敢的夢一次吧！</h4>
+            <div className="swiper-pagination mt4"></div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
             <div className="ph3">
@@ -434,21 +448,28 @@ class TopicD extends Component {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
+                      <img src={"images/"+pageURL+"/lecturer1-3.png"} alt=""/>
                     </figure>
                     <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-1'][1]}</h4>
-                    <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-1'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-1'][0].split('/')[1]}</span></h5>
+                    <h5 className="center ph3 tl mt3 pn fw4"><span className="fw7">{modalString['lecturer-1'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-1'][0].split('/')[1]}</span></h5>
                   </div>
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-2" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
+                      <img src={"images/"+pageURL+"/lecturer2-3.png"} alt=""/>
                     </figure>
                     <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-2'][1]}</h4>
-                    <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-2'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-2'][0].split('/')[1]}</span></h5>
+                    <h5 className="center ph3 tl mt3 pn fw4"><span className="fw7">{modalString['lecturer-2'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-2'][0].split('/')[1]}</span></h5>
+                  </div>
+                  <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-4" onClick={this.onOpenModal}>
+                    <figure className="db center w-100 pn topImg">
+                      <img src={"images/"+pageURL+"/lecturer4-3.png"} alt=""/>
+                    </figure>
+                    <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-4'][1]}</h4>
+                    <h5 className="center ph3 tl mt3 pn fw4"><span className="fw7">{modalString['lecturer-4'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-4'][0].split('/')[1]}</span></h5>
                   </div>
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-3" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
-                      <img src="images/1920x1080.png" alt=""/>
+                      <img src={"images/"+pageURL+"/lecturer3-3.png"} alt=""/>
                     </figure>
                     <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-3'][1]}</h4>
                     <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-3'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-3'][0].split('/')[1]}</span></h5>
@@ -463,14 +484,14 @@ class TopicD extends Component {
         {/* Banner */}
         <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情…</h3>
+            <h3 className="white">夢想，就是自我實現。</h3>
           </div>
         </section>
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">影人一指然</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h2 className="fw5 hideme hidediv ph2">偷看其他人的夢想</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">關於教育，一直都有一群踏實的逐夢人。<br className="dn-s" />歡迎你來隨時加入，跟這群最聰明的傻瓜一起作夢。</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
                 {this.exhibitComponent(1)}
@@ -496,44 +517,44 @@ class TopicD extends Component {
         </section>
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5-ns pv4">
-          <div className="center w-100 mw8 ph5-l ph3 tc">
-            <h4 className="center fw4 mw7-l hideme hidediv mw6">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭血氣國意中須細無血氣國意中須素，照一現快府半頭小細無血氣國意中須素，照一現快府半頭血氣國意中須素細．</h4>
+          <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
+            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於如何實現夢，以及怎麼教會孩子們做夢<br className="dn-s" />相信你一定還有話想說<br/><br/>雜學起義，一場以非典型教育為名的夢想，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
             <div className="mw9 center mt5-l mt4 mb4-l">
-              <div className="center cf df dfc-s mw6 mw-none-l">
+              <div className="center cf df dfc-s mw6 mw-none-l relative t30">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pl1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-05.png"} alt=""/>
+                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-5.png"} alt=""/>
                     </figure>
-                    <h3 className="center mt0 fw5">次要次要</h3>
-                    <p className="center pr4-ns pl3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
-                    <a href="" target="_blank">
-                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                    <h3 className="center mt0 fw5 tracked-m">認識雜學校</h3>
+                    <p className="center ph3-ns ph0 mt2 tl">雜學校是什麼呢？我們想幹麻？這邊請！</p>
+                    <a href="http://zashare.org" target="_blank">
+                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">前往雜學校</div>
                     </a>
                   </div>
                 </div>
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 df dfc br3">
                     <figure className="db center mw200 mt3">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-04.png"} alt=""/>
+                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-4.png"} alt=""/>
                     </figure>
-                    <h3 className="center mt2 fw5">主要主要</h3>
-                    <p className="center ph2-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用所了不陽會我．</p>
-                    <a href="" target="_blank">
-                      <div className="center mb3 mt4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
+                    <h3 className="center mt2 fw5 tracked-m">加入革命</h3>
+                    <p className="center ph2-ns ph0 mt2 tl">革命正要展開，未來將陸續推出系列活動及工作坊，想投身參與，請留下Email，接收第一手革命訊息！</p>
+                    <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank">
+                      <div className="center mb3 mt4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">算我一份</div>
                     </a>
                   </div>
                 </div>
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pr1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-06.png"} alt=""/>
+                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
-                    <h3 className="center mt0 fw5">次要次要</h3>
-                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">在較城是功不持天只政差是時：刻會是用會我．</p>
-                    <a href="" target="_blank">
-                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white">分享</div>
-                    </a>
+                    <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
+                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
+                    <Link to='/'>
+                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">回首頁</div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -543,10 +564,9 @@ class TopicD extends Component {
         {/* Banner */}
         <section className="banner bg-blue">
           <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
-            <h4 className="center fw5 mt4 mw7-l hideme hidediv mw6 white">無血氣國意素，照一現快府半頭小半頭血氣國意中須半頭</h4>
-
-            <div className="center mv4 button cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white blue" onClick={this.socialShare}>
-              <FontAwesome name='facebook-official' className="blue mr2" alt="Share to Facebook" title="Share to Facebook" />分享</div>
+            <h4 className="center fw4 mt4 mw7-l hideme hidediv mw6 white i">馬上推廣！分享這個訊息，一起擴散這場雜學革命</h4>
+            <div className="center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white blue" onClick={this.socialShare}>
+              <FontAwesome name='facebook-official' className="blue mr2" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
           </div>
         </section>
       </div>

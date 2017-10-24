@@ -54,6 +54,7 @@ body {
 main,
 header,
 section {
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -83,24 +84,46 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   font-size: 40px;
 }
+.body-fb h1 {
+ font-size: 32px; 
+}
+
 h2 {
   font-size: 32px;
   letter-spacing: 4px;
 }
+
+.body-fb h2 {
+ font-size: 24px; 
+}
+
 h3 {
   font-size: 24px;
 }
+
+.body-fb h3 {
+ font-size: 20px; 
+}
+
 h4 {
   font-size: 20px;
 }
+
+.body-fb h4 {
+ font-size: 18px; 
+}
+
 h5 {
   font-size: 18px; 
+}
+
+.body-fb h5 {
+ font-size: 16px; 
 }
 
 p {
   font-size: 16px;
   letter-spacing: 2px;
-  line-height: 1.5;
 }
 
 .f35 {font-size: 1.8rem;}
@@ -343,7 +366,7 @@ p {
 .o3-l, .o3 {order: 3;}
 
 .cover-video {
-  transform: scale(1.4) translateX(-40px);
+  transform: scale(1.4) translateX(-60px);
 }
 .home-video {
   transform: scale(1.1);
@@ -380,7 +403,6 @@ p {
 .hidediv {
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   position: relative;
-  transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
@@ -509,7 +531,7 @@ p {
 .tracked-tight { letter-spacing: -.05em; }
 .tracked { letter-spacing: .1em; }
 .tracked-m { letter-spacing: .25em; }
-.tracked-l { letter-spacing: .5em; }
+.tracked-l { letter-spacing: .5em !important; transform: translateX(.25em);}
 .tracked-mega { letter-spacing: .75em; margin-right: -.75em; white-space: nowrap; }
 .mw350 {max-width: 350px;}
 .mw200 {max-width: 200px;}
@@ -518,15 +540,20 @@ p {
 .t30 {top: 30px;}
 .t25 {top: 25px;}
 .mb-1 {margin-bottom: -1rem;}
+.align-start {align-items: flex-start !important;}
 .s95 {
   transform: scale(.95);
   max-width: 85vh;
   min-width: 440px;
 }
+.dn {display: none;}
 
 @media screen and (max-width: 959px) {
   .t-25 {top: -25px;}
+  .mw160-s {max-width: 160px;}
   .mb-1 {margin-bottom: -.5rem;}
+  .dn-m {display: none;}
+  .align-start {align-items: center !important;}
 }
 
 @media screen and (max-width: 479px) {
@@ -536,9 +563,7 @@ p {
     max-width: 90vw;
     min-width: auto;
   }
-  .dn-s {
-    display: none;
-  }
+  .dn-s {display: none;}
 }
 
 hr {
@@ -597,11 +622,22 @@ hr {
   flex-direction: row;
 }
 
+.body-fb .button{
+  font-size: 16px !important;
+}
+
 .button {
   border-radius: 6px;
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, background-color .15s cubic-bezier(0.23, 1, 0.32, 1);
   width: 150px; padding: 12px;
   font-size: 18px;
+}
+
+.button-fb {
+  width: 200px !important;
+  padding: 20px !important;
+  font-size: 20px !important;
+  border-radius: 10px;
 }
 
 .button-round {
@@ -620,14 +656,30 @@ hr {
 }
 .swiper-button-disabled {opacity: .1 !important}
 .swiper-pagination-bullet-active {background: #4867B0 !important;}
-.swiper-button-next {display: none; -webkit-filter: grayscale(100%); opacity: .6}
-.swiper-button-prev {display: none; -webkit-filter: grayscale(100%); opacity: .6}
-
-@media screen and (max-width: 959px) {
-  .swiper-button-next {right: 4px; display: block; right: calc(((100% - 480px)/2 - 16px)/2); margin-top: 40px; transform: scale(.6);}
-  .swiper-button-prev {left: 4px; display: block; left: calc(((100% - 480px)/2 - 16px)/2); margin-top: 40px; transform: scale(.6);}  
+.swiper-button-next {
+  -webkit-filter: grayscale(100%); 
+  opacity: .6; 
+  display: block; 
+  right: calc((100% - 880px)/2 - 40px); 
+  margin-top: 75px; 
+  transform: scale(.6);
 }
-
+.swiper-button-prev {
+  -webkit-filter: grayscale(100%); 
+  opacity: .6; 
+  display: block; 
+  left: calc((100% - 880px)/2 - 40px);
+  margin-top: 75px; 
+  transform: scale(.6);
+}  
+@media screen and (max-width: 959px) {
+  .swiper-button-next {
+    right: calc((100% - 512px)/2 - 40px); 
+  }
+  .swiper-button-prev {
+    left: calc((100% - 512px)/2 - 40px);
+  }  
+}
 @media screen and (max-width: 560px) {
   .swiper-button-next {right: 4px; margin-top: 70px;}
   .swiper-button-prev {left: 4px; margin-top: 70px;}
@@ -762,7 +814,7 @@ video {
 
 .video-container {
   position: relative;
-  padding-bottom: 52.2%;
+  padding-bottom: 51.7%;
   padding-top: 30px;
   height: 0px;
   overflow: hidden;

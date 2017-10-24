@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
 import $ from 'jquery';
+import {Helmet} from "react-helmet";
 
 class Home extends Component {
   constructor(props) {
@@ -85,11 +86,11 @@ class Home extends Component {
                 <video id="home-video-loop" className="home-video absolute" width="100%" muted playsInline preload="auto" loop>
                 <source src={"images/home_video_loop"+this.randomNum+".mp4"} type="video/mp4" /></video>
                 <figure>
-                  <img src={"images/home_video"+this.randomNum+"_poster.png"} alt="poster" />
+                  <img src={"images/home_video"+this.randomNum+"_poster.png"} alt="雜學起義" />
                 </figure>
               </figure>
               <figure className="center w-100 mw6 ma0 db hideme hidediv">
-                <img className="home-title" src="images/home-title.svg" alt=""/>
+                <img className="home-title" src="images/home-title.svg" alt="雜學起義 Zashare Revolution!"/>
               </figure>
               <h3 className="mt0 tc tracked-mega hideme hidediv">台灣非典型教育革命</h3>
             </div>
@@ -101,14 +102,14 @@ class Home extends Component {
         {/* Banner */}
         <section className="banner bg-dark-gray">
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">給一大聲標提樣化義能加！不讀持檢滿手？<br/>知費位等不陸十縣不大到利，一點發木才屋和點小筆的</h3>
+            <h3 className="white i">雜學起義，一場真實的革命！不拋頭顱，不灑狗血，<br className="dn-m" />只等你義起，掀起改變的契機！</h3>
           </div>
         </section>
         {/* Topics */}
         <section className="bg-near-white pv5-l pv5-m pv4">
         	<div className="center w-100 mw70 ph5-l ph3 mb5-l mb0 tc-l tc-m tl">
-            <h2 className="fw5 hideme hidediv ph2">影人一指然</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">無血氣國意中須素，照一現快府半頭小細</h4>
+            <h2 className="fw5 hideme hidediv ph2">雜學起義 革命戰略圖</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">盤點五大副本任務，與我們一起洞悉情勢，策動改變！<br className="dn-s"/>馬上點選你有興趣的戰場，開啟成就教育新風景的使命！</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf">
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
@@ -123,7 +124,7 @@ class Home extends Component {
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">追求夢想</h3>
-                      <p className="center mt2 ph4 mw6 tl">追求夢想的簡短介紹簡短介紹簡短介紹．</p>
+                      <p className="center mt2 ph4 mw6 tl">做人如果沒夢想，跟鹹魚有什麼分別？</p>
                     </div>
                   </Link>
                 </div>
@@ -136,33 +137,7 @@ class Home extends Component {
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">尊重生命</h3>
-                      <p className="center mt2 ph4 mw6 tl">尊重生命的簡短介紹簡短介紹簡短介紹．</p>
-                    </div>
-                  {/*<Link to='/critical-thinking'>*/}
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/gender-equality'>*/}
-                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
-                        <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
-                        </figure>
-                      </figure>
-                      <h3 className="center mt3 fw5">性別平等</h3>
-                      <p className="center mt2 ph4 mw6 tl">性別平等的簡短介紹簡短介紹簡短介紹．</p>
-                    </div>
-                  {/*<Link to='/critical-thinking'>*/}
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/aesthetic-education'>*/}
-                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
-                        <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
-                        </figure>
-                      </figure>
-                      <h3 className="center mt3 fw5">美感教育</h3>
-                      <p className="center mt2 ph4 mw6 tl">美感教育的簡短介紹簡短介紹簡短介紹．</p>
+                      <p className="center mt2 ph4 mw6 tl">一個國家的偉大程度，端看他們如何對待動物。</p>
                     </div>
                   {/*</Link>*/}
                 </div>
@@ -175,22 +150,48 @@ class Home extends Component {
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">思辨能力</h3>
-                      <p className="center mt2 ph4 mw6 tl">思辨能力的簡短介紹簡短介紹簡短介紹．</p>
+                      <p className="center mt2 ph4 mw6 tl">教育最大的目的，就是教你分辨「有人在胡說八道」</p>
                     </div>
                   {/*</Link>*/}
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <Link to='/'>
+                  {/*<Link to='/gender-equality'>*/}
+                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
+                      <figure className="db center lock ma0">
+                        <figure>
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
+                        </figure>
+                      </figure>
+                      <h3 className="center mt3 fw5">性別平等</h3>
+                      <p className="center mt2 ph4 mw6 tl">無論男女，我們都是被塑造而成的。</p>
+                    </div>
+                  {/*</Link>*/}
+                </div>
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
+                  {/*<Link to='/aesthetic-education'>*/}
+                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
+                      <figure className="db center lock ma0">
+                        <figure>
+                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
+                        </figure>
+                      </figure>
+                      <h3 className="center mt3 fw5">美感教育</h3>
+                      <p className="center mt2 ph4 mw6 tl">我們的世界從不缺少美，而是缺少發現。</p>
+                    </div>
+                  {/*</Link>*/}
+                </div>
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
+                  <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank">
                     <div className="bg-silver ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image question ma0">
                         <figure>
                           <img src="images/雜ＸTONE_icon-02.png" alt="question" />
                         </figure>
                       </figure>
-                      <h3 className="center mt3 fw5 white">????</h3>
-                      <p className="center mt2 ph4 mw6 tl white">????簡短介紹簡短介紹簡短介紹．</p>
+                      <h3 className="center mt3 fw5 white">提案起義</h3>
+                      <p className="center mt2 ph4 mw6 tl white">這是一個隱藏任務！</p>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
