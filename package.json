@@ -36,5 +36,5 @@
     "prestart": "npm run css",
     "prebuild": "npm run css"
   },
-  "homepage": "http://revolution.toneskill.co"
+  "homepage": "http://revolution.zashare.org"
 }
