@@ -11,6 +11,8 @@ class Home extends Component {
   }
   componentDidMount() {
     document.title = "雜學起義 Zashare Revolution - 台灣非典型教育革命";
+    console.log("#home");
+    window.history.pushState('Home', 'Title', '/#/');
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
     

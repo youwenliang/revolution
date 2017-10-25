@@ -200,6 +200,8 @@ class TopicD extends Component {
             }  
           });
           $('.fadein').removeClass('fadein');
+          console.log("#self-realization");
+      	  window.history.pushState(pageURL, 'Title', '/'+pageURL);
         }, 400);
       }, 400);
       console.log(allImgs.length, 'images loaded!', allImgs);
