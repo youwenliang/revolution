@@ -380,6 +380,12 @@ p {
   z-index: 2
 }
 
+.header-cover {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 959px) {
   .o1-l {order: 2;}
   .o2-l {order: 1;}

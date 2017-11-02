@@ -27,7 +27,7 @@ class Footer extends Component {
                   <img id="toneskill" src="images/雜ＸTONE_icon-05.png" alt="toneskill" />
                 {/*</a>*/}
               </figure>
-              <p>TONE識是一間新創設計顧問公司，擅長協同合作夥伴共同釐清議題、轉化概念，創造打動人心的設計專案與溝通體驗。</p>
+              <p>TONE識是一間新創設計顧問公司，擅長協助合作單位共同釐清議題、轉化概念，創造打動人心的設計專案與溝通體驗。我們專精於品牌研究、策略設計、使用者研究、資訊設計專案。此外，更串連UX領域專家共同開設UX溝通課程，在真實世界中不斷實踐更多可能。</p>
             </div>
           </div>
         </div>

@@ -363,9 +363,9 @@ class TopicD extends Component {
         <Modal open={open} onClose={this.onCloseModal} little>
           {this.modalContent(modalId)}
         </Modal>
-        <header id="section-0" className="min-vh-100 pv5-l pt2 pb6 df dfjc">
-          <div className="w-100 df dfc t30 relative">
-            <div className="center w-100 mw8 ph5-l ph3">
+        <header id="section-0" className="min-vh-100 df dfjc">
+          <div className="w-100 df dfc">
+            <div className="center w-100 mw8 ph5-l ph3 t30 relative header-cover">
               <div className="center mw9 ph2">
                 <div className="center cf df mw6 mw-none-l dfc-s intro">
                   <div className="o1 w-100 w-50-l tc">
@@ -385,7 +385,7 @@ class TopicD extends Component {
               </div>
             </div>
             <div className="center w-100 df dfjc fadein" id="scrolling">
-              <img src="images/scroll.gif" className="center o-50" width="90" height="90" alt="scroll" />
+              <img src="images/scroll.gif" className="center o-50" width="85.5" height="85.5" alt="scroll" />
             </div>
           </div>
         </header>
