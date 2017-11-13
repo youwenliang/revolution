@@ -160,6 +160,12 @@ p {
   }  
 }
 
+@media screen and (max-height: 480px) {
+  #scrolling {
+    display: none;
+  }  
+}
+
 /* Navigation */
 #section-nav {
   position: fixed;
@@ -381,9 +387,11 @@ p {
 }
 
 .header-cover {
-  min-height: 82vh;
+  height: 82vh;
   display: flex;
   align-items: center;
+  max-height: 575px;
+  min-height: 400px;
 }
 
 @media screen and (max-width: 959px) {
