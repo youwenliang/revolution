@@ -143,11 +143,11 @@ class Main extends Component {
         <div id="fb-root"></div>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/respect-life' component={Topic1} />
-          <Route exact path='/gender-equality' component={Topic2} />
-          <Route exact path='/aesthetic-education' component={Topic3} />
-          <Route exact path='/self-realization' component={Topic4} />
-          <Route exact path='/critical-thinking' component={Topic5} />
+          <Route exact path='/self-realization' component={Topic1} />
+          <Route exact path='/aesthetic-education' component={Topic2} />
+          <Route exact path='/critical-thinking' component={Topic3} />
+          <Route exact path='/gender-equality' component={Topic4} />
+          <Route exact path='/respect-life' component={Topic5} />
           <Redirect from='*' to='/' />
         </Switch>
       </main>

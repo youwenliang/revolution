@@ -131,59 +131,71 @@ class Home extends Component {
                   </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/respect-life'>*/}
+                  <Link to='/aesthetic-education'>
                     <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
+                      <figure className="db center home-image ma0">
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/aesthetic-education/thumbnail_video_poster.png">
+                          <source src="images/aesthetic-education/thumbnail_video.mp4" type="video/mp4" />
+                        </video>
                         <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
-                        </figure>
-                      </figure>
-                      <h3 className="center mt3 fw5">尊重生命</h3>
-                      <p className="center mt2 ph4 mw6 tl">一個國家的偉大程度，端看他們如何對待動物。</p>
-                    </div>
-                  {/*</Link>*/}
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/critical-thinking'>*/}
-                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
-                        <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
-                        </figure>
-                      </figure>
-                      <h3 className="center mt3 fw5">思辨能力</h3>
-                      <p className="center mt2 ph4 mw6 tl">教育最大的目的，就是教你分辨「有人在胡說八道」</p>
-                    </div>
-                  {/*</Link>*/}
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/gender-equality'>*/}
-                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
-                        <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
-                        </figure>
-                      </figure>
-                      <h3 className="center mt3 fw5">性別平等</h3>
-                      <p className="center mt2 ph4 mw6 tl">無論男女，我們都是被塑造而成的。</p>
-                    </div>
-                  {/*</Link>*/}
-                </div>
-                <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  {/*<Link to='/aesthetic-education'>*/}
-                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
-                      <figure className="db center lock ma0">
-                        <figure>
-                          <img src="images/雜ＸTONE_icon-01.png" alt="lock" />
+                          <img src="images/aesthetic-education/thumbnail_video_poster.png" alt="aesthetic education"/>
                         </figure>
                       </figure>
                       <h3 className="center mt3 fw5">美感教育</h3>
                       <p className="center mt2 ph4 mw6 tl">我們的世界從不缺少美，而是缺少發現。</p>
                     </div>
-                  {/*</Link>*/}
+                  </Link>
                 </div>
                 <div className="fl w-100 w-third-l pa2 hideme hidediv">
-                  <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank">
+                  <Link to='/critical-thinking'>
+                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
+                      <figure className="db center home-image ma0">
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/critical-thinking/thumbnail_video_poster.png">
+                          <source src="images/critical-thinking/thumbnail_video.mp4" type="video/mp4" />
+                        </video>
+                        <figure>
+                          <img src="images/critical-thinking/thumbnail_video_poster.png" alt="critical thinking"/>
+                        </figure>
+                      </figure>
+                      <h3 className="center mt3 fw5">思辨能力</h3>
+                      <p className="center mt2 ph4 mw6 tl">教育最大的目的，就是教你分辨「有人在胡說八道」</p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
+                  <Link to='/gender-equality'>
+                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
+                      <figure className="db center home-image ma0">
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/gender-equality/thumbnail_video_poster.png">
+                          <source src="images/gender-equality/thumbnail_video.mp4" type="video/mp4" />
+                        </video>
+                        <figure>
+                          <img src="images/gender-equality/thumbnail_video_poster.png" alt="gender equality"/>
+                        </figure>
+                      </figure>
+                      <h3 className="center mt3 fw5">性別平等</h3>
+                      <p className="center mt2 ph4 mw6 tl">無論男女，我們都是被塑造而成的。</p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
+                  <Link to='/respect-life'>
+                    <div className="bg-white ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
+                      <figure className="db center home-image ma0">
+                        <video className="topic-video" width="100%" muted preload="auto" poster="images/respect-life/thumbnail_video_poster.png">
+                          <source src="images/respect-life/thumbnail_video.mp4" type="video/mp4" />
+                        </video>
+                        <figure>
+                          <img src="images/respect-life/thumbnail_video_poster.png" alt="respect life"/>
+                        </figure>
+                      </figure>
+                      <h3 className="center mt3 fw5">尊重生命</h3>
+                      <p className="center mt2 ph4 mw6 tl">一個國家的偉大程度，端看他們如何對待動物。</p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="fl w-100 w-third-l pa2 hideme hidediv">
+                  <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank" rel="noopener noreferrer">
                     <div className="bg-silver ba b--moon-gray pb2 df dfc dfjc topic mw6 mw-none-l center">
                       <figure className="db center home-image question ma0">
                         <figure>

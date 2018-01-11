@@ -139,14 +139,45 @@ p {
 .w5 {width: 20rem}
 .h5 {height: 20rem}
 .pv4 {padding-top: 2.5rem; padding-bottom: 2.5rem;}
+.bw2 {border-width:.1rem;}
+.bg-dark-gray {background-color: #595756;}
+
+/* Blue */
 .blue {color: #4867b0;}
 .bg-blue {background-color: #4867b0;}
 .light-blue {color: #7396CE;}
 .bg-light-blue {background-color: #7396CE;}
-.bg-dark-gray {background-color: #595756;}
 .hover-bg-blue:hover {background-color: #4867b0;}
 .hover-bg-dark-blue:hover {background-color: #345291;}
-.bw2 {border-width:.1rem;}
+
+/* Green */
+.green {color: #85C364;}
+.bg-green {background-color: #85C364;}
+.light-green {color: #9FCF84;}
+.bg-light-green {background-color: #9FCF84;}
+.hover-bg-green:hover {background-color: #85C364;}
+
+/* Red */
+.red {color: #E39474;}
+.bg-red {background-color: #E39474;}
+.light-red {color: #EAAA8D;}
+.bg-light-red {background-color: #EAAA8D;}
+.hover-bg-red:hover {background-color: #E39474;}
+
+/* Pink */
+.pink {color: #D39AC3;}
+.bg-pink {background-color: #D39AC3;}
+.light-pink {color: #D7AFCD;}
+.bg-light-pink {background-color: #D7AFCD;}
+.hover-bg-pink:hover {background-color: #D39AC3;}
+
+/* Purple */
+.purple {color: #827A85;}
+.bg-purple {background-color: #827A85;}
+.light-purple {color: #A59CA3;}
+.bg-light-purple {background-color: #A59CA3;}
+.hover-bg-purple:hover {background-color: #827A85;}
+
 
 #scrolling {
   align-items: flex-end;
@@ -453,7 +484,7 @@ p {
 .topImg {
   position: relative;
   overflow: hidden;
-  background-color: #4867B0;
+  background-color: #333;
 }
 
 .topImg img{
@@ -669,7 +700,9 @@ hr {
   margin: 0 5px;
 }
 .swiper-button-disabled {opacity: .1 !important}
-.swiper-pagination-bullet-active {background: #4867B0 !important;}
+
+.swiper-pagination-bullet-active {background: #333 !important;}
+
 .swiper-button-next {
   -webkit-filter: grayscale(100%); 
   opacity: .6; 
@@ -846,10 +879,10 @@ video {
 }
 
 ::selection {
-  background: #4867B0; /* WebKit/Blink Browsers */
+  background: #333; /* WebKit/Blink Browsers */
   color: #fff;
 }
 ::-moz-selection {
-  background: #4867B0; /* Gecko Browsers */
+  background: #333; /* Gecko Browsers */
   color: #fff;
 }

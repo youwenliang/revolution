@@ -8,8 +8,9 @@ import loadImage from 'image-promise';
 import $ from 'jquery';
 import {Helmet} from "react-helmet";
 
-var pageName = "追求夢想";
-var pageURL = "self-realization";
+var pageName = "性別平等";
+var pageURL = "gender-equality";
+var themeColor = "pink";
 var exhibitNum = 12;
 
 /* Lightbox Contents */
@@ -143,7 +144,7 @@ var modalString = {
                      ]
 }
 
-class TopicD extends Component {
+class Topic2 extends Component {
   componentDidMount() {
     document.title = pageName + " - 雜學起義 Zashare Revolution";
     document.getElementById('loading').classList.remove('fade');
@@ -169,17 +170,8 @@ class TopicD extends Component {
 
     /* Preload Image */
     var images  = [];
-    for ( var x = 1; x <= 4; x++) {
-      for ( var y = 1; y <= 3; y++) {
-        images.push('images/'+pageURL+'/lecturer'+x+'-'+y+'.png');
-      }
-    }
-    for ( var i = 1; i <= 6; i++) {
+    for ( var i = 1; i <= 3; i++) {
       images.push('images/'+pageURL+'/雜ＸTONE_icon-'+i+'.png');
-    }
-    for ( var j = 1; j <= exhibitNum; j++) {
-      images.push('images/'+pageURL+'/exhibit_'+j+'_cover.jpg');
-      images.push('images/'+pageURL+'/exhibit_'+j+'_logo.jpg');
     }
     images.push('images/'+pageURL+'/cover_video_poster.png');
     images.push('images/'+pageURL+'/cover_video_poster_small.png');
@@ -377,8 +369,11 @@ class TopicD extends Component {
                     </figure>
                   </div>
                   <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
-                    <h1 className="w-100 fw5 blue hideme hidediv">題目：我的夢想</h1>
-                    <h5 className="w-100 fw3 mt4 mb3 hideme hidediv">小時候的你，寫過這個作文題目吧！<br/><br/>曾為這個題目苦惱的你，也不知不覺的長大了。<br className="dn-s"/>身為大人的你，已經知道「夢想」是什麼了嗎？</h5>
+                    <h1 className={"w-100 fw5 hideme hidediv "+themeColor}>性別平等</h1>
+                    <h5 className="w-100 fw3 mt4 mb3 hideme hidediv">為什麼女生等於粉紅色？<br/><br/>男生就該喜歡小汽車？
+					<br className="dn-s"/>追求性別平等的價值，
+					<br className="dn-s"/>在於讓每個人都能自在活出自己的樣子。
+					<br className="dn-s"/>曾為這個題目苦惱的你，也不知不覺的長大了。</h5>
                     <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.zashare.org/#/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                   </div>
                 </div>
@@ -390,9 +385,9 @@ class TopicD extends Component {
           </div>
         </header>
         {/* Banner */}
-        <section className="banner bg-blue">
+        <section className={"banner bg-"+themeColor}>
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">夢想，總帶點浪漫、彷彿不切實際，<br className="dn-s"/>不小心說出來，還會有點難為情…</h3>
+            <h3 className="white">做自己喜歡的樣子，才能活出自己的樣子。</h3>
           </div>
         </section>
         {/*--- Section 1 ---*/}
@@ -406,8 +401,8 @@ class TopicD extends Component {
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
-                  <h2 className="w-100 fw5 hideme hidediv lh-copy blue">從小到大，沒有一堂課，教我們如何實現夢想</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">星爺說，做人如果沒夢想，那跟鹹魚有什麼分別？<br/><br/>夢想，可以很簡單，也可以很困難。<br className="dn-s"/>實現夢想的過程，必須先經歷「尋夢」和「圓夢」兩階段。<br/><br/>你的夢想呢，它藏在哪裡？</p>
+                  <h2 className={"w-100 fw5 hideme hidediv lh-copy "+themeColor}>理解性別，而不是製造差別。</h2>
+                  <p className="w-100 fw3 mt3 hideme hidediv">什麼是女生該有的樣子？男生該有的樣子？這些框框，讓好多人不能活出自己真正的樣子。教育孩子性別平等，並不是鼓勵標新立異，而是透過理解性別的各種面向，學會尊重每個個體的獨特與價值。</p>
                 </div>
               </div>
               <div className="center cf df dfc-s intro mb5 mw6 mw-none-l">
@@ -417,9 +412,11 @@ class TopicD extends Component {
                   </figure>
                 </div>
                 <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
-                  <h2 className="w-100 fw5 lh-copy blue hideme hidediv">夢想，藏在哪裡？</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">夢想來自哪裡？可能是一個靈感，一次獨特的生命經驗。但社會上的各種框架和規範，很容易限制我們的想像。尋夢過程中，「多方體驗」、「自我認識」和「獨立思考」是三大重點，人們會在體驗的道路上了解自己，最終內化出一個適合自己的夢想。</p>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <h2 className={"w-100 fw5 lh-copy hideme hidediv "+themeColor}>性別，不只是男女</h2>
+                  <p className="w-100 fw3 mt3 hideme hidediv">性別是一種區分的方法，最常見的是以生理特徵區分為男生和女生，除此之外，還有涉及心理層面的「性別認同」及「性取向」。<br/><br/>生理性別：從外表的生理特徵分為男性與女性。
+					<br/>性別認同：代表一個人對自己性別上的自我認同。
+					<br/>性取向：指一個人對特定性別而產生的性吸引力。</p>
+                  <div className={"mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc hideme hidediv"} data-id="video-1" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
               <div className="center cf df dfc-s intro mw6 mw-none-l">
@@ -429,9 +426,9 @@ class TopicD extends Component {
                   </figure>
                 </div>
                 <div className="o1-l w-100 w-50-l pr4-l tl df dfc afs">
-                  <h2 className="w-100 fw5 hideme hidediv lh-copy blue">出發吧！和夢想一起</h2>
-                  <p className="w-100 fw3 mt3 hideme hidediv">以夢想為名的旅程中，永遠都有意外與驚喜。前方，有著解不完的選擇題，考驗著運氣與判斷力。在圓夢階段，我們將尋找資源、夥伴、機會，並且培養出足夠的抗壓性，面對各式各樣的挫敗與挑戰。</p>
-                  <div className="mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc hideme hidediv" data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
+                  <h2 className={"w-100 fw5 hideme hidediv lh-copy "+themeColor}>平等，從尊重做起</h2>
+                  <p className="w-100 fw3 mt3 hideme hidediv">用正確的方式認識性別的各種樣貌，並理解到：「不論是哪種生理性別、性取向、性別認同，都應該被平等的尊重與對待」，不會因為性別而失去機會、工作機會、交友機會、被別人公平評價的機會。男生當家庭主夫不奇怪，女生是機師也很正常，讓性別不再是枷鎖，就是性別平等真正的價值與目的。</p>
+                  <div className={"mt4 button-round pr2 pl3 cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc hideme hidediv"} data-id="video-2" onClick={this.onOpenModal}>聽聽其他人的經驗 ＞</div>
                 </div>
               </div>
             </div>
@@ -484,9 +481,9 @@ class TopicD extends Component {
           </div>
         </section>
         {/* Banner */}
-        <section className="banner bg-blue">
+        <section className={"banner bg-"+themeColor}>
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">夢想，就是自我實現。</h3>
+            <h3 className="white">不管你是哪種樣子，都是值得被尊重的樣子。</h3>
           </div>
         </section>
         {/*--- Section 3 ---*/}
@@ -513,7 +510,7 @@ class TopicD extends Component {
                 </div>
                 </div>
               </div>
-              <div className="center button mt4-l mt2 cp fw5 bg-light-blue bg-animate hover-bg-blue white hideme hidediv tc" onClick={this.showMore}>閱讀更多</div>
+              <div className={"center button mt4-l mt2 cp fw5 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white hideme hidediv tc"} onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
@@ -530,8 +527,8 @@ class TopicD extends Component {
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">認識雜學校</h3>
                     <p className="center ph3-ns ph0 mt2 tl">雜學校是什麼呢？我們想幹麻？這邊請！</p>
-                    <a href="http://zashare.org" target="_blank">
-                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">前往雜學校</div>
+                    <a href="http://zashare.org" target="_blank" rel="noopener noreferrer">
+                      <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>前往雜學校</div>
                     </a>
                   </div>
                 </div>
@@ -542,8 +539,8 @@ class TopicD extends Component {
                     </figure>
                     <h3 className="center mt2 fw5 tracked-m">加入革命</h3>
                     <p className="center ph2-ns ph0 mt2 tl">革命正要展開，未來將陸續推出系列活動及工作坊，想投身參與，請留下Email，接收第一手革命訊息！</p>
-                    <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank">
-                      <div className="center mb3 mt4 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">算我一份</div>
+                    <a href="https://toneproject.typeform.com/to/mrdeeQ" target="_blank" rel="noopener noreferrer">
+                      <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>算我一份</div>
                     </a>
                   </div>
                 </div>
@@ -555,7 +552,7 @@ class TopicD extends Component {
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
                     <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
                     <Link to='/'>
-                      <div className="center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-blue bg-animate hover-bg-blue white tc">回首頁</div>
+                      <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>回首頁</div>
                     </Link>
                   </div>
                 </div>
@@ -564,11 +561,11 @@ class TopicD extends Component {
           </div>
         </section>
         {/* Banner */}
-        <section className="banner bg-blue">
+        <section className={"banner bg-"+themeColor}>
           <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
             <h4 className="center fw4 mt4 mw7-l hideme hidediv mw6 white i">馬上推廣！分享這個訊息，一起擴散這場雜學革命</h4>
-            <div className="center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white blue" onClick={this.socialShare}>
-              <FontAwesome name='facebook-official' className="blue mr2" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
+            <div className={"center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white "+themeColor} onClick={this.socialShare}>
+              <FontAwesome name='facebook-official' className="mr2 blue" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
           </div>
         </section>
       </div>
@@ -576,4 +573,5 @@ class TopicD extends Component {
   }
 }
 
-export default TopicD;
+export default Topic2;
+
