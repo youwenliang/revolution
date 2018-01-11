@@ -518,7 +518,7 @@ class Topic1 extends Component {
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pl1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-5.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-5.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">認識雜學校</h3>
                     <p className="center ph3-ns ph0 mt2 tl">雜學校是什麼呢？我們想幹麻？這邊請！</p>
@@ -530,7 +530,7 @@ class Topic1 extends Component {
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 df dfc br3">
                     <figure className="db center mw200 mt3">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-4.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-4.png"} alt=""/>
                     </figure>
                     <h3 className="center mt2 fw5 tracked-m">加入革命</h3>
                     <p className="center ph2-ns ph0 mt2 tl">革命正要展開，未來將陸續推出系列活動及工作坊，想投身參與，請留下Email，接收第一手革命訊息！</p>
@@ -542,7 +542,7 @@ class Topic1 extends Component {
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pr1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-6.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
                     <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>

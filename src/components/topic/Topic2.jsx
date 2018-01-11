@@ -11,7 +11,7 @@ import {Helmet} from "react-helmet";
 var pageName = "美感教育";
 var pageURL = "aesthetic-education";
 var themeColor = "red";
-var exhibitNum = 12;
+var exhibitNum = 4;
 
 /* Lightbox Contents */
 var modalId = "";
@@ -58,89 +58,33 @@ var modalString = {
                       '泛科學', 
                       'PanSci泛科學是台灣最大科學網站，邀請台灣科學研究者、教育者、愛好者、以及所有受科學影響的人們，共同暢談科學、將高深龐雜的科學發展重新放置回台灣公共論壇中，並且用理性思考社會議題中的科學面向。'
                      ],
-  'exhibit-1'       :['臺灣吧',
-                      '【臺灣吧】用動畫說故事，新媒體的教育革命', 
-                      '臺灣吧是自產內容的新媒體公司，目標是『讓臺灣成為全球數位內容的燈塔』。我們試著以優質的數位內容，替臺灣找到下一個不可取代的理由， 並努力解決教育、傳播與娛樂等產業正在面臨的困境。',
+  'exhibit-1'       :['美感細胞＿教科書改造計畫',
+                      '【美感細胞】一場關於教科書的實驗', 
+                      '十二年國教後，教科書與我們為伍的時間超過兩萬多個小時，但孩子一年平均去美術館的時間不到一次。如果有一天，這些課本就是一本本可以放進書包的美術館呢？ 我們相信美感的培養是需要長時間的薰陶在台灣的教育環境下，教科書和我們形影不離也成為了美感培養最好的媒介！',
                       
-                      'http://www.taiwanbar.cc/',
-                      'https://www.facebook.com/taiwanbarstudio/'
+                      'https://www.flyingv.cc/projects/15219',
+                      'https://www.facebook.com/aestheticell/'
                      ],
-  'exhibit-2'       :['宜蘭人文國中小士林行動教室',
-                      '【宜蘭人文中小】適性教育，一起無框架學習', 
-                      '以開展天賦為教育核心，實踐「生活即教育、社會即學校」，運用行動學習模式，並以經驗知識取代套裝知識，搭配多元智能理論，再配合每個孩子的發展階段與興趣，彈性調整課程內容與進行方式。以達到適性化、個別化，充分開展學生天賦的理想。',
+  'exhibit-2'       :['易禧創意',
+                      '【易禧創意】讓教育領著設計前進', 
+                      '易禧創意專注在設計專業教學，由業界專業設計師擔任授課講師，專案範例教學，整合數位工具與創意，傳授最新設計專業素養！累積培訓超過2萬名設計創意人才，並陸續與國外知名大學合作開辦碩士先修課程，開創設計留學先修新頁。',
                       
-                      'http://www.explorationalclassroom.com/',
-                      'https://www.facebook.com/jwpsnews/'
+                      'http://www.ecgroup.com.tw/',
+                      'https://www.facebook.com/ecdesignschools/'
                      ],
-  'exhibit-3'       :['青醒',
-                      '【青醒】青年覺醒，點燃一場學習的革命', 
-                      '《Awakening青醒》是一個以行動為導向的國際草根媒體平台，以「青年探索與行動的攻略」自許，取名自「青年覺醒」。青年覺醒，過程即是目的：從改變自己的學習歷程開始，Awakening試圖點燃一場學習革命，啟動華人教育的典範轉移。',
+  'exhibit-3'       :['學學文化創意基金會',
+                      '【學學文創】看見的不只是色彩', 
+                      '長期投入文化色彩教育與研究，建置「學學台灣文化色彩」網站，為學習台灣文化色彩的互動平台，成功將數位典藏導入美感教育學習。同時推動網站與APP「XueXueColors」，以鄉土教育為起點，帶領孩子認同自然、土地、歷史與人文風貌，發現在地文化色彩，以藝術創作翻轉孩子的生命價值！',
                       
-                      'http://www.awakeningedu.org/',
-                      'https://www.facebook.com/Awakening.edu/'
+                      'http://www.xuexuecolors.com/index.php',
+                      ''
                      ],
-  'exhibit-4'       :['接棒啟蒙計畫',
-                      '【接棒】與未來接棒，讓求學選擇不再迷茫', 
-                      '我們都知道我們身處在一個不完美的教育體制下，但一切都有解了！接棒是非營利的教育組織，是一個可以將社會善意轉化成高中生探索自我價值的平台。我們相信，天賦、熱情、態度與機會是一個學生活出卓越人生的關鍵！',
-                      
-                      'http://thebatonproject.org/',
-                      'https://www.facebook.com/BatonEnlightenmentProject/'
-                     ],
-  'exhibit-5'       :['可能性',
-                      '【可能性】用副本，發掘你的無限可能', 
-                      '可能性 Possibility，透過自媒體和資訊設計的力量，讓更多關於生涯選擇的可能性得以被看見，同時也藉我們的倡議，幫助更多人去思考、挖掘並去實踐潛藏在自己身上的可能性。我們相信，教育環境唯有連年輕人都願意開始主動捲起袖子，才有可能推得動真正的改革。',
+  'exhibit-4'       :['游墨之間',
+                      '【游墨之間】用書法游於藝的無限可能', 
+                      '「游墨之間」從書法線條與文字藝術發想，我們渴望將所學結合，在墨韻之間融入空間設計與音樂，呈現出書法的濃淡、韻味、疏密與一氣呵成等特色。使用創新的模式讓大家了解書法不只是兒時一項無聊的作業，即使是傳統文化也能有意想不到的表現方式。',
                       
                       '',
-                      'https://www.facebook.com/Possibility.tw/'
-                     ],
-  'exhibit-6'       :['N次坊',
-                      '【N次坊】是學生，也是講師！', 
-                      'Ｎ次坊的工作坊定位是從 0 到 1 的「入門工作坊」。學生講者透過Ｎ次坊將技能系統化設計成工作坊、分享而深化自身技能，並將熱情感染給更多人去體驗；透過多方學習，不斷疊加，養成分享的態度，達到學習Ｎ次方。',
-                      
-                      '',
-                      'https://www.facebook.com/npower.workshop/'
-                     ],
-  'exhibit-7'       :['他群',
-                      '【他群】運用天賦，讓世界變得更好吧 ！', 
-                      '他群，一個協助他人「自我探索」且促進「社會意識」的教育設計團隊。我們利用「概念遊戲化」將許多的概念轉譯成實體的原創遊戲（議想世界＆夢想之道）。將遊戲融入到課程與活動當中，讓參與者能在遊戲的體驗中探索自我且深刻地認識社會議題，進而找到人生其他的可能性。',
-                      
-                      'https://taqun.club/',
-                      'https://www.facebook.com/taqun.taipei/'
-                     ],
-  'exhibit-8'       :['交點文化股份有限公司',
-                      '【交點】創造交點，打開對自己的另一種想像', 
-                      '交點相信，分享，是夢想啟程的起點，分享讓善的漣漪持續下去。每個月交點固定舉辦聚會，讓人與人相遇、交流。並透過活動舉辦、顧問諮詢、課程服務，希望未來可以打造一個資源共享的環境，提供給社會上的年輕人們，讓他們在追尋夢想的道路上，不再孤單。',
-                      
-                      'http://crosspoint.tw/',
-                      'https://www.facebook.com/crosspoint0505/'
-                     ],
-  'exhibit-9'       :['YOTTA 線上教育平台',
-                      '【YOTTA】學習無限大，技能學習最佳平台', 
-                      'YOTTA是來自臺灣，全中文的跨領域教育平台。我們致力於數位教學內容規劃，並結合實體課程資源、虛實整合，創造嶄新學習體驗。平台上的課程分成三大主題：生活、專業技能，以及語言。眾多實務導向的課程，幫助你快速習得實用技能，轉化成實體收入。',
-                      
-                      'http://www.yottau.com.tw/',
-                      'https://www.facebook.com/yottau/'
-                     ],
-  'exhibit-10'       :['技職3.0',
-                      '【技職3.0】為技職，深築一條從根本改善的路', 
-                      '獨立媒體《技職3.0》長期關注「技職教育」與「職業訓練」議題，以監督政府施政、凝聚技職圈並傳承技職技藝工匠精神為使命。2016年起辦理系列實體活動《技職研討會》、《技職講堂》以及《技職咖啡館》，深度耕耘技職教育與職業訓練圈。',
-                      
-                      'http://www.tvet3.info/',
-                      'https://www.facebook.com/Craftsmanship.Insights/'
-                     ],
-  'exhibit-11'       :['Yourator 新創職涯資訊平台',
-                      '【Yourator】尋找夢想工作，開拓職涯新視野', 
-                      'Yourator 是新世代專屬的新創求職與職涯資訊平台，Yourator 的使命在於發掘有核心價值並擴張成長的新創公司，以策展式的招募介面，協助新世代取得完整清楚的新創團隊經營內容、創業理念、社會價值及團隊文化。',
-                      
-                      'https://www.yourator.co/',
-                      'https://www.facebook.com/yourator.co/'
-                     ],
-  'exhibit-12'       :['SHOKUZiNE 職人',
-                      '【職人】建立夢想的方式還有多少可能？', 
-                      '一個重拾專業、尊重專業的時代 一份翻轉臺灣職業認識的原創社會企業內容 透過書寫職人故事、記錄教育及業界現場，《職人》SHOKUZiNE自許成為傳遞夢想的媒體，替孩子點亮未來的閃閃火光。',
-                      
-                      'https://www.shokuzine.com/',
-                      'https://www.facebook.com/SHOKUZiNE/'
+                      'https://www.facebook.com/moreinkbetween/'
                      ]
 }
 
@@ -289,7 +233,8 @@ class Topic2 extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       let links = null;
-      if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
+      if(modalString[a][4] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p></div>;
+      else if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
@@ -495,21 +440,8 @@ class Topic2 extends Component {
                 {this.exhibitComponent(1)}
                 {this.exhibitComponent(2)}
                 {this.exhibitComponent(3)}
-                <div className="hide" id="more_2">
                 {this.exhibitComponent(4)}
-                {this.exhibitComponent(5)}
-                {this.exhibitComponent(6)}
-                <div className="hide" id="more_1">
-                {this.exhibitComponent(7)}
-                {this.exhibitComponent(8)}
-                {this.exhibitComponent(9)}
-                {this.exhibitComponent(10)}
-                {this.exhibitComponent(11)}
-                {this.exhibitComponent(12)}
-                </div>
-                </div>
               </div>
-              <div className={"center button mt4-l mt2 cp fw5 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white hideme hidediv tc"} onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
@@ -522,7 +454,7 @@ class Topic2 extends Component {
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pl1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-5.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-5.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">認識雜學校</h3>
                     <p className="center ph3-ns ph0 mt2 tl">雜學校是什麼呢？我們想幹麻？這邊請！</p>
@@ -534,7 +466,7 @@ class Topic2 extends Component {
                 <div className="o2-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 df dfc br3">
                     <figure className="db center mw200 mt3">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-4.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-4.png"} alt=""/>
                     </figure>
                     <h3 className="center mt2 fw5 tracked-m">加入革命</h3>
                     <p className="center ph2-ns ph0 mt2 tl">革命正要展開，未來將陸續推出系列活動及工作坊，想投身參與，請留下Email，接收第一手革命訊息！</p>
@@ -546,7 +478,7 @@ class Topic2 extends Component {
                 <div className="o3-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
                   <div className="bg-white ba bw2 b--moon-gray pa3 pr1-l df dfc br3">
                     <figure className="db center mw160 mt2">
-                      <img src={"images/"+pageURL+"/雜ＸTONE_icon-6.png"} alt=""/>
+                      <img src={"images/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
                     <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
