@@ -405,6 +405,11 @@ p {
 .cover-video {
   transform: scale(1.4) translateX(-60px);
 }
+
+#gender-equality .cover-video {
+ transform: scale(1.2) translateX(-60px); 
+}
+
 .home-video {
   transform: scale(1.1);
 }

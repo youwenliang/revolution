@@ -60,7 +60,7 @@ class Home extends Component {
           });
           $('.fadein').removeClass('fadein');
           setTimeout(function(){
-            video.play();
+            if($(window).width() >= 400) video.play();
             // $('#home-video').attr('poster', 'images/home_video_poster.png');
           },200);
         }, 400);

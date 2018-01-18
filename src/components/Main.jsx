@@ -18,7 +18,7 @@ class Main extends Component {
       if($('.cover-video').length) {
         var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
         var video = document.getElementById('cover-video');
-        if($(window).width() < 960) {
+        if($(window).width() < 960 && $(window).width() > 400) {
           if(original_src.indexOf('small') < 0) {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
@@ -31,9 +31,9 @@ class Main extends Component {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
             $('.cover-video').attr('poster', 'images/' + original_src.replace('_small','') + '_poster.png');
-            video.load();
-            video.play();
           }
+          video.load();
+          video.play();
         }
       }
     });
@@ -67,7 +67,7 @@ class Main extends Component {
     if($('.cover-video').length) {
       var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
       var video = document.getElementById('cover-video');
-      if($(window).width() < 960) {
+      if($(window).width() < 960 && $(window).width() > 400) {
         if(original_src.indexOf('small') < 0) {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
@@ -80,16 +80,16 @@ class Main extends Component {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
           $('.cover-video').attr('poster', 'images/' + original_src.replace('_small','') + '_poster.png');
-          video.load();
-          video.play();
         }
+        video.load();
+        video.play();
       }
     }
     if($('.topic').length) {
       $('.topic').hover(function(){
         var gif = $(this).find('video').get(0);
         if(gif !== undefined) {
-          gif.play();
+          if($(window).width() >= 400) gif.play();
         }
       }, function(){
         var gif = $(this).find('video').get(0);

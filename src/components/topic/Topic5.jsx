@@ -291,7 +291,7 @@ class Topic2 extends Component {
               <div className="center mw9 ph2">
                 <div className="center cf df mw6 mw-none-l dfc-s intro">
                   <div className="o1 w-100 w-50-l tc">
-  	                <video id="cover-video" className="cover-video mh0 ml0-l center mb3 mb0-l hideme hidediv" width="100%" autoPlay muted loop poster={"images/"+pageURL+"/cover_video_poster.png"}>
+  	                <video id="cover-video" className="cover-video mh0 ml0-l center mb3 mb0-l hideme hidediv" width="100%" muted playsInline preload="auto" loop poster={"images/"+pageURL+"/cover_video_poster.png"}>
                       <source src={"images/"+pageURL+"/cover_video.mp4"} type="video/mp4" />
                     </video>
                     <figure className="mh0 ml0-l center mb3 mb0-1 hideme hidediv">
