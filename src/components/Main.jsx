@@ -55,9 +55,11 @@ class Main extends Component {
       }
       if($('#section-0').length) {
         for (var i = 0; i < 5; i++) {
-          if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
-            $('.active').removeClass('active');
-            $('a[href="#section-'+i+'"]').addClass('active');
+          if($('#section-'+i).css('display')!='none'){
+            if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
+              $('.active').removeClass('active');
+              $('a[href="#section-'+i+'"]').addClass('active');
+            }
           }
         }
       }
@@ -99,11 +101,13 @@ class Main extends Component {
       });
     }
 
-    if($('#section-1').length) {
+    if($('#section-0').length) {
       for (var i = 0; i < 5; i++) {
-        if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
-          $('.active').removeClass('active');
-          $('a[href="#section-'+i+'"]').addClass('active');
+        if($('#section-'+i).css('display')!='none'){
+          if($(window).scrollTop() >= $('#section-'+i).offset().top - $(window).height()/2) {
+            $('.active').removeClass('active');
+            $('a[href="#section-'+i+'"]').addClass('active');
+          }
         }
       }
     };

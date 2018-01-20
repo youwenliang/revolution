@@ -16,47 +16,27 @@ var exhibitNum = 4;
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
-  'video-1'         :'azWAceBZJdI',
-  'video-2'         :'Gmm5vRyLtr4',
-  'lecturer-1-image':['azWAceBZJdI', 'images/self-realization/lecturer1-1.png', 'images/self-realization/lecturer1-2.png'],
-  'lecturer-1'      :['葉丙成/台大電機系教授', 
-                      '夢想這件事，是試出來的！',
-                      '夢想這件事，是試出來的！只要勇敢試了，就穩贏的！',
-                      '葉丙成',
+  'video-1'         :'TKFuCifcYdY',
+  'video-2'         :'p9Z49qPuH30',
+  'lecturer-1-image':['TKFuCifcYdY', 'images/aesthetic-education/lecturer1-1.png', 'images/aesthetic-education/lecturer1-2.png'],
+  'lecturer-1'      :['張柏韋 / 美感細胞共同創辦人', 
+                      '培養美感最好的方式，是增廣你的視野',
+                      '培養美感最好的方式，是增廣你的視野。在這些多元的選擇之中，找到一個你喜歡的，然後栽進去。',
+                      '張柏韋',
                       '葉丙成，號丙紳，現任台大電機系教授、台大 MOOC 計畫執⾏⻑、無界塾創辦人、PaGamO 團隊創辦人。⾃幼觀父葉勝年教授對生徒之關懷，⽽立後受台大電機許博文⽼師「教授稱謂實不如師，多未傳道、解惑故」之啟發，輔以天⽣生雞婆性格，漸步上熱血教師一途。',
                       '延伸推薦', 
                       '我的成功，我決定', 
                       '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
                      ],
-  'lecturer-2-image':['Gmm5vRyLtr4', 'images/self-realization/lecturer2-1.png', 'images/self-realization/lecturer2-2.png'],
-  'lecturer-2'      :['蘇仰志/雜學校創辦人', 
-                      '大家在乎的是你做了什麼，而不是你知道什麼',
-                      '勇敢去實踐，你就有機會接近實現夢想的那一刻。',
-                      '蘇仰志',
-                      '奧茲藝術負責人、不太乖教育節＆雜學校創辦人與主辦人。主張透過「展覽」與大眾溝通，提供對未來不確定的年輕朋友、家長與老師新指引，介紹教育的各種樣貌。',
+  'lecturer-2-image':['p9Z49qPuH30', 'images/aesthetic-education/lecturer2-1.png', 'images/aesthetic-education/lecturer2-2.png'],
+  'lecturer-2'      :['劉長灝/綠光表演學堂指導老師', 
+                      '打開感官，你會發現世界很不一樣',
+                      '感官可以讓你的世界變得繽紛色彩，利用感官，你可以創造你的世界，讓你的世界自由。',
+                      '劉長灝',
+                      '劉長灝老師，又稱大熊老師，為綠光劇團表演學堂專任講師，也是政治大學EMBA「戲劇與創意」的講師。豐富的教學經驗與親切幽默的個性，讓學習的過程活潑且輕鬆，善與學員互動，在遊戲中引導學員發現創意，並累積創意的能量。',
                       '延伸推薦', 
-                      '雜學校', 
-                      '雜學校一個由下而上勇敢的社會創新運動，一個亞洲最具影響力的教育創新IP, 以台灣為基地集結台世界各地多元多樣的『非典型教育創新』的國際型博覽會與平台。寄望透過各種新世代的串連與實驗，對未來教育提出更多的可能與實踐。'
-                     ],
-  'lecturer-3-image':['uJECld1Yq48', 'images/self-realization/lecturer3-1.png', 'images/self-realization/lecturer3-2.png'],
-  'lecturer-3'      :['楊逸帆/《學習的理由》導演', 
-                      '用熱情、專長和關懷去實現夢想',
-                      '用熱情、專長和關懷去實現夢想。',
-                      '楊逸帆',
-                      '楊逸帆1995年出生於教職家庭，從小接受體制外教育。學校沒有圍牆、鐘聲與課本，學習方向由好奇心引領。曾經拍攝紀錄片《學習的理由》、同時也是《Awakening青醒》青年教改團隊創辦人。目前正在國際Alternative Education Resource Organization 擔任台灣負責人。',
-                      '延伸推薦', 
-                      '學習的理由', 
-                      '《學習的理由》是由楊逸帆執導的一部教育紀錄片。拍攝自己在人文國中小的朋友們面對基測的過程，並追蹤他們一路到大學的改變歷程，探討升學與分流體系對青少年的影響，更觸及人們為何「換了位子就換了腦袋」此一大哉問。https://www.zeczec.com/projects/reasontostudy'
-                     ],
-  'lecturer-4-image':['Sy_q0Q8b5z8', 'images/self-realization/lecturer4-1.png', 'images/self-realization/lecturer4-2.png'],
-  'lecturer-4'      :['鄭國威/泛科學總編輯', 
-                      '不要太在乎結果，先去做你可以做的事情吧！',
-                      '不要太在乎結果，先去做你可以做的事情吧！',
-                      '鄭國威',
-                      '小時候是那種很喜歡看科學讀物，以為自己會成為科學家，但是長大之後因為數理太爛所以早早放棄科學夢的無數人其中之一。關心台灣的傳播環境跟媒體品質，現在是PanSci 泛科學網的總編輯。',
-                      '延伸推薦', 
-                      '泛科學', 
-                      'PanSci泛科學是台灣最大科學網站，邀請台灣科學研究者、教育者、愛好者、以及所有受科學影響的人們，共同暢談科學、將高深龐雜的科學發展重新放置回台灣公共論壇中，並且用理性思考社會議題中的科學面向。'
+                      '綠光表演學堂 ', 
+                      '綠光表演學堂由劉長灝（大熊老師）主持，帶領學員進行生活體驗、強化感官/情緒記憶、節奏/情境練習、聲音表情、說話呼吸等演員及表演技巧，從中培養出對生活的敏銳觀察，並發掘出每個人都有的獨特創造力。網站：http://www.greenray.org.tw/main/performance/news.html'
                      ],
   'exhibit-1'       :['美感細胞＿教科書改造計畫',
                       '【美感細胞】一場關於教科書的實驗', 
@@ -136,7 +116,7 @@ class Topic2 extends Component {
             }  
           });
           $('.fadein').removeClass('fadein');
-          console.log("#self-realization");
+          console.log("#aesthetic-education");
       	  window.history.pushState(pageURL, 'Title', '/'+pageURL);
         }, 400);
       }, 400);
@@ -199,7 +179,7 @@ class Topic2 extends Component {
       console.log('lecture');
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
-          <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊夢想</h3>
+          <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊美感</h3>
           <div className="video-container mh0 mb3"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a+'-image'][0]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe></div>
           <p className="mb5">{modalString[a][2]}</p>
           <div className="bg-white df dfc-s center pa3 pa4-m pa0-l pr4-l mb4">
