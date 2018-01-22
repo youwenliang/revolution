@@ -23,10 +23,10 @@ var modalString = {
                       '培養美感最好的方式，是增廣你的視野',
                       '培養美感最好的方式，是增廣你的視野。在這些多元的選擇之中，找到一個你喜歡的，然後栽進去。',
                       '張柏韋',
-                      '葉丙成，號丙紳，現任台大電機系教授、台大 MOOC 計畫執⾏⻑、無界塾創辦人、PaGamO 團隊創辦人。⾃幼觀父葉勝年教授對生徒之關懷，⽽立後受台大電機許博文⽼師「教授稱謂實不如師，多未傳道、解惑故」之啟發，輔以天⽣生雞婆性格，漸步上熱血教師一途。',
+                      '畢業於交通大學人文社會學系，因為交換學生在荷蘭生活了半年，也曾在奧美廣告待過一些日子。目前是美感細胞＿教科書再造計畫協會的理事。',
                       '延伸推薦', 
-                      '我的成功，我決定', 
-                      '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
+                      '美感教科書', 
+                      '給我們一本課本，我們給孩子一座美術館 。十二年國教後，教科書與我們為伍的時間超過兩萬多個小時，但我們孩子一年平均去美術館的時間不到一次。如果有一天，這些課本就是一本本可以放進書包的美術館呢？ 很多人說台灣的美感落後國外十年，而美感又是國家重要的競爭力，我們相信美感的培養是需要長時間的薰陶在台灣的教育環境下，教科書和我們形影不離也成為了美感培養最好的媒介！'
                      ],
   'lecturer-2-image':['p9Z49qPuH30', 'images/aesthetic-education/lecturer2-1.png', 'images/aesthetic-education/lecturer2-2.png'],
   'lecturer-2'      :['劉長灝/綠光表演學堂指導老師', 
@@ -77,7 +77,7 @@ class Topic2 extends Component {
     /* Init Swiper */
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
-      slidesPerView: 3,
+      slidesPerView: 2,
       simulateTouch: false,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -367,7 +367,7 @@ class Topic2 extends Component {
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
             <div className="ph3">
-              <div className="swiper-container mt5-l mt4 mh2 mw6 mw-none-l center pb3">
+              <div className="swiper-container mt5-l mt4 mh2 mw6 mw65-l center pb3">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
@@ -382,20 +382,6 @@ class Topic2 extends Component {
                     </figure>
                     <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-2'][1]}</h4>
                     <h5 className="center ph3 tl mt3 pn fw4"><span className="fw7">{modalString['lecturer-2'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-2'][0].split('/')[1]}</span></h5>
-                  </div>
-                  <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-4" onClick={this.onOpenModal}>
-                    <figure className="db center w-100 pn topImg">
-                      <img src={"images/"+pageURL+"/lecturer4-3.png"} alt=""/>
-                    </figure>
-                    <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-4'][1]}</h4>
-                    <h5 className="center ph3 tl mt3 pn fw4"><span className="fw7">{modalString['lecturer-4'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-4'][0].split('/')[1]}</span></h5>
-                  </div>
-                  <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-3" onClick={this.onOpenModal}>
-                    <figure className="db center w-100 pn topImg">
-                      <img src={"images/"+pageURL+"/lecturer3-3.png"} alt=""/>
-                    </figure>
-                    <h4 className="center ph3 tl mt3 pn fw5">{modalString['lecturer-3'][1]}</h4>
-                    <h5 className="center ph3 tl mt3 pn fw5"><span className="fw7">{modalString['lecturer-3'][0].split('/')[0]}</span><span className="o-50">/{modalString['lecturer-3'][0].split('/')[1]}</span></h5>
                   </div>
                 </div>
               </div>
@@ -476,7 +462,7 @@ class Topic2 extends Component {
           <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
             <h4 className="center fw4 mt4 mw7-l hideme hidediv mw6 white i">馬上推廣！分享這個訊息，一起擴散這場雜學革命</h4>
             <div className={"center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white "+themeColor} onClick={this.socialShare}>
-              <FontAwesome name='facebook-official' className="mr2 blue" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
+              立即分享</div>
           </div>
         </section>
       </div>

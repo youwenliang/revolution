@@ -35,8 +35,8 @@ var modalString = {
                       '朱家安',
                       '多年來面無表情地致力於哲學教育，雖然人稱「雞蛋糕腦闆」但其實不受兒童喜愛。著有簡單易懂的哲學書《哲學哲學雞蛋糕》以及同性婚姻爭論的論點分析書《護家盟不萌？》。',
                       '延伸推薦', 
-                      '雜學校', 
-                      '雜學校一個由下而上勇敢的社會創新運動，一個亞洲最具影響力的教育創新IP, 以台灣為基地集結台世界各地多元多樣的『非典型教育創新』的國際型博覽會與平台。寄望透過各種新世代的串連與實驗，對未來教育提出更多的可能與實踐。'
+                      '哲學雞蛋糕', 
+                      '哲學哲學雞蛋糕是朱家安在2007年開始撰寫的哲學部落格，部分內容於2013年集結出版同名書籍、2015年與台灣吧合作推出系列哲學短片。'
                      ],
   'exhibit-1'       :['時習教育工作室',
                       '【時習教育工作室】將學科運用於生活', 
@@ -84,7 +84,7 @@ class Topic2 extends Component {
     /* Init Swiper */
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
-      slidesPerView: 3,
+      slidesPerView: 2,
       simulateTouch: false,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -376,7 +376,7 @@ class Topic2 extends Component {
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
             <div className="ph3">
-              <div className="swiper-container mt5-l mt4 mh2 mw6 mw-none-l center pb3">
+              <div className="swiper-container mt5-l mt4 mh2 mw6 mw65-l center pb3">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
@@ -472,7 +472,7 @@ class Topic2 extends Component {
           <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
             <h4 className="center fw4 mt4 mw7-l hideme hidediv mw6 white i">馬上推廣！分享這個訊息，一起擴散這場雜學革命</h4>
             <div className={"center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white "+themeColor} onClick={this.socialShare}>
-              <FontAwesome name='facebook-official' className="mr2 blue" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
+              立即分享</div>
           </div>
         </section>
       </div>

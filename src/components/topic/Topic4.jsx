@@ -49,7 +49,7 @@ class Topic2 extends Component {
     /* Init Swiper */
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
-      slidesPerView: 3,
+      slidesPerView: 2,
       simulateTouch: false,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -338,7 +338,7 @@ class Topic2 extends Component {
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
             <div className="ph3">
-              <div className="swiper-container mt5-l mt4 mh2 mw6 mw-none-l center pb3">
+              <div className="swiper-container mt5-l mt4 mh2 mw6 mw65-l center pb3">
                 <div className="swiper-wrapper">
                   <div className="swiper-slide bg-white cp pb4 content-block ba b--moon-gray br1" data-id="lecturer-1" onClick={this.onOpenModal}>
                     <figure className="db center w-100 pn topImg">
@@ -419,7 +419,7 @@ class Topic2 extends Component {
           <div className="center w-100 mw6 mw-none-l ph3 pv3 tc">
             <h4 className="center fw4 mt4 mw7-l hideme hidediv mw6 white i">馬上推廣！分享這個訊息，一起擴散這場雜學革命</h4>
             <div className={"center mv4 button button-fb cp hideme hidediv fw5 bg-white bg-animate hover-bg-near-white "+themeColor} onClick={this.socialShare}>
-              <FontAwesome name='facebook-official' className="mr2 blue" alt="Share to Facebook" title="Share to Facebook" />立即分享</div>
+              立即分享</div>
           </div>
         </section>
       </div>
