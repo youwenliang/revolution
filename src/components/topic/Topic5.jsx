@@ -23,20 +23,20 @@ var modalString = {
                       '了解每一個生命存在的價值',
                       '每一個生命存在這世界上，都有他自己的存活下去的方法跟方向，動物也是一樣。',
                       '李宜龍',
-                      '葉丙成，號丙紳，現任台大電機系教授、台大 MOOC 計畫執⾏⻑、無界塾創辦人、PaGamO 團隊創辦人。⾃幼觀父葉勝年教授對生徒之關懷，⽽立後受台大電機許博文⽼師「教授稱謂實不如師，多未傳道、解惑故」之啟發，輔以天⽣生雞婆性格，漸步上熱血教師一途。',
+                      '以大橘子新聞事件為契機，李宜龍在2016年1月與一群志同道合的夥伴於動物行為暨生態研討會舉辦了野生動物追思會，以靜態照片陳述野生動物所遭遇的各種困境。同年隔月，粉絲團正式運作，將收集來的照片正式上架，供大家瞻仰。期盼透過粉絲團的分享，能夠有更多人關心野生動物。曾於泛知識節、雜學校以及台灣各個校園舉辦野生動物保育相關的講座及社會教育展。',
                       '延伸推薦', 
-                      '我的成功，我決定', 
-                      '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
+                      '野生動物追思會', 
+                      '2016年1月25-26日，我們在動物行為暨生態研討會舉辦了野生動物追思會，以靜態照片陳述野生動物所遭遇的各種困境。2016年2月2日粉絲團正式開始運作，我們將收集來的照片正式上架，供大家瞻仰。期間也陸續招募野生動物因人而死的遺照，並將背後的故事告訴大家。期盼透過粉絲團的分享，能夠有更多人關心野生動物。'
                      ],
   'lecturer-2-image':['yefinzbkGM0', 'images/respect-life/lecturer2-1.png', 'images/respect-life/lecturer2-2.png'],
   'lecturer-2'      :['楊仕音/TONE識顧問&科普作者', 
                       '每一個個體都是獨一無二的',
                       '真正的換位思考，在個體跟個體，也就是人跟人之間的彼此尊重，和不同物種之間相互尊重，其實是異曲同工的。',
                       '楊仕音',
-                      '奧茲藝術負責人、不太乖教育節＆雜學校創辦人與主辦人。主張透過「展覽」與大眾溝通，提供對未來不確定的年輕朋友、家長與老師新指引，介紹教育的各種樣貌。',
+                      '青少年時期為了探索生命的本質，在哲學書堆裡鬼打牆，之後決定就讀動物學系（現為生命科學系）。自高中開始長期參與社會運動。因個人微型金融海嘯發展出的求生技能包括品牌管理、專利分析、英語教學等。台大動物學系、動物學研究所碩士畢，美國長春藤Dartmouth College工商管理學院碩士畢。目前週間是TONE識商業顧問、專利顧問及科普人，週末變身成三石2人工作室藝術創作者。',
                       '延伸推薦', 
-                      '雜學校', 
-                      '雜學校一個由下而上勇敢的社會創新運動，一個亞洲最具影響力的教育創新IP, 以台灣為基地集結台世界各地多元多樣的『非典型教育創新』的國際型博覽會與平台。寄望透過各種新世代的串連與實驗，對未來教育提出更多的可能與實踐。'
+                      '台灣野望影展', 
+                      '透過英國Wildscreen的協助，自2011年起舉辦「台灣野望國際自然影展」（WildViewTaiwan Film Festival in association with Wildscreen），每年引進台灣20部世界頂尖的生態環境紀錄片，進行為期一年的巡迴播映。'
                      ],
   'exhibit-1'       :['綿羊犬百寶箱',
                       '【綿羊犬百寶箱】遊戲學習開啟孩子的無限潛能', 
@@ -163,6 +163,8 @@ class Topic2 extends Component {
   modalContent = (a) => {
     if(a.indexOf('lecturer') >= 0) {
       console.log('lecture');
+      var link = null;
+      if(a.indexOf('1') >= 0) link = <p>網站：<a href="https://www.facebook.com/pg/Wildlife2016">https://www.facebook.com/pg/Wildlife2016</a></p>
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
           <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊生命</h3>
@@ -190,6 +192,7 @@ class Topic2 extends Component {
             <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc pv4-l">
               <h3 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][6]}</h3>
               <p className="w-100 mt2 tl">{modalString[a][7]}</p>
+              {link}
             </div>
           </div>
           <div className="modal-close mt4 mb3">
@@ -431,7 +434,7 @@ class Topic2 extends Component {
                       <img src={"images/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
-                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
+                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了生命，我還想要瞭解更多！</p>
                     <Link to='/'>
                       <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>回首頁</div>
                     </Link>

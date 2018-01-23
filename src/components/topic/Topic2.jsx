@@ -36,7 +36,7 @@ var modalString = {
                       '劉長灝老師，又稱大熊老師，為綠光劇團表演學堂專任講師，也是政治大學EMBA「戲劇與創意」的講師。豐富的教學經驗與親切幽默的個性，讓學習的過程活潑且輕鬆，善與學員互動，在遊戲中引導學員發現創意，並累積創意的能量。',
                       '延伸推薦', 
                       '綠光表演學堂 ', 
-                      '綠光表演學堂由劉長灝（大熊老師）主持，帶領學員進行生活體驗、強化感官/情緒記憶、節奏/情境練習、聲音表情、說話呼吸等演員及表演技巧，從中培養出對生活的敏銳觀察，並發掘出每個人都有的獨特創造力。網站：http://www.greenray.org.tw/main/performance/news.html'
+                      '綠光表演學堂由劉長灝（大熊老師）主持，帶領學員進行生活體驗、強化感官/情緒記憶、節奏/情境練習、聲音表情、說話呼吸等演員及表演技巧，從中培養出對生活的敏銳觀察，並發掘出每個人都有的獨特創造力。'
                      ],
   'exhibit-1'       :['美感細胞＿教科書改造計畫',
                       '【美感細胞】一場關於教科書的實驗', 
@@ -177,6 +177,8 @@ class Topic2 extends Component {
   modalContent = (a) => {
     if(a.indexOf('lecturer') >= 0) {
       console.log('lecture');
+      var link = null;
+      if(a.indexOf('2') >= 0) link = <p>網站：<a href="http://www.greenray.org.tw/main/performance/news.html">http://www.greenray.org.tw/main/performance/news.html</a></p>
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
           <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊美感</h3>
@@ -204,6 +206,7 @@ class Topic2 extends Component {
             <div className="o2 w-100 w-70-l pl4-l tl-l tc df dfc pv4-l">
               <h3 className="w-100 fw5 tc tl-l mt3 mt0-l">{modalString[a][6]}</h3>
               <p className="w-100 mt2 tl">{modalString[a][7]}</p>
+              {link}
             </div>
           </div>
           <div className="modal-close mt4 mb3">
@@ -447,7 +450,7 @@ class Topic2 extends Component {
                       <img src={"images/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
-                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
+                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了美感，我還想要瞭解更多！</p>
                     <Link to='/'>
                       <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>回首頁</div>
                     </Link>

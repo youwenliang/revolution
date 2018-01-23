@@ -23,10 +23,10 @@ var modalString = {
                       '理性思辨，是公民社會的第一步',
                       '每個人都應該用理性的角度進行思辨，如果做不到，就無法公眾討論，公民社會也無從開始。',
                       '黃益中',
-                      '葉丙成，號丙紳，現任台大電機系教授、台大 MOOC 計畫執⾏⻑、無界塾創辦人、PaGamO 團隊創辦人。⾃幼觀父葉勝年教授對生徒之關懷，⽽立後受台大電機許博文⽼師「教授稱謂實不如師，多未傳道、解惑故」之啟發，輔以天⽣生雞婆性格，漸步上熱血教師一途。',
+                      '一九七九年生，新竹高中、師大公民訓育系畢，政大東亞所碩士，海軍陸戰隊預官。曾任國中教師，現為台北市大直高中公民與社會科教師、十二年國教高級中等以下學校課程審議大會委員。課堂外的身分是台灣居住正義協會理事長，「巢運」發起人之一，並擔任公民教師行動聯盟發言人。著有《思辨：熱血教師的十堂公民課》以及《向高牆說不》（寶瓶文化）。',
                       '延伸推薦', 
-                      '我的成功，我決定', 
-                      '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
+                      '思辨：熱血教師的十堂公民課', 
+                      '透過師生討論、激辯、對話的過程，轉化我們日日面對爆炸資訊下的「理性思辨」能力，讓近年來台灣社會最重大的人權議題、被忽略的弱勢族群，在學生的辯論中發酵，重獲關注。公民老師教什麼？黃益中以《思辨──熱血教師的十堂公民課》這本書，做扎根的工作。因為，當社會資源分配嚴重傾斜，階級不再流動，教育，是最後的希望！'
                      ],
   'lecturer-2-image':['h-MDtCZCOZc', 'images/critical-thinking/lecturer2-1.png', 'images/critical-thinking/lecturer2-2.png'],
   'lecturer-2'      :['朱家安/哲學雞蛋糕腦闆', 
@@ -457,7 +457,7 @@ class Topic2 extends Component {
                       <img src={"images/雜ＸTONE_icon-6.png"} alt=""/>
                     </figure>
                     <h3 className="center mt0 fw5 tracked-m">看其他主題</h3>
-                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了夢想，我還想要瞭解更多！</p>
+                    <p className="center pl4-ns pr3-ns ph0 mt2 tl">除了思辨，我還想要瞭解更多！</p>
                     <Link to='/'>
                       <div className={"center mv4-l mt4 mb3 button cp fw5 pa2 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white tc"}>回首頁</div>
                     </Link>
