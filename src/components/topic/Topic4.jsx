@@ -332,8 +332,8 @@ class Topic2 extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-near-white pv5-ns pv4 df">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">聽聽他們怎麼談「夢想」，再勇敢的夢一次吧！</h4>
+            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊性平！</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">性別平等對他們來說，是....？</h4>
             <div className="swiper-pagination mt4"></div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
@@ -364,14 +364,14 @@ class Topic2 extends Component {
         {/* Banner */}
         <section className={"banner bg-"+themeColor}>
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">不管你是哪種樣子，都是值得被尊重的樣子。</h3>
+            <h3 className="white">不管你是哪種樣子，都值得被尊重。</h3>
           </div>
         </section>
         <section id="section-3" className="dn"></section>
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於如何實現夢，以及怎麼教會孩子們做夢<br className="dn-s" />相信你一定還有話想說<br/><br/>雜學起義，一場以非典型教育為名的夢想，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
+            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於理解性別，以及創造平等，<br className="dn-s" />我們都還可以做得更多。<br/><br/>雜學起義，一場透過非典型教育著手的性平革命，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
             <div className="mw9 center mt5-l mt4 mb4-l">
               <div className="center cf df dfc-s mw6 mw-none-l relative t30">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">

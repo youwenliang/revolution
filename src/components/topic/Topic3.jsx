@@ -302,10 +302,10 @@ class Topic2 extends Component {
                   </div>
                   <div className="o2 w-100 w-50-l pl4-l tl df dfc afs">
                     <h1 className={"w-100 fw5 hideme hidediv "+themeColor}>快「思」慢「辨」</h1>
-                    <h3 className={"w-100 fw5 hideme hidediv "+themeColor}>先思考而判斷，以邏輯做辯證！</h3>
+                    <h3 className={"w-100 fw5 hideme hidediv "+themeColor}>先思考再判斷，以邏輯做辯證！</h3>
                     <h5 className="w-100 fw3 mt4 mb3 hideme hidediv">網路超載的時代，
 					<br className="dn-s"/>面對越來越多的資訊、資料與資源，
-					<br className="dn-s"/>越應該正視思辨能力的培養，
+					<br className="dn-s"/>越應該正視思辨能力的養成，
 					<br className="dn-s"/>懂得辨別思考，不被神邏輯給蒙蔽。</h5>
                     <div id="fb-like" className="fb-like w-100 mt3 hideme hidediv mw6" data-href={"http://revolution.zashare.org/#/"+pageURL} data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                   </div>
@@ -320,7 +320,7 @@ class Topic2 extends Component {
         {/* Banner */}
         <section className={"banner bg-"+themeColor}>
           <div className="center w-100 mw6 mw-none-l ph3 pv5 tc hideme hidediv">
-            <h3 className="white">資訊越超載，思辨能力越要進化！</h3>
+            <h3 className="white">資訊越超載，思辨能力越重要！</h3>
           </div>
         </section>
         {/*--- Section 1 ---*/}
@@ -370,8 +370,8 @@ class Topic2 extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-near-white pv5-ns pv4 df">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">聽聽他們怎麼談「夢想」，再勇敢的夢一次吧！</h4>
+            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊思辨！</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">對他們來說，思辨是 ＿＿？</h4>
             <div className="swiper-pagination mt4"></div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
@@ -408,8 +408,8 @@ class Topic2 extends Component {
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">偷看其他人的夢想</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">關於教育，一直都有一群踏實的逐夢人。<br className="dn-s" />歡迎你來隨時加入，跟這群最聰明的傻瓜一起作夢。</h4>
+            <h2 className="fw5 hideme hidediv ph2">看非典型教育怎麼教思辨</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">跟著他們一起跳脫框架，啟發觀點。<br className="dn-s" />體會非典型教育創造的思辨之力。</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
                 {this.exhibitComponent(1)}
@@ -424,7 +424,7 @@ class Topic2 extends Component {
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於如何實現夢，以及怎麼教會孩子們做夢<br className="dn-s" />相信你一定還有話想說<br/><br/>雜學起義，一場以非典型教育為名的夢想，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
+            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於思考方式，以及辯證能力的培養，<br className="dn-s" />我們也想聽聽你的脈絡。<br/><br/>雜學起義，一場以非典型教育的思辨之旅，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
             <div className="mw9 center mt5-l mt4 mb4-l">
               <div className="center cf df dfc-s mw6 mw-none-l relative t30">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">

@@ -164,7 +164,7 @@ class Topic2 extends Component {
     if(a.indexOf('lecturer') >= 0) {
       console.log('lecture');
       var link = null;
-      if(a.indexOf('1') >= 0) link = <p>網站：<a href="https://www.facebook.com/pg/Wildlife2016">https://www.facebook.com/pg/Wildlife2016</a></p>
+      if(a.indexOf('1') >= 0) link = <p className="w-100 mt2 tl">網站：<a href="https://www.facebook.com/pg/Wildlife2016">https://www.facebook.com/pg/Wildlife2016</a></p>
       return (
         <div className="pa5-l pa4-m pa3 oh h-100">
           <h3 className="f35 fw5 mb3 pr3-ns">雜學起義：聽{modalString[a][3]}聊生命</h3>
@@ -350,8 +350,8 @@ class Topic2 extends Component {
         {/*--- Section 2 ---*/}
         <section id="section-2" className="bg-near-white pv5-ns pv4 df">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊夢想！</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2">聽聽他們怎麼談「夢想」，再勇敢的夢一次吧！</h4>
+            <h2 className="fw5 hideme hidediv ph2">嘿，這些人想跟你聊聊生命！</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2">聽聽他們對尊重生命的詮釋</h4>
             <div className="swiper-pagination mt4"></div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
@@ -388,8 +388,8 @@ class Topic2 extends Component {
         {/*--- Section 3 ---*/}
         <section id="section-3" className="bg-near-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h2 className="fw5 hideme hidediv ph2">偷看其他人的夢想</h2>
-            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">關於教育，一直都有一群踏實的逐夢人。<br className="dn-s" />歡迎你來隨時加入，跟這群最聰明的傻瓜一起作夢。</h4>
+            <h2 className="fw5 hideme hidediv ph2">讓尊重生命的理念成真</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">看看這群人怎麼運用非典型教育，<br className="dn-s" />將尊重生命的概念植入人心。</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
                 {this.exhibitComponent(1)}
@@ -401,7 +401,7 @@ class Topic2 extends Component {
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
-            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於如何實現夢，以及怎麼教會孩子們做夢<br className="dn-s" />相信你一定還有話想說<br/><br/>雜學起義，一場以非典型教育為名的夢想，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
+            <h4 className="center fw4 mw7-l hideme hidediv mw6 ph2">關於尊重生命的實踐，<br className="dn-s" />我們還可以怎麼做到更多？<br/><br/>雜學起義，一場以非典型教育為名的行動，現正起義中<br/><br/>如果你對自我實現、創新教育有興趣，<br className="dn-s" />想加入這場雜學起義，實踐更多創新可能<br className="dn-s" />現在就留下行動，成為我們的一份子！</h4>
             <div className="mw9 center mt5-l mt4 mb4-l">
               <div className="center cf df dfc-s mw6 mw-none-l relative t30">
                 <div className="o1-l fl w-100 w-third-l w-100 pa2 hideme hidediv mw6">
