@@ -18,15 +18,15 @@ class Main extends Component {
       if($('.cover-video').length) {
         var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
         var video = document.getElementById('cover-video');
-        if($(window).width() < 960 && $(window).width() > 400) {
+        if($(window).width() < 960 && $(window).width() > 480) {
           if(original_src.indexOf('small') < 0) {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
             $('.cover-video').attr('poster', 'images/' + original_src + '_poster_small.png');
-            video.load();
-            video.play();
           }
-        } else {
+          video.load();
+          video.play();
+        } else if($(window).width() >= 960){
           if(original_src.indexOf('small') >= 0) {
             video.pause();
             $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
@@ -34,7 +34,7 @@ class Main extends Component {
           }
           video.load();
           video.play();
-        }
+        } else video.pause();
       }
     });
 
@@ -69,15 +69,15 @@ class Main extends Component {
     if($('.cover-video').length) {
       var original_src = $('.cover-video source').attr('src').replace('images/', '').split('.mp4')[0];
       var video = document.getElementById('cover-video');
-      if($(window).width() < 960 && $(window).width() > 400) {
+      if($(window).width() < 960 && $(window).width() > 480) {
         if(original_src.indexOf('small') < 0) {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src + '_small.mp4');
           $('.cover-video').attr('poster', 'images/' + original_src + '_poster_small.png');
-          video.load();
-          video.play();
         }
-      } else {
+        video.load();
+        video.play();
+      } else if($(window).width() >= 960){
         if(original_src.indexOf('small') >= 0) {
           video.pause();
           $('.cover-video source').attr('src', 'images/' + original_src.replace('_small','') + '.mp4');
@@ -85,7 +85,7 @@ class Main extends Component {
         }
         video.load();
         video.play();
-      }
+      } else video.pause();
     }
     if($('.topic').length) {
       $('.topic').hover(function(){
