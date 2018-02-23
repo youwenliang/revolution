@@ -439,6 +439,12 @@ p {
     max-height: inherit !important;
     transform: scale(0.9);
   }
+  .header-cover {
+    height: auto;
+    min-height: initial;
+    max-height: initial;
+    padding-bottom: 100px;
+  }
 }
 
 /* Scroll Transition Divs */
