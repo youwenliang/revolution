@@ -875,7 +875,7 @@ video {
   padding-bottom: 51.7%;
   padding-top: 30px;
   height: 0px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   z-index: 11;
 }
 
@@ -887,6 +887,17 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.close-video {
+  display: inline-block;
+  float: right;
+  padding: 6px 12px;
+  background-color: #1f1f1f;
+  color: #ccc;
+  pointer-events: none;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
 }
 
 ::selection {

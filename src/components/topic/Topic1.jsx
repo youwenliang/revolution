@@ -16,9 +16,9 @@ var exhibitNum = 12;
 /* Lightbox Contents */
 var modalId = "";
 var modalString = {
-  'video-1'         :'azWAceBZJdI',
-  'video-2'         :'Gmm5vRyLtr4',
-  'lecturer-1-image':['azWAceBZJdI', 'images/self-realization/lecturer1-1.png', 'images/self-realization/lecturer1-2.png'],
+  'video-1'         :'UhTJMgo1uyI',
+  'video-2'         :'Sf5Px3bUT5c',
+  'lecturer-1-image':['UhTJMgo1uyI', 'images/self-realization/lecturer1-1.png', 'images/self-realization/lecturer1-2.png'],
   'lecturer-1'      :['葉丙成/台大電機系教授', 
                       '夢想這件事，是試出來的！',
                       '夢想這件事，是試出來的！只要勇敢試了，就穩贏的！',
@@ -28,7 +28,7 @@ var modalString = {
                       '我的成功，我決定', 
                       '一本為臺灣孩子量身打造，讀了最「有感」、最「有FU」的人物故事集，帶領孩子重新思考「成功」的定義，積極面對生命中的挫折與失敗， 在人生的舞臺上，創造出屬於自己的價值，讓自己的名字真正發光發亮！'
                      ],
-  'lecturer-2-image':['Gmm5vRyLtr4', 'images/self-realization/lecturer2-1.png', 'images/self-realization/lecturer2-2.png'],
+  'lecturer-2-image':['Sf5Px3bUT5c', 'images/self-realization/lecturer2-1.png', 'images/self-realization/lecturer2-2.png'],
   'lecturer-2'      :['蘇仰志/雜學校創辦人', 
                       '大家在乎的是你做了什麼，而不是你知道什麼',
                       '勇敢去實踐，你就有機會接近實現夢想的那一刻。',
@@ -38,7 +38,7 @@ var modalString = {
                       '雜學校', 
                       '雜學校一個由下而上勇敢的社會創新運動，一個亞洲最具影響力的教育創新IP, 以台灣為基地集結台世界各地多元多樣的『非典型教育創新』的國際型博覽會與平台。寄望透過各種新世代的串連與實驗，對未來教育提出更多的可能與實踐。'
                      ],
-  'lecturer-3-image':['uJECld1Yq48', 'images/self-realization/lecturer3-1.png', 'images/self-realization/lecturer3-2.png'],
+  'lecturer-3-image':['jAIhPoGKCA8', 'images/self-realization/lecturer3-1.png', 'images/self-realization/lecturer3-2.png'],
   'lecturer-3'      :['楊逸帆/《學習的理由》導演', 
                       '用熱情、專長和關懷去實現夢想',
                       '用熱情、專長和關懷去實現夢想。',
@@ -48,7 +48,7 @@ var modalString = {
                       '學習的理由', 
                       '《學習的理由》是由楊逸帆執導的一部教育紀錄片。拍攝自己在人文國中小的朋友們面對基測的過程，並追蹤他們一路到大學的改變歷程，探討升學與分流體系對青少年的影響，更觸及人們為何「換了位子就換了腦袋」此一大哉問。https://www.zeczec.com/projects/reasontostudy'
                      ],
-  'lecturer-4-image':['Sy_q0Q8b5z8', 'images/self-realization/lecturer4-1.png', 'images/self-realization/lecturer4-2.png'],
+  'lecturer-4-image':['nZ-vtDaf1Ck', 'images/self-realization/lecturer4-1.png', 'images/self-realization/lecturer4-2.png'],
   'lecturer-4'      :['鄭國威/泛科學總編輯', 
                       '不要太在乎結果，先去做你可以做的事情吧！',
                       '不要太在乎結果，先去做你可以做的事情吧！',
@@ -319,7 +319,10 @@ class Topic1 extends Component {
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <div className="video-container"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe></div>
+        <div className="video-container">
+          <iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe>
+          <div className="close-video cp">關閉影片</div>
+        </div>
       );
     }
   }
