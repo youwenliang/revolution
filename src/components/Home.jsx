@@ -82,12 +82,12 @@ class Home extends Component {
           <div className="df dfc s95">
           	<div className="center w-100 mw8 ph5-l tc relative t-25">
               <h2 className="hideme hidediv t25">2017</h2>
-              <figure className="center w-100 mw6 hideme hidediv relative t30">
+              <figure className="center w-100 mw6 hideme hidediv relative t30 bg-white">
                 <video id="home-video" className="home-video relative" width="100%" muted playsInline preload="auto">
                 <source src={"images/home_video"+this.randomNum+".mp4"} type="video/mp4" /></video>
                 <video id="home-video-loop" className="home-video absolute" width="100%" muted playsInline preload="auto" loop>
                 <source src={"images/home_video_loop"+this.randomNum+".mp4"} type="video/mp4" /></video>
-                <figure>
+                <figure className="bg-white">
                   <img src={"images/home_video"+this.randomNum+"_poster.png"} alt="雜學起義" />
                 </figure>
               </figure>

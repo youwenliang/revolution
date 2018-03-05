@@ -247,7 +247,10 @@ class Topic2 extends Component {
     } else if(a.indexOf('video') >= 0) {
       console.log('video');
       return (
-        <div className="video-container"><iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe></div>
+        <div className="video-container">
+          <iframe title="youtube" width="853" height="480" src={"https://www.youtube.com/embed/"+modalString[a]+"?modestbranding=1&amp;rel=0&amp;controls=1"} frameBorder="0" allowFullScreen></iframe>
+          <div className="close-video cp">關閉影片</div>
+        </div>
       );
     }
   }
