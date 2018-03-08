@@ -894,7 +894,6 @@ video {
   padding: 6px 12px;
   background-color: #1f1f1f;
   color: #ccc;
-  pointer-events: none;
   position: absolute;
   bottom: -40px;
   right: 0px;
