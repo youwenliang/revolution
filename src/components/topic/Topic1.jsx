@@ -11,7 +11,7 @@ import {Helmet} from "react-helmet";
 var pageName = "追求夢想";
 var pageURL = "self-realization";
 var themeColor = "blue";
-var exhibitNum = 12;
+var exhibitNum = 18;
 
 /* Lightbox Contents */
 var modalId = "";
@@ -141,6 +141,48 @@ var modalString = {
                       
                       'https://www.shokuzine.com/',
                       'https://www.facebook.com/SHOKUZiNE/'
+                     ],
+  'exhibit-13'       :['See More 教育',
+                      '【See More】傳遞生命故事 帶給迷惘學生「選擇」的勇氣', 
+                      '由一群對教育有熱忱的青年共同籌辦。 透過不同的職人、達人分享與互動，引導孩子們 SEE MORE，看見更多可能，對未來有更多的想像空間。',
+                      
+                      'http://web.seemore.org.tw/',
+                      ''
+                     ],
+  'exhibit-14'       :['YOTTA',
+                      '【YOTTA】斜槓青年的好夥伴：YOTTA帶你學習無限大！', 
+                      'YOTTA專注於職場專業領域進修，也是台灣擁有最多專業課程的線上教學平台，無論是對自身能力感到不足、或渴望在有限的時間資源內進修，YOTTA提供通往不同領域的階梯，讓學習者能提升自我、實現夢想！',
+                      
+                      'https://www.yottau.com.tw/home/',
+                      ''
+                     ],
+  'exhibit-15'       :['SELFPICK',
+                      '【SELFPICK】在學校飲酒？調酒影集帶動影視產業變化　', 
+                      '由一群對影視產業有熱情的20多歲年輕人組成，拍攝影集、電影，未來計畫從酒吧開到Hostel，最終成立一棟製作大樓，為影視產業注入活水。他們是SELFPICK，自我揀選，選擇找回娛樂產業的本質。',
+                      
+                      '',
+                      'https://www.facebook.com/selfpick/'
+                     ],
+  'exhibit-16'       :['讓狂人飛',
+                      '【讓狂人飛】最貼近社團學生需求的智囊團！', 
+                      '社團是課外學習與交流的好場所，而新上任的幹部卻常在耗盡心力後，社團也隨之倒下。讓狂人飛立志重拾社團價值，藉由專業技術課程分享知識型懶人包，讓社團人有能力經營社團，使社團持續做為讓學生切磋、築夢的地方！',
+                      
+                      '',
+                      'https://www.facebook.com/flying.crazyer/'
+                     ],
+  'exhibit-17'       :['傑作國際專業教練',
+                      '【傑作】永遠不要停止自我探索', 
+                      '傑作以教練(Coaching)的方式創造一個安全與支持的氛圍，協助各年齡層的學子與社會人士，透過自我探索，釐清自己擅長、喜愛與關心的領域，已確立自己的定位與方向，讓自己對未來不再迷惘。',
+                      
+                      '',
+                      'https://www.facebook.com/true.identity.coaching'
+                     ],
+  'exhibit-18'       :['財團法人超越文創教育基金會',
+                      '【超越基金會】認清現實才能超越騰達', 
+                      '我們相信成熟的公民是促使社會前進的動力，也相信每個人都是獨特的個體，最值得超越的對象就是自己。2012年推出超越達人公益計畫，期望以互動實作的教育方式讓青少年認識自己、認識世界，找到最適合自己的位置。',
+                      
+                      'http://eball.tw/',
+                      ''
                      ]
 }
 
@@ -289,7 +331,8 @@ class Topic1 extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       let links = null;
-      if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
+      if(modalString[a][4] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p></div>;
+      else if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
@@ -505,6 +548,12 @@ class Topic1 extends Component {
                 {this.exhibitComponent(10)}
                 {this.exhibitComponent(11)}
                 {this.exhibitComponent(12)}
+                {this.exhibitComponent(13)}
+                {this.exhibitComponent(14)}
+                {this.exhibitComponent(15)}
+                {this.exhibitComponent(16)}
+                {this.exhibitComponent(17)}
+                {this.exhibitComponent(18)}
                 </div>
                 </div>
               </div>
