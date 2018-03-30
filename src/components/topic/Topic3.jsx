@@ -11,7 +11,7 @@ import {Helmet} from "react-helmet";
 var pageName = "思辨能力";
 var pageURL = "critical-thinking";
 var themeColor = "purple";
-var exhibitNum = 5;
+var exhibitNum = 8;
 
 /* Lightbox Contents */
 var modalId = "";
@@ -72,6 +72,27 @@ var modalString = {
                       
                       'http://www.qsteens-edu.com/index.php',
                       'https://www.facebook.com/qsnotbook/'
+                     ],
+  'exhibit-6'       :['意識物 Consciousness',
+                      '【意識物】重新建構你所認識的世界', 
+                      '意識物，一個跨領域的科學傳播平台，並嘗試以多元設計方法呈現與傳播資訊，致力於創造一個科學與社會的連結，進而與讀者共享關於科學的觀點。在反思科學的過程中，與讀者一同形塑對於這個世界的想像。',
+                      
+                      '',
+                      'https://www.facebook.com/consciousness.sciwrite/'
+                     ],
+  'exhibit-7'       :['玩轉學校',
+                      '【玩轉學校】玩遊戲也能翻轉學習熱情', 
+                      '玩轉學校（Pley=Play+Education）想要透過遊戲點燃孩子自主學習的熱情，喚醒他們的天賦，讓孩子知道如何開創未來，面對未來的各種挑戰。',
+                      
+                      'http://www.pleyschool.org/',
+                      ''
+                     ],
+  'exhibit-8'       :['教育丸子',
+                      '【教育丸子】讓教育不只出現在課本，更在生活中發生', 
+                      '每天5分鐘，教育丸子Education One用影片教你學校沒教的事！由教育部支持，以教育為主題建置的影音平台，希望突破學習界線，以影像紀錄為媒介，激發不同思考、探索多元議題。',
+                      
+                      'http://eduone.moe.edu.tw/main/',
+                      ''
                      ]
 }
 
@@ -420,6 +441,9 @@ class Topic2 extends Component {
                 {this.exhibitComponent(3)}
                 {this.exhibitComponent(4)}
                 {this.exhibitComponent(5)}
+                {this.exhibitComponent(6)}
+                {this.exhibitComponent(7)}
+                {this.exhibitComponent(8)}
               </div>
             </div>
           </div>
