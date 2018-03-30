@@ -1,12 +1,10 @@
 /*global FB*/
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
-import {Helmet} from "react-helmet";
 
 var pageName = "思辨能力";
 var pageURL = "critical-thinking";
@@ -439,12 +437,17 @@ class Topic2 extends Component {
                 {this.exhibitComponent(1)}
                 {this.exhibitComponent(2)}
                 {this.exhibitComponent(3)}
+                <div className="hide" id="more_2">
                 {this.exhibitComponent(4)}
                 {this.exhibitComponent(5)}
                 {this.exhibitComponent(6)}
+                <div className="hide" id="more_1">
                 {this.exhibitComponent(7)}
                 {this.exhibitComponent(8)}
+                </div>
+                </div>
               </div>
+              <div className={"center button mt4-l mt2 cp fw5 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white hideme hidediv tc"} onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>

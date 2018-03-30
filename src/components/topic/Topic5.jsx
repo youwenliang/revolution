@@ -1,17 +1,15 @@
 /*global FB*/
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
-import {Helmet} from "react-helmet";
 
 var pageName = "尊重生命";
 var pageURL = "respect-life";
 var themeColor = "green";
-var exhibitNum = 2;
+var exhibitNum = 4;
 
 /* Lightbox Contents */
 var modalId = "";
@@ -39,7 +37,7 @@ var modalString = {
                       '透過英國Wildscreen的協助，自2011年起舉辦「台灣野望國際自然影展」（WildViewTaiwan Film Festival in association with Wildscreen），每年引進台灣20部世界頂尖的生態環境紀錄片，進行為期一年的巡迴播映。'
                      ],
   'exhibit-1'       :['綿羊犬百寶箱',
-                      '【綿羊犬百寶箱】遊戲學習開啟孩子的無限潛能', 
+                      '【綿羊犬】遊戲學習開啟孩子的無限潛能', 
                       '綿羊犬百寶箱全國首創的「動手學習」教育玩具品牌，以臺灣原創．臺灣製造的高品質產品，提供孩子全新的遊戲與學習體驗！',
                       
                       'http://www.shepherdkit.com.tw/',
@@ -51,6 +49,20 @@ var modalString = {
                       
                       'http://godot.org.tw/',
                       'https://www.facebook.com/godotfans/'
+                     ],
+  'exhibit-3'       :['牠牠－「浪，我幫你說」體驗式生命教育',
+                      '【牠牠】以愛擁抱生命，牠牠替浪浪找家', 
+                      '「牠牠」最大的夢想是讓台灣成為亞洲第一個零棄養的國家！牠牠的體驗式生命教育課程，著重在學員能親身體會生命的價值，用愛與擁抱陪伴牠，牠就會告訴你生命的意義，牠牠邀請您一起用教育打破流浪動物的無限循環！',
+                      
+                      '',
+                      'https://www.facebook.com/tatafortaiwan/'
+                     ],
+  'exhibit-4'       :['極熊設計工作室',
+                      '【極熊】用設計，關心我們在乎的動物議題', 
+                      '由六位喜愛動物的設計師、兩隻米克斯犬組成，長期以設計探討動物議題，關注人與狗之間的關係，又以浪犬議題的專案最為知名，如：《終犬》、《浪孩起步走》，2017以《Joseph的紅色披風》導盲犬開路計畫為主軸。',
+                      
+                      '',
+                      'https://www.facebook.com/gicumadesignstudio/'
                      ]
 }
 
@@ -202,7 +214,8 @@ class Topic2 extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       let links = null;
-      if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
+      if(modalString[a][4] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p></div>;
+      else if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
@@ -397,6 +410,8 @@ class Topic2 extends Component {
               <div className="cf mw6 mw-none-l center">
                 {this.exhibitComponent(1)}
                 {this.exhibitComponent(2)}
+                {this.exhibitComponent(3)}
+                {this.exhibitComponent(4)}
               </div>
             </div>
           </div>

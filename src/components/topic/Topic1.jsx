@@ -1,12 +1,10 @@
 /*global FB*/
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
-import {Helmet} from "react-helmet";
 
 var pageName = "追求夢想";
 var pageURL = "self-realization";

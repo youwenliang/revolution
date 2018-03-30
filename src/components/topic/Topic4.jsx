@@ -1,17 +1,15 @@
 /*global FB*/
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import Swiper from 'swiper';
 import Modal from 'react-responsive-modal';
 import loadImage from 'image-promise';
 import $ from 'jquery';
-import {Helmet} from "react-helmet";
 
 var pageName = "性別平等";
 var pageURL = "gender-equality";
 var themeColor = "pink";
-var exhibitNum = 0;
+var exhibitNum = 2;
 
 /* Lightbox Contents */
 var modalId = "";
@@ -37,6 +35,20 @@ var modalString = {
                       '延伸推薦', 
                       '台灣性別平等教育協會', 
                       '過去多年來，我們除了在校內結合有興趣的教師，發展教材教法；也往來各地，參與各項研習課程活動；並從事相關學術研究，鑽研論述；還積極影響政府政策，推動立法。因為深感性別平等教育的重要性，也為了累積、交流彼此的經驗，並持續深耕與推廣這個議題，我們這一群夥伴，包括基層中小學教師、大專院校學者，以及民間團體專業工作者，決定打造這個共同的家，來立性別教育的大業。'
+                     ],
+  'exhibit-1'       :['UDSTAND STUDIO',
+                      '【UDSTAND】互動式遊戲設計 性教育不害羞', 
+                      '來自互動設計系的年輕團隊，相信「性別」與「教育」有著密不可分的關係，若要建立良好的性別觀念一定得從教育做起，利用多媒體設計的方式呈現社會大眾習慣避而不談的性教育議題。以「互動設計」將各式議題變的親近有趣，吸引人們並傳達理念。',
+                      
+                      'https://www.behance.net/understandstudio',
+                      ''
+                     ],
+  'exhibit-2'       :['月釀杯-台灣月亮杯Formoonsa Cup',
+                      '【月釀杯】女性的紅色革命', 
+                      '創辦人凡妮莎在臺灣花費14年推動生理用品教育，有感於臺灣女性對女性生理用品相關知識較為保守，希望在攤位上提供最多元的世界生理用品，與大家一起學習新知！愛自己，就從「改善自己的生理期體驗」開始做起！',
+                      
+                      'http://www.formoonsacup.com/',
+                      ''
                      ]
 }
 
@@ -185,7 +197,8 @@ class Topic2 extends Component {
     } else if(a.indexOf('exhibit') >= 0) {
       console.log('exhibit');
       let links = null;
-      if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
+      if(modalString[a][4] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p></div>;
+      else if(modalString[a][3] === '') links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       else links = <div className="mb3 pl4-l pl0"><p className="w-100 mt2 tl"><span className="nowrap">官網：</span><a href={modalString[a][3]} target="_blank">{modalString[a][3]}</a></p><p className="w-100 mt2 tl"><span className="nowrap">粉專：</span><a href={modalString[a][4]} target="_blank">{modalString[a][4]}</a></p></div>;
       return (
         <div className="ph5-l ph4-m ph3 pb5-l pb4-m pb3 oh h-100">
@@ -246,6 +259,7 @@ class Topic2 extends Component {
           <a href="#section-0">主題首頁</a>
           <a href="#section-1">議題簡介</a>
           <a href="#section-2">名人對談</a>
+          <a href="#section-3">歷屆參展</a>
           <a href="#section-4">加入革命</a>
         </div>
         <p>目錄</p>
@@ -370,7 +384,19 @@ class Topic2 extends Component {
             <h3 className="white">不管你是哪種樣子，都值得被尊重。</h3>
           </div>
         </section>
-        <section id="section-3" className="dn"></section>
+        {/*--- Section 3 ---*/}
+        <section id="section-3" className="bg-near-white pv5-ns pv4">
+          <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">
+            <h2 className="fw5 hideme hidediv ph2">讓性別平等的理念成真</h2>
+            <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">看看這群人怎麼運用非典型教育，<br className="dn-s" />將性別平等的概念植入人心。</h4>
+            <div className="mw9 center mt5-l mt4">
+              <div className="cf mw6 mw-none-l center">
+                {this.exhibitComponent(1)}
+                {this.exhibitComponent(2)}
+              </div>
+            </div>
+          </div>
+        </section>
         {/*--- Section 4 ---*/}
         <section id="section-4" className="bg-white pv5-ns pv4">
           <div className="center w-100 mw8 ph5-l ph3 tc-ns tl">

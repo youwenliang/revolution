@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
 import $ from 'jquery';
-import {Helmet} from "react-helmet";
 
 class Home extends Component {
   constructor(props) {
