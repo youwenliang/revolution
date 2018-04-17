@@ -408,8 +408,6 @@ class Topic2 extends Component {
             <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">看看這群人怎麼運用非典型教育，<br className="dn-s" />將尊重生命的概念植入人心。</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
-                {this.exhibitComponent(1)}
-                {this.exhibitComponent(2)}
                 {this.exhibitComponent(3)}
                 {this.exhibitComponent(4)}
               </div>

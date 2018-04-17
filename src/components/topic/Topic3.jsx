@@ -434,20 +434,10 @@ class Topic2 extends Component {
             <h4 className="fw4 mt3 hideme hidediv ph2 mb-1">跟著他們一起跳脫框架，啟發觀點。<br className="dn-s" />體會非典型教育創造的思辨之力。</h4>
             <div className="mw9 center mt5-l mt4">
               <div className="cf mw6 mw-none-l center">
-                {this.exhibitComponent(1)}
-                {this.exhibitComponent(2)}
-                {this.exhibitComponent(3)}
-                <div className="hide" id="more_2">
-                {this.exhibitComponent(4)}
-                {this.exhibitComponent(5)}
                 {this.exhibitComponent(6)}
-                <div className="hide" id="more_1">
                 {this.exhibitComponent(7)}
                 {this.exhibitComponent(8)}
-                </div>
-                </div>
               </div>
-              <div className={"center button mt4-l mt2 cp fw5 bg-light-"+themeColor+" bg-animate hover-bg-"+themeColor+" white hideme hidediv tc"} onClick={this.showMore}>閱讀更多</div>
             </div>
           </div>
         </section>
