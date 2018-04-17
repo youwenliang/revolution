@@ -76,21 +76,24 @@ var modalString = {
                       '意識物，一個跨領域的科學傳播平台，並嘗試以多元設計方法呈現與傳播資訊，致力於創造一個科學與社會的連結，進而與讀者共享關於科學的觀點。在反思科學的過程中，與讀者一同形塑對於這個世界的想像。',
                       
                       '',
-                      'https://www.facebook.com/consciousness.sciwrite/'
+                      'https://www.facebook.com/consciousness.sciwrite/',
+                      'https://zashare.org/expo/2017/blog/246'
                      ],
   'exhibit-7'       :['玩轉學校',
                       '【玩轉學校】玩遊戲也能翻轉學習熱情', 
                       '玩轉學校（Pley=Play+Education）想要透過遊戲點燃孩子自主學習的熱情，喚醒他們的天賦，讓孩子知道如何開創未來，面對未來的各種挑戰。',
                       
                       'http://www.pleyschool.org/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/213'
                      ],
   'exhibit-8'       :['教育丸子',
                       '【教育丸子】讓教育不只出現在課本，更在生活中發生', 
                       '每天5分鐘，教育丸子Education One用影片教你學校沒教的事！由教育部支持，以教育為主題建置的影音平台，希望突破學習界線，以影像紀錄為媒介，激發不同思考、探索多元議題。',
                       
                       'http://eduone.moe.edu.tw/main/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/221'
                      ]
 }
 
@@ -279,15 +282,20 @@ class Topic2 extends Component {
   }
 
   exhibitComponent = (a) => {
+    var textStyle = {
+      color: "#58595B"
+    }
     return (
       <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a} onClick={this.onOpenModal}>
+        <a href={modalString['exhibit-'+a][5]} target="_blank" style={textStyle}>
+        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a}>
           <figure className="db center w-100 pn topImg">
             <img src={'images/'+pageURL+'/exhibit_'+a+'_cover.jpg'} alt=""/>
           </figure>
           <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-'+a][1]}</h4>
           <p className="center tl pn mt2 ph15">{modalString['exhibit-'+a][2].substring(0, 30)}...</p>
         </div>
+        </a>
       </div>
     )
   }

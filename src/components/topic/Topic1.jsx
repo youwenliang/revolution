@@ -145,42 +145,48 @@ var modalString = {
                       '由一群對教育有熱忱的青年共同籌辦。 透過不同的職人、達人分享與互動，引導孩子們 SEE MORE，看見更多可能，對未來有更多的想像空間。',
                       
                       'http://web.seemore.org.tw/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/238'
                      ],
   'exhibit-14'       :['YOTTA',
                       '【YOTTA】斜槓青年的好夥伴：YOTTA帶你學習無限大！', 
                       'YOTTA專注於職場專業領域進修，也是台灣擁有最多專業課程的線上教學平台，無論是對自身能力感到不足、或渴望在有限的時間資源內進修，YOTTA提供通往不同領域的階梯，讓學習者能提升自我、實現夢想！',
                       
                       'https://www.yottau.com.tw/home/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/161'
                      ],
   'exhibit-15'       :['SELFPICK',
                       '【SELFPICK】在學校飲酒？調酒影集帶動影視產業變化　', 
                       '由一群對影視產業有熱情的20多歲年輕人組成，拍攝影集、電影，未來計畫從酒吧開到Hostel，最終成立一棟製作大樓，為影視產業注入活水。他們是SELFPICK，自我揀選，選擇找回娛樂產業的本質。',
                       
                       '',
-                      'https://www.facebook.com/selfpick/'
+                      'https://www.facebook.com/selfpick/',
+                      'https://zashare.org/expo/2017/blog/125'
                      ],
   'exhibit-16'       :['讓狂人飛',
                       '【讓狂人飛】最貼近社團學生需求的智囊團！', 
                       '社團是課外學習與交流的好場所，而新上任的幹部卻常在耗盡心力後，社團也隨之倒下。讓狂人飛立志重拾社團價值，藉由專業技術課程分享知識型懶人包，讓社團人有能力經營社團，使社團持續做為讓學生切磋、築夢的地方！',
                       
                       '',
-                      'https://www.facebook.com/flying.crazyer/'
+                      'https://www.facebook.com/flying.crazyer/',
+                      'https://zashare.org/expo/2017/blog/225'
                      ],
   'exhibit-17'       :['傑作國際專業教練',
                       '【傑作】永遠不要停止自我探索', 
                       '傑作以教練(Coaching)的方式創造一個安全與支持的氛圍，協助各年齡層的學子與社會人士，透過自我探索，釐清自己擅長、喜愛與關心的領域，已確立自己的定位與方向，讓自己對未來不再迷惘。',
                       
                       '',
-                      'https://www.facebook.com/true.identity.coaching'
+                      'https://www.facebook.com/true.identity.coaching',
+                      'https://zashare.org/expo/2017/blog/155'
                      ],
   'exhibit-18'       :['財團法人超越文創教育基金會',
                       '【超越基金會】認清現實才能超越騰達', 
                       '我們相信成熟的公民是促使社會前進的動力，也相信每個人都是獨特的個體，最值得超越的對象就是自己。2012年推出超越達人公益計畫，期望以互動實作的教育方式讓青少年認識自己、認識世界，找到最適合自己的位置。',
                       
                       'http://eball.tw/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/180'
                      ]
 }
 
@@ -369,15 +375,20 @@ class Topic1 extends Component {
   }
 
   exhibitComponent = (a) => {
+    var textStyle = {
+      color: "#58595B"
+    }
     return (
       <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a} onClick={this.onOpenModal}>
+        <a href={modalString['exhibit-'+a][5]} target="_blank" style={textStyle}>
+        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a}>
           <figure className="db center w-100 pn topImg">
             <img src={'images/'+pageURL+'/exhibit_'+a+'_cover.jpg'} alt=""/>
           </figure>
           <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-'+a][1]}</h4>
           <p className="center tl pn mt2 ph15">{modalString['exhibit-'+a][2].substring(0, 30)}...</p>
         </div>
+        </a>
       </div>
     )
   }

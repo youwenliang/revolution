@@ -69,42 +69,48 @@ var modalString = {
                       '以臺灣傳統廟宇彩繪為主題，希望能將祖先流傳下來的珍貴藝術傳承下去，融合西洋繪畫與臺灣傳統技法、現代技術工法，打造新世代的臺灣廟口藝術文化。',
                       
                       '',
-                      'https://goo.gl/KgPvYf'
+                      'https://goo.gl/KgPvYf',
+                      'https://zashare.org/expo/2017/blog/215'
                      ],
   'exhibit-6'       :['Cupos享畫',
                       '【Cupos享畫】圖像紀錄 畫出你的話', 
                       '藉由圖像提升溝通與引導思考，運用圖像思考與創意構想的方式傳遞資訊與想法，將資訊與設計結合，傳遞知識的藝術之美。',
                       
                       '',
-                      'https://www.facebook.com/cupos.sh'
+                      'https://www.facebook.com/cupos.sh',
+                      'https://zashare.org/expo/2017/blog/207'
                      ],
   'exhibit-7'       :['Circle 設計微誌',
                       '【Circle 設計微誌】美學與生活的息息相關', 
                       '以系統的方式，逐步介紹平面設計的分門別類，同時延伸實驗不同的創意與觀點，每期深入分析不同類別的內涵與應用，不僅有多元的視覺風格，也是可收藏的參考工具。',
                       
                       '',
-                      'https://www.facebook.com/circlezine/'
+                      'https://www.facebook.com/circlezine/',
+                      'https://zashare.org/expo/2017/blog/245'
                      ],
   'exhibit-8'       :['尹太工作坊',
                       '【尹太】視障藝術家燒出不一樣的藝術生命力', 
                       '認為除了視覺，藝術也能透過其他感官感受、融入於生活，創作藝術家廖凡棋是一名具有才華的年輕陶藝家，同時也是輕度視覺障礙者，雖然視野不曾清晰，但態度十分堅定。',
                       
                       '',
-                      'https://www.facebook.com/Yintai2017/'
+                      'https://www.facebook.com/Yintai2017/',
+                      'https://zashare.org/expo/2017/blog/146'
                      ],
   'exhibit-9'       :['來字哪裡',
                       '【來字哪裡】突破框架 玩轉文字的排列組合', 
                       '由兩位熱愛字體的臺灣90後女孩，以推廣臺灣正體中文字為目標，來自那裡的「自」為「字」，雙關語不僅代表從哪裡來，也希望正體中文從臺灣躍向世界並傳達其中之美。',
                       
                       '',
-                      'https://business.facebook.com/laizinali'
+                      'https://business.facebook.com/laizinali',
+                      'https://zashare.org/expo/2017/blog/168'
                      ],
   'exhibit-10'       :['日心月藝工作室',
                       '【日心月藝】以藝解心，心靈的悠活之旅', 
                       '日心月藝工作室以教育及心理科學為基底，透過科學檢測結合藝術、肢體、心理的主題式課程，協助探索、開發並積極培養內在情感、自信、創造力等心理素質。',
                       
                       '',
-                      'https://www.facebook.com/solarandlunarstudio/'
+                      'https://www.facebook.com/solarandlunarstudio/',
+                      'https://zashare.org/expo/2017/blog/150'
                      ]
 }
 
@@ -296,15 +302,20 @@ class Topic2 extends Component {
   }
 
   exhibitComponent = (a) => {
+    var textStyle = {
+      color: "#58595B"
+    }
     return (
       <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a} onClick={this.onOpenModal}>
+        <a href={modalString['exhibit-'+a][5]} target="_blank" style={textStyle}>
+        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a}>
           <figure className="db center w-100 pn topImg">
             <img src={'images/'+pageURL+'/exhibit_'+a+'_cover.jpg'} alt=""/>
           </figure>
           <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-'+a][1]}</h4>
           <p className="center tl pn mt2 ph15">{modalString['exhibit-'+a][2].substring(0, 30)}...</p>
         </div>
+        </a>
       </div>
     )
   }

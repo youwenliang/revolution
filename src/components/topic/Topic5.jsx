@@ -55,14 +55,16 @@ var modalString = {
                       '「牠牠」最大的夢想是讓台灣成為亞洲第一個零棄養的國家！牠牠的體驗式生命教育課程，著重在學員能親身體會生命的價值，用愛與擁抱陪伴牠，牠就會告訴你生命的意義，牠牠邀請您一起用教育打破流浪動物的無限循環！',
                       
                       '',
-                      'https://www.facebook.com/tatafortaiwan/'
+                      'https://www.facebook.com/tatafortaiwan/',
+                      'https://zashare.org/expo/2017/blog/165'
                      ],
   'exhibit-4'       :['極熊設計工作室',
                       '【極熊】用設計，關心我們在乎的動物議題', 
                       '由六位喜愛動物的設計師、兩隻米克斯犬組成，長期以設計探討動物議題，關注人與狗之間的關係，又以浪犬議題的專案最為知名，如：《終犬》、《浪孩起步走》，2017以《Joseph的紅色披風》導盲犬開路計畫為主軸。',
                       
                       '',
-                      'https://www.facebook.com/gicumadesignstudio/'
+                      'https://www.facebook.com/gicumadesignstudio/',
+                      'https://zashare.org/expo/2017/blog/167'
                      ]
 }
 
@@ -254,15 +256,20 @@ class Topic2 extends Component {
   }
 
   exhibitComponent = (a) => {
+    var textStyle = {
+      color: "#58595B"
+    }
     return (
       <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a} onClick={this.onOpenModal}>
+        <a href={modalString['exhibit-'+a][5]} target="_blank" style={textStyle}>
+        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a}>
           <figure className="db center w-100 pn topImg">
             <img src={'images/'+pageURL+'/exhibit_'+a+'_cover.jpg'} alt=""/>
           </figure>
           <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-'+a][1]}</h4>
           <p className="center tl pn mt2 ph15">{modalString['exhibit-'+a][2].substring(0, 30)}...</p>
         </div>
+        </a>
       </div>
     )
   }

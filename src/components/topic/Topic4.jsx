@@ -41,14 +41,16 @@ var modalString = {
                       '來自互動設計系的年輕團隊，相信「性別」與「教育」有著密不可分的關係，若要建立良好的性別觀念一定得從教育做起，利用多媒體設計的方式呈現社會大眾習慣避而不談的性教育議題。以「互動設計」將各式議題變的親近有趣，吸引人們並傳達理念。',
                       
                       'https://www.behance.net/understandstudio',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/175'
                      ],
   'exhibit-2'       :['月釀杯-台灣月亮杯Formoonsa Cup',
                       '【月釀杯】女性的紅色革命', 
                       '創辦人凡妮莎在臺灣花費14年推動生理用品教育，有感於臺灣女性對女性生理用品相關知識較為保守，希望在攤位上提供最多元的世界生理用品，與大家一起學習新知！愛自己，就從「改善自己的生理期體驗」開始做起！',
                       
                       'http://www.formoonsacup.com/',
-                      ''
+                      '',
+                      'https://zashare.org/expo/2017/blog/210'
                      ]
 }
 
@@ -237,15 +239,20 @@ class Topic2 extends Component {
   }
 
   exhibitComponent = (a) => {
+    var textStyle = {
+      color: "#58595B"
+    }
     return (
       <div className="fl w-100 w-third-l pa3-l pa2 hideme hidediv mb3 mb0-l">
-        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a} onClick={this.onOpenModal}>
+        <a href={modalString['exhibit-'+a][5]} target="_blank" style={textStyle}>
+        <div className="pb4 cp center content-block bg-white ba b--moon-gray br1" data-id={"exhibit-"+a}>
           <figure className="db center w-100 pn topImg">
             <img src={'images/'+pageURL+'/exhibit_'+a+'_cover.jpg'} alt=""/>
           </figure>
           <h4 className="center tl mt3 pn mh3 fw5 ph15">{modalString['exhibit-'+a][1]}</h4>
           <p className="center tl pn mt2 ph15">{modalString['exhibit-'+a][2].substring(0, 30)}...</p>
         </div>
+        </a>
       </div>
     )
   }
